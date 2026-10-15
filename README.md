@@ -32,7 +32,7 @@ Still to do:
 1. **The API key (Andrew only).**
    - Go to **Settings → Secrets and variables → Actions → New repository secret**.
    - Name it `ANTHROPIC_API_KEY` and paste a key from console.anthropic.com.
-2. **For an edition straight away**, go to **Actions → Nightly AI news → Run workflow** and choose **build**. Otherwise the first new edition arrives at 1am.
+2. **For an edition straight away**, go to **Actions → Nightly AI news → Run workflow** and choose **build**. Otherwise the first new edition arrives at 1am. A manual build replaces that day's edition if there already is one.
 3. **Custom address (optional):**
    - In Squarespace → Domains → DNS, add a CNAME record: host `news`, value `andrewgardneremberseed.github.io`.
    - Put `news.emberseedautomation.com.au` in **Settings → Pages → Custom domain** and tick **Enforce HTTPS**.
