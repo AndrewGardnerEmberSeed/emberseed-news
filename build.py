@@ -41,8 +41,8 @@ SITE_URL = (os.environ.get("NEWS_SITE_URL") or "https://news.emberseedautomation
 MAIN_SITE = "https://emberseedautomation.com.au"
 # One model picks the stories and another writes them. Set NEWS_PICK_MODEL or
 # NEWS_WRITE_MODEL to change either.
-PICK_MODEL = os.environ.get("NEWS_PICK_MODEL") or "claude-opus-5-5"
-WRITE_MODEL = os.environ.get("NEWS_WRITE_MODEL") or "claude-opus-5-5"
+PICK_MODEL = os.environ.get("NEWS_PICK_MODEL") or "claude-sonnet-5-5"
+WRITE_MODEL = os.environ.get("NEWS_WRITE_MODEL") or "claude-haiku-5-5"
 EFFORT = os.environ.get("NEWS_EFFORT") or "medium"  # how hard Claude thinks: low, medium or high
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
@@ -268,7 +268,7 @@ def claude(prompt, system, schema, model, max_tokens=16000, cache=False):
 
 def select_stories(candidates, style, recent=()):
     listing = "\n".join(
-        f"[{c['id']}] {c['source']} | {c['published'][:16]} | {c['title']} | {c['description'][:280]}"
+        f"[{c['id']}] {c['source']} | {c['published'][:16]} | {c['title']} | {c['description'][:160]}"
         for c in candidates)
     prompt = (
         f"Here are today's AI news items from our feeds, one per line as "

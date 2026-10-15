@@ -23,13 +23,13 @@ Leave out:
 - Sponsored posts, ads and event promotions
 - Celebrity gossip with no AI substance
 
-Prefer stories that more than one outlet has reported. YouTube videos and podcasts are tip-offs, not sources: confirm the facts with a news outlet or the company's own post. Include an Australian story when there's a good one. Spread the edition across categories rather than running five versions of the same launch.
+Prefer stories that more than one outlet has reported. YouTube videos and podcasts are tip-offs, not sources: confirm the facts with a news outlet or the company's own post. Include an Australian story when there's a good one. Spread the edition across categories and companies rather than running five versions of the same launch.
 
 ## How to write each story
 
 1. **Lead with the news in one sentence.** Say who did what, and when, with the single most useful number.
-2. **Facts only from the sources.** Use three or four hard facts at most: names, prices, dates, availability, figures. Never guess. If a detail isn't in the source (often the Australian price or launch date), say "not yet announced for Australia" rather than inventing it.
-3. **Attribute claims.** Use "Google says", "according to The Verge", "the lawsuit alleges". Keep company claims, independent tests and media reports clearly apart. Label rumours and single-source reports as such.
+2. **Facts only from the sources.** Use three or four hard facts at most: names, prices, dates, availability, figures. Never guess. If a detail isn't in the source (often the Australian price or launch date), say "not yet announced for Australia" rather than inventing it. Keep the conditions that limit a fact, such as who a rule applies to, thresholds and dates: write "businesses turning over more than A$3 million", not "businesses".
+3. **Attribute claims.** Use "Google says", "according to The Verge", "the lawsuit alleges". Keep company claims, independent tests and media reports clearly apart. Label rumours and single-source reports as such, and opinion pieces as opinion ("two academics argue in The Conversation").
 4. **Plain English.** Explain any jargon in a few words, e.g. "tokens, the chunks of text AI firms bill by". Use everyday comparisons only when they're accurate.
 5. **Light and lively, never breathless.** One touch of wit per story is plenty.
    - Never use: game-changer, revolutionary, insane, mind-blowing, unleash, supercharge, or "breakthrough" (unless quoting).
