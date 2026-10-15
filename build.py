@@ -25,6 +25,7 @@ import html
 import json
 import os
 import re
+import shutil
 import sys
 import time
 import urllib.error
@@ -36,6 +37,7 @@ from zoneinfo import ZoneInfo
 ROOT = Path(__file__).resolve().parent
 SITE = ROOT / "site"
 DATA = ROOT / "data"
+STATIC = ROOT / "static"  # icons and the web app manifest, copied into the site as they are
 TZ = ZoneInfo("Australia/Adelaide")
 SITE_URL = (os.environ.get("NEWS_SITE_URL") or "https://news.emberseedautomation.com.au").rstrip("/")
 MAIN_SITE = "https://emberseedautomation.com.au"
@@ -369,6 +371,11 @@ HEAD = """<!doctype html>
 <title>{title}</title>
 <meta name="description" content="{description}">
 <link rel="alternate" type="application/rss+xml" title="EmberSeed AI News" href="{base}feed.xml">
+<link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{base}favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{base}apple-touch-icon.png">
+<link rel="manifest" href="{base}manifest.webmanifest">
+<meta name="apple-mobile-web-app-title" content="AI News">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=Figtree:wght@400;500;600;700&amp;display=swap">
@@ -572,17 +579,18 @@ def main():
 
 
 def rebuild_site():
-    files = sorted(DATA.glob("*.json"), reverse=True)
+    # Every edition is rendered, oldest first, so fixes to older stories show up
+    # and the newest edition writes index.html last.
+    files = sorted(DATA.glob("*.json"))
     if not files:
         sys.exit("No editions in data/ yet.")
-    history, all_stories = [], []
-    for f in files:
-        day_stories = json.loads(f.read_text())
-        history.append({"date": f.stem, "label": nice_date(dt.date.fromisoformat(f.stem)), "count": len(day_stories)})
-        all_stories.extend(day_stories)
-    render(dt.date.fromisoformat(files[0].stem), json.loads(files[0].read_text()), history)
-    write_feed(all_stories)
-    print(f"Site rebuilt: {len(files)} editions, latest {files[0].stem}.")
+    editions = [(dt.date.fromisoformat(f.stem), json.loads(f.read_text())) for f in files]
+    history = [{"date": d.isoformat(), "label": nice_date(d), "count": len(s)} for d, s in reversed(editions)]
+    for d, stories in editions:
+        render(d, stories, history)
+    write_feed([s for _, stories in reversed(editions) for s in stories])
+    shutil.copytree(STATIC, SITE, dirs_exist_ok=True)
+    print(f"Site rebuilt: {len(files)} editions, latest {files[-1].stem}.")
 
 
 def usage_report():
