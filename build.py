@@ -12,7 +12,7 @@ unless run with --no-ai (a test mode that uses the feed text as-is).
 Usage:
   python3 build.py              # normal nightly run
   python3 build.py --no-ai      # test the feeds and pages without calling Claude
-  python3 build.py --force      # run even if it isn't 1am in Adelaide
+  python3 build.py --force      # run now, even outside 1am to 4am in Adelaide
 """
 
 import argparse
@@ -392,7 +392,7 @@ def write_feed(all_stories):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-ai", action="store_true", help="test run without calling Claude")
-    ap.add_argument("--force", action="store_true", help="run even if it isn't 1am in Adelaide")
+    ap.add_argument("--force", action="store_true", help="run now, even outside 1am to 4am in Adelaide")
     ap.add_argument("--render-only", action="store_true", help="rebuild pages and feed from data/ without fetching")
     args = ap.parse_args()
     if args.render_only:
@@ -401,8 +401,10 @@ def main():
 
     now = dt.datetime.now(dt.timezone.utc)
     here = now.astimezone(TZ)
-    if not args.force and here.hour != 1:
-        print(f"It's {here:%H:%M} in Adelaide, not 1am. Nothing to do.")
+    # GitHub can start a scheduled run late, or skip it when it's busy, so any
+    # run from 1am to 4am counts. The check below stops a second edition.
+    if not args.force and not 1 <= here.hour < 4:
+        print(f"It's {here:%H:%M} in Adelaide, outside 1am to 4am. Nothing to do.")
         return
     edition_date = here.date()
     DATA.mkdir(exist_ok=True)

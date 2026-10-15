@@ -12,20 +12,39 @@ Every night at 1am Adelaide time, a GitHub Action runs `build.py`, which:
 
 Each edition is labelled "Summarised by AI, read by Andrew". Andrew reads each edition in the morning and corrects anything that's wrong.
 
+GitHub sometimes starts scheduled jobs late or skips them, so backup runs follow an hour or two after 1am. There's only ever one edition a day.
+
+## Status (15 October 2026)
+
+- Live at https://andrewgardneremberseed.github.io/emberseed-news/. The News links on emberseedautomation.com.au go to `/news`, which a Squarespace URL mapping redirects here.
+- The old Squarespace News page is switched off, at `/news-first-edition`.
+- Waiting on the `ANTHROPIC_API_KEY` secret. Until it's added, the nightly runs skip and the 15 October edition stays up.
+
 ## One-time setup
 
-1. Create the repository from this folder, then go to **Settings → Pages** and set **Source** to **GitHub Actions**.
-2. Go to **Settings → Secrets and variables → Actions**:
-   - Add the secret `ANTHROPIC_API_KEY` (from console.anthropic.com). Only Andrew handles this key.
-   - Add the variable `NEWS_SITE_URL`: either `https://news.emberseedautomation.com.au`, or the GitHub Pages address to start with.
-3. Custom address (optional):
+Done on 15 October 2026:
+
+- The public repository, with **Settings → Pages → Source** set to **GitHub Actions**.
+- The variable `NEWS_SITE_URL`, set to `https://andrewgardneremberseed.github.io/emberseed-news`.
+
+Still to do:
+
+1. **The API key (Andrew only).**
+   - Go to **Settings → Secrets and variables → Actions → New repository secret**.
+   - Name it `ANTHROPIC_API_KEY` and paste a key from console.anthropic.com.
+2. **For an edition straight away**, go to **Actions → Nightly AI news → Run workflow** and choose **build**. Otherwise the first new edition arrives at 1am.
+3. **Custom address (optional):**
    - In Squarespace → Domains → DNS, add a CNAME record: host `news`, value `andrewgardneremberseed.github.io`.
-   - Then put `news.emberseedautomation.com.au` in **Settings → Pages → Custom domain** and tick **Enforce HTTPS**.
-4. To make the first edition straight away, go to **Actions → Nightly AI news → Run workflow**.
+   - Put `news.emberseedautomation.com.au` in **Settings → Pages → Custom domain** and tick **Enforce HTTPS**.
+   - Change the `NEWS_SITE_URL` variable to `https://news.emberseedautomation.com.au`.
+   - Point the `/news` URL mapping in Squarespace (Settings → Developer Tools → URL Mappings) at the new address.
 
 ## Fixing a story
 
-Edit `data/YYYY-MM-DD.json`, then run the workflow again. The pages and the feed are rebuilt from the data files.
+1. Edit `data/YYYY-MM-DD.json`. On GitHub, open the file, click the pencil, make the change and commit.
+2. Go to **Actions → Nightly AI news → Run workflow** and choose **render**.
+
+The pages and the feed are rebuilt from the data files.
 
 ## Testing locally
 

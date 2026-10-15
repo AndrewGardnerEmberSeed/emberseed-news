@@ -4,9 +4,11 @@ on:
   schedule:
     # GitHub runs on UTC. 14:30 UTC is 1am in Adelaide during daylight saving
     # (UTC+10:30); 15:30 UTC is 1am the rest of the year (UTC+9:30).
-    # build.py only does the work when it's 1am in Adelaide.
+    # The later runs are backups in case GitHub starts one late or skips it.
+    # build.py only does the work from 1am to 4am in Adelaide, once a day.
     - cron: "30 14 * * *"
     - cron: "30 15 * * *"
+    - cron: "30 16 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -26,7 +28,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
@@ -73,7 +75,7 @@ jobs:
 
   deploy:
     needs: build
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
