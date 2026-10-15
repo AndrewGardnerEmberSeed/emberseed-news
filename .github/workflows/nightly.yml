@@ -12,9 +12,9 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "build = make a new edition now; render = rebuild the pages from data/ after fixing a story"
+        description: "build = make a new edition now (replaces today's); render = rebuild the pages from data/ after fixing a story; test = a full run with Claude that publishes nothing"
         type: choice
-        options: [build, render]
+        options: [build, render, test]
         default: build
 
 permissions:
@@ -36,6 +36,8 @@ jobs:
       NEWS_MODEL: ${{ vars.NEWS_MODEL }}
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main  # the latest commit, even if this run waited behind another
 
       - uses: actions/setup-python@v5
         with:
@@ -57,7 +59,12 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'render'
         run: python3 build.py --render-only
 
+      - name: Test run (publishes nothing)
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'test'
+        run: python3 build.py --dry-run
+
       - name: Save the edition
+        if: inputs.mode != 'test'
         run: |
           git config user.name "EmberSeed News"
           git config user.email "news-bot@users.noreply.github.com"
@@ -70,11 +77,13 @@ jobs:
           fi
 
       - uses: actions/upload-pages-artifact@v3
+        if: inputs.mode != 'test'
         with:
           path: site
 
   deploy:
     needs: build
+    if: inputs.mode != 'test'
     runs-on: ubuntu-24.04
     environment:
       name: github-pages

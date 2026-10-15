@@ -13,6 +13,7 @@ Usage:
   python3 build.py              # normal nightly run
   python3 build.py --no-ai      # test the feeds and pages without calling Claude
   python3 build.py --force      # run now, even outside 1am to 4am in Adelaide
+  python3 build.py --dry-run    # full run with Claude that prints the stories and saves nothing
 """
 
 import argparse
@@ -24,6 +25,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -182,9 +184,26 @@ def claude(prompt, system, max_tokens=4000):
         "https://api.anthropic.com/v1/messages", data=body, method="POST",
         headers={"x-api-key": key, "anthropic-version": "2023-06-01",
                  "content-type": "application/json"})
-    with urllib.request.urlopen(req, timeout=180) as r:
-        data = json.load(r)
-    text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    # Rate limits (429) and busy periods (5xx, 529) usually clear within a minute,
+    # so wait and try again. Other errors stop with the API's own explanation.
+    for attempt in range(1, 6):
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                data = json.load(r)
+            break
+        except urllib.error.HTTPError as e:
+            detail = e.read().decode("utf-8", "ignore")[:400]
+            if e.code not in (429, 500, 502, 503, 504, 529) or attempt == 5:
+                raise RuntimeError(f"Claude API error {e.code}: {detail}") from None
+            after = (e.headers.get("retry-after") or "").strip()
+            wait = float(after) if after.replace(".", "", 1).isdigit() else 15 * attempt
+        except OSError:  # network trouble or a timeout
+            if attempt == 5:
+                raise
+            wait = 15 * attempt
+        print(f"  Claude is busy (attempt {attempt}); trying again in {min(wait, 90):.0f}s")
+        time.sleep(min(wait, 90))
+    text ="".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     m = re.search(r"\{.*\}|\[.*\]", text, re.S)
     if not m:
         raise ValueError("Claude did not return JSON")
@@ -204,11 +223,20 @@ def select_stories(candidates, style):
         f"outlet or the company itself also covers it. Spread across categories where you can. Return JSON only: "
         f'{{"stories":[{{"ids":[...], "category": one of {CATEGORIES}}}]}} '
         f"with the strongest story first.")
-    return claude(prompt, style)["stories"][:MAX_STORIES]
+    picked = claude(prompt, style)
+    if isinstance(picked, dict):
+        picked = picked.get("stories", [])
+    return picked[:MAX_STORIES]
+
+
+def outlet(feed_name):
+    """'The Verge (AI)' -> 'The Verge'."""
+    return re.sub(r"\s*\(.*\)$", "", feed_name)
 
 
 def write_story(group, candidates, style):
-    srcs = [candidates[i] for i in group["ids"] if i < len(candidates)]
+    ids = [int(i) for i in group.get("ids", []) if str(i).isdigit()]
+    srcs = [candidates[i] for i in ids if i < len(candidates)]
     srcs = [s for s in srcs if not TIP_ONLY.search(s["source"])]
     if not srcs:
         raise ValueError("only YouTube or podcast sources")
@@ -222,9 +250,27 @@ def write_story(group, candidates, style):
         "guide exactly. Use only facts stated in the sources. If a detail isn't in the sources, "
         "leave it out. Return JSON only: "
         '{"headline": str, "summary": str, "why_it_matters": str, "category": str, '
-        '"source_name": str, "source_url": str, "also_reported_by": [str]}\n\n'
+        '"source_name": str, "source_url": str}\n\n'
         + "\n\n---\n\n".join(material))
     story = claude(prompt, style, max_tokens=1500)
+    if not isinstance(story, dict):
+        raise ValueError("Claude didn't return a story")
+    for k in ("headline", "summary", "why_it_matters"):
+        story[k] = str(story.get(k) or "").strip()
+        if not story[k]:
+            raise ValueError(f"the story has no {k}")
+    # Only ever link to an article Claude was given, and only list outlets that
+    # actually covered the story in our feeds.
+    if story.get("source_url") not in {s["link"] for s in srcs}:
+        story["source_url"], story["source_name"] = srcs[0]["link"], ""
+    main_src = next(s for s in srcs if s["link"] == story["source_url"])
+    story["source_name"] = str(story.get("source_name") or "").strip() or outlet(main_src["source"])
+    also = []
+    for s in srcs:
+        name = outlet(s["source"])
+        if s is not main_src and name not in also and name != story["source_name"]:
+            also.append(name)
+    story["also_reported_by"] = also
     story["category"] = story.get("category") if story.get("category") in CATEGORIES else group.get("category", "Trends")
     story["_source_text"] = " ".join(material)
     return story
@@ -394,6 +440,7 @@ def main():
     ap.add_argument("--no-ai", action="store_true", help="test run without calling Claude")
     ap.add_argument("--force", action="store_true", help="run now, even outside 1am to 4am in Adelaide")
     ap.add_argument("--render-only", action="store_true", help="rebuild pages and feed from data/ without fetching")
+    ap.add_argument("--dry-run", action="store_true", help="full run with Claude that prints the stories and saves nothing")
     args = ap.parse_args()
     if args.render_only:
         rebuild_site()
@@ -403,12 +450,12 @@ def main():
     here = now.astimezone(TZ)
     # GitHub can start a scheduled run late, or skip it when it's busy, so any
     # run from 1am to 4am counts. The check below stops a second edition.
-    if not args.force and not 1 <= here.hour < 4:
+    if not (args.force or args.dry_run) and not 1 <= here.hour < 4:
         print(f"It's {here:%H:%M} in Adelaide, outside 1am to 4am. Nothing to do.")
         return
     edition_date = here.date()
     DATA.mkdir(exist_ok=True)
-    if DATA.joinpath(f"{edition_date}.json").exists() and not args.force:
+    if DATA.joinpath(f"{edition_date}.json").exists() and not (args.force or args.dry_run):
         print("Today's edition already exists.")
         return
 
@@ -439,6 +486,10 @@ def main():
                 continue
             s.pop("_source_text", None)
             stories.append(s)
+    if args.dry_run:
+        print(json.dumps(stories, indent=2, ensure_ascii=False))
+        print(f"Test run: {len(stories)} stories passed the checks. Nothing was saved.")
+        return
     if len(stories) < MIN_STORIES and not args.no_ai:
         sys.exit("Too few stories passed the checks; leaving yesterday's edition up.")
 
