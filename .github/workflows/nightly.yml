@@ -15,6 +15,14 @@ on:
         type: choice
         options: [build, render, test]
         default: build
+      pick_model:
+        description: "Optional, this run only: the model that picks the stories"
+        type: string
+        required: false
+      write_model:
+        description: "Optional, this run only: the model that writes the stories"
+        type: string
+        required: false
 
 permissions:
   contents: write
@@ -34,7 +42,9 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
       NEWS_SITE_URL: ${{ vars.NEWS_SITE_URL }}
-      NEWS_MODEL: ${{ vars.NEWS_MODEL }}
+      NEWS_PICK_MODEL: ${{ inputs.pick_model || vars.NEWS_PICK_MODEL }}
+      NEWS_WRITE_MODEL: ${{ inputs.write_model || vars.NEWS_WRITE_MODEL }}
+      NEWS_EFFORT: ${{ vars.NEWS_EFFORT }}
     steps:
       - uses: actions/checkout@v4
         with:

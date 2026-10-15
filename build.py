@@ -39,12 +39,18 @@ DATA = ROOT / "data"
 TZ = ZoneInfo("Australia/Adelaide")
 SITE_URL = (os.environ.get("NEWS_SITE_URL") or "https://news.emberseedautomation.com.au").rstrip("/")
 MAIN_SITE = "https://emberseedautomation.com.au"
-MODEL = os.environ.get("NEWS_MODEL") or "claude-opus-5-5"
+# One model picks the stories and another writes them. Set NEWS_PICK_MODEL or
+# NEWS_WRITE_MODEL to change either.
+PICK_MODEL = os.environ.get("NEWS_PICK_MODEL") or "claude-opus-5-5"
+WRITE_MODEL = os.environ.get("NEWS_WRITE_MODEL") or "claude-opus-5-5"
 EFFORT = os.environ.get("NEWS_EFFORT") or "medium"  # how hard Claude thinks: low, medium or high
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
 MIN_STORIES, MAX_STORIES = 4, 8
-USAGE = {"calls": 0, "input": 0, "output": 0}
+# US$ per million input and output tokens, for the cost line at the end of each
+# run. Check https://platform.claude.com/docs/en/about-claude/pricing if they change.
+PRICES = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.10, 0.50)}
+USAGE = {}  # tokens used, per model
 
 # Robotics is out of scope, and so is very technical material.
 EXCLUDE = re.compile(
@@ -198,34 +204,44 @@ def article_text(url, limit=12000):
 
 # ---------------------------------------------------------------- Claude
 
-def claude(prompt, system, schema, max_tokens=16000):
+def claude(prompt, system, schema, model, max_tokens=16000, cache=False):
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         sys.exit("ANTHROPIC_API_KEY is not set")
-    body = json.dumps({
-        "model": MODEL,
+    # With cache=True the style guide is cached, so the calls after the first
+    # read it at a tenth of the price.
+    system_block = {"type": "text", "text": system}
+    if cache:
+        system_block["cache_control"] = {"type": "ephemeral"}
+    body = {
+        "model": model,
         "max_tokens": max_tokens,  # room for Claude's thinking as well as the reply
-        "system": system,
+        "system": [system_block],
         "messages": [{"role": "user", "content": prompt}],
-        # Opus 5.5 always thinks; effort sets how much.
+        # Current Claude models always think; effort sets how much.
         "output_config": {"effort": EFFORT, "format": {"type": "json_schema", "schema": schema}},
-        # If a safety check declines the request, Anthropic reruns it on a suitable model.
-        "fallbacks": "default",
-    }).encode()
-    req = urllib.request.Request(
-        "https://api.anthropic.com/v1/messages", data=body, method="POST",
-        headers={"x-api-key": key, "anthropic-version": "2023-06-01",
-                 "anthropic-beta": "server-side-fallback-2026-07-01",
-                 "content-type": "application/json"})
+    }
+    headers = {"x-api-key": key, "anthropic-version": "2023-06-01", "content-type": "application/json"}
+    # If a safety check declines the request, Anthropic reruns it on a suitable
+    # model. Haiku has no such fallback.
+    if not model.startswith("claude-haiku"):
+        body["fallbacks"] = "default"
+        headers["anthropic-beta"] = "server-side-fallback-2026-07-01"
+    req = urllib.request.Request("https://api.anthropic.com/v1/messages",
+                                 data=json.dumps(body).encode(), method="POST", headers=headers)
     # Rate limits (429) and busy periods (5xx, 529) usually clear within a minute,
     # so wait and try again. Other errors stop with the API's own explanation.
     for attempt in range(1, 6):
         try:
             with urllib.request.urlopen(req, timeout=600) as r:
                 data = json.load(r)
-            USAGE["calls"] += 1
-            USAGE["input"] += data.get("usage", {}).get("input_tokens", 0)
-            USAGE["output"] += data.get("usage", {}).get("output_tokens", 0)
+            used = USAGE.setdefault(model, {"calls": 0, "input": 0, "cache_write": 0, "cache_read": 0, "output": 0})
+            u = data.get("usage", {})
+            used["calls"] += 1
+            used["input"] += u.get("input_tokens", 0)
+            used["cache_write"] += u.get("cache_creation_input_tokens", 0)
+            used["cache_read"] += u.get("cache_read_input_tokens", 0)
+            used["output"] += u.get("output_tokens", 0)
             break
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "ignore")[:400]
@@ -266,7 +282,7 @@ def select_stories(candidates, style, recent=()):
     if recent:
         prompt += ("\n\nThese stories ran in the last few editions. Skip them unless there's a "
                    "significant new development:\n" + "\n".join(f"- {h}" for h in recent))
-    picked = claude(prompt, style, SELECT_SCHEMA)
+    picked = claude(prompt, style, SELECT_SCHEMA, PICK_MODEL)
     if isinstance(picked, dict):
         picked = picked.get("stories", [])
     return picked[:MAX_STORIES]
@@ -294,7 +310,7 @@ def write_story(group, candidates, style):
         "leave it out. Give the headline, summary, why it matters, category, and the name "
         "and URL of the main source.\n\n"
         + "\n\n---\n\n".join(material))
-    story = claude(prompt, style, STORY_SCHEMA)
+    story = claude(prompt, style, STORY_SCHEMA, WRITE_MODEL, cache=True)
     if not isinstance(story, dict):
         raise ValueError("Claude didn't return a story")
     for k in ("headline", "summary", "why_it_matters"):
@@ -560,9 +576,27 @@ def rebuild_site():
     print(f"Site rebuilt: {len(files)} editions, latest {files[0].stem}.")
 
 
+def usage_report():
+    """What this run used, and roughly what it cost."""
+    lines, total = ["Claude usage:"], 0.0
+    for model, u in USAGE.items():
+        tokens_in = u["input"] + u["cache_write"] + u["cache_read"]
+        line = (f"  {model}: {u['calls']} calls, {tokens_in:,} input ({u['cache_read']:,} from cache), "
+                f"{u['output']:,} output")
+        if model in PRICES:
+            p_in, p_out = PRICES[model]
+            cost = ((u["input"] + 1.25 * u["cache_write"] + 0.1 * u["cache_read"]) * p_in
+                    + u["output"] * p_out) / 1e6
+            total += cost
+            line += f", about US${cost:.3f}"
+        lines.append(line)
+    lines.append(f"  Total about US${total:.3f}")
+    return "\n".join(lines)
+
+
 if __name__ == "__main__":
     try:
         main()
     finally:
-        if USAGE["calls"]:
-            print(f"Claude: {USAGE['calls']} calls, {USAGE['input']:,} input and {USAGE['output']:,} output tokens.")
+        if USAGE:
+            print(usage_report())
