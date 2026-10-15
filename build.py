@@ -151,7 +151,13 @@ def parse_feed(raw, feed):
     return items
 
 
-def collect(feeds, now):
+def recent_stories(before, editions=3):
+    """Stories from the last few editions, so the same news doesn't run twice."""
+    files = [f for f in sorted(DATA.glob("*.json"), reverse=True) if f.stem < before.isoformat()]
+    return [s for f in files[:editions] for s in json.loads(f.read_text())]
+
+
+def collect(feeds, now, skip_urls=()):
     cutoff = now - dt.timedelta(hours=WINDOW_HOURS)
     seen, out, problems = set(), [], []
     for feed in feeds:
@@ -164,7 +170,7 @@ def collect(feeds, now):
             when = dt.datetime.fromisoformat(it["published"])
             if when < cutoff or when > now + dt.timedelta(hours=2):
                 continue
-            if EXCLUDE.search(it["title"] + " " + it["description"]):
+            if EXCLUDE.search(it["title"] + " " + it["description"]) or it["link"] in skip_urls:
                 continue
             key = re.sub(r"[^a-z0-9]", "", it["title"].lower())[:80]
             url_key = it["link"].split("?")[0].rstrip("/")
@@ -244,7 +250,7 @@ def claude(prompt, system, schema, max_tokens=16000):
     return json.loads(m.group(0))
 
 
-def select_stories(candidates, style):
+def select_stories(candidates, style, recent=()):
     listing = "\n".join(
         f"[{c['id']}] {c['source']} | {c['published'][:16]} | {c['title']} | {c['description'][:280]}"
         for c in candidates)
@@ -257,6 +263,9 @@ def select_stories(candidates, style):
         f"outlet or the company itself also covers it. Spread across categories where you can. "
         f"For each story, give the ids of the items that cover it and its category, "
         f"strongest story first.")
+    if recent:
+        prompt += ("\n\nThese stories ran in the last few editions. Skip them unless there's a "
+                   "significant new development:\n" + "\n".join(f"- {h}" for h in recent))
     picked = claude(prompt, style, SELECT_SCHEMA)
     if isinstance(picked, dict):
         picked = picked.get("stories", [])
@@ -494,7 +503,8 @@ def main():
 
     feeds = json.loads(ROOT.joinpath("feeds.json").read_text())
     style = ROOT.joinpath("style-guide.md").read_text()
-    candidates, problems = collect(feeds, now)
+    recent = recent_stories(edition_date)
+    candidates, problems = collect(feeds, now, {s["source_url"] for s in recent})
     print(f"{len(candidates)} candidate items from {len(feeds)} feeds; {len(problems)} feeds failed")
     for p in problems:
         print("  feed problem:", p)
@@ -508,7 +518,7 @@ def main():
                             "why_it_matters": "(test mode: no AI rewrite)", "category": "Trends",
                             "source_name": c["source"], "source_url": c["link"], "also_reported_by": []})
     else:
-        for group in select_stories(candidates, style):
+        for group in select_stories(candidates, style, [s["headline"] for s in recent]):
             try:
                 s = write_story(group, candidates, style)
             except Exception as e:  # noqa: BLE001
