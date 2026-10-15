@@ -40,6 +40,7 @@ TZ = ZoneInfo("Australia/Adelaide")
 SITE_URL = (os.environ.get("NEWS_SITE_URL") or "https://news.emberseedautomation.com.au").rstrip("/")
 MAIN_SITE = "https://emberseedautomation.com.au"
 MODEL = os.environ.get("NEWS_MODEL") or "claude-opus-5-5"
+EFFORT = os.environ.get("NEWS_EFFORT") or "medium"  # how hard Claude thinks: low, medium or high
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
 MIN_STORIES, MAX_STORIES = 4, 8
@@ -54,6 +55,23 @@ TIP_ONLY = re.compile(r"YouTube|podcast", re.I)
 
 CATEGORIES = ["Trends", "New models", "Industry", "Safety & policy", "Business",
               "Gaming & entertainment", "Applications"]
+
+# Structured outputs: Claude's reply has to match these shapes exactly.
+SELECT_SCHEMA = {
+    "type": "object",
+    "properties": {"stories": {"type": "array", "items": {
+        "type": "object",
+        "properties": {"ids": {"type": "array", "items": {"type": "integer"}},
+                       "category": {"type": "string", "enum": CATEGORIES}},
+        "required": ["ids", "category"], "additionalProperties": False}}},
+    "required": ["stories"], "additionalProperties": False}
+
+STORY_FIELDS = ["headline", "summary", "why_it_matters", "category", "source_name", "source_url"]
+STORY_SCHEMA = {
+    "type": "object",
+    "properties": {f: ({"type": "string", "enum": CATEGORIES} if f == "category" else {"type": "string"})
+                   for f in STORY_FIELDS},
+    "required": STORY_FIELDS, "additionalProperties": False}
 
 
 # ---------------------------------------------------------------- feeds
@@ -174,25 +192,30 @@ def article_text(url, limit=12000):
 
 # ---------------------------------------------------------------- Claude
 
-def claude(prompt, system, max_tokens=4000):
+def claude(prompt, system, schema, max_tokens=16000):
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         sys.exit("ANTHROPIC_API_KEY is not set")
     body = json.dumps({
         "model": MODEL,
-        "max_tokens": max_tokens,
+        "max_tokens": max_tokens,  # room for Claude's thinking as well as the reply
         "system": system,
         "messages": [{"role": "user", "content": prompt}],
+        # Opus 5.5 always thinks; effort sets how much.
+        "output_config": {"effort": EFFORT, "format": {"type": "json_schema", "schema": schema}},
+        # If a safety check declines the request, Anthropic reruns it on a suitable model.
+        "fallbacks": "default",
     }).encode()
     req = urllib.request.Request(
         "https://api.anthropic.com/v1/messages", data=body, method="POST",
         headers={"x-api-key": key, "anthropic-version": "2023-06-01",
+                 "anthropic-beta": "server-side-fallback-2026-07-01",
                  "content-type": "application/json"})
     # Rate limits (429) and busy periods (5xx, 529) usually clear within a minute,
     # so wait and try again. Other errors stop with the API's own explanation.
     for attempt in range(1, 6):
         try:
-            with urllib.request.urlopen(req, timeout=180) as r:
+            with urllib.request.urlopen(req, timeout=600) as r:
                 data = json.load(r)
             USAGE["calls"] += 1
             USAGE["input"] += data.get("usage", {}).get("input_tokens", 0)
@@ -210,7 +233,11 @@ def claude(prompt, system, max_tokens=4000):
             wait = 15 * attempt
         print(f"  Claude is busy (attempt {attempt}); trying again in {min(wait, 90):.0f}s")
         time.sleep(min(wait, 90))
-    text ="".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
+    if data.get("stop_reason") == "max_tokens":
+        raise ValueError("Claude ran out of room before finishing")
+    if data.get("stop_reason") == "refusal":
+        raise ValueError(f"Claude declined ({(data.get('stop_details') or {}).get('category') or 'no reason given'})")
+    text = "".join(b.get("text", "") for b in data.get("content", []) if b.get("type") == "text")
     m = re.search(r"\{.*\}|\[.*\]", text, re.S)
     if not m:
         raise ValueError("Claude did not return JSON")
@@ -227,10 +254,10 @@ def select_stories(candidates, style):
         f"Pick the {MIN_STORIES}-{MAX_STORIES} most interesting stories for small-business "
         f"owners, following the editorial scope in the style guide. Group items that cover the "
         f"same story. YouTube and podcast items are tip-offs only: never pick a story unless a news "
-        f"outlet or the company itself also covers it. Spread across categories where you can. Return JSON only: "
-        f'{{"stories":[{{"ids":[...], "category": one of {CATEGORIES}}}]}} '
-        f"with the strongest story first.")
-    picked = claude(prompt, style)
+        f"outlet or the company itself also covers it. Spread across categories where you can. "
+        f"For each story, give the ids of the items that cover it and its category, "
+        f"strongest story first.")
+    picked = claude(prompt, style, SELECT_SCHEMA)
     if isinstance(picked, dict):
         picked = picked.get("stories", [])
     return picked[:MAX_STORIES]
@@ -255,11 +282,10 @@ def write_story(group, candidates, style):
     prompt = (
         "Write one EmberSeed news item from the source material below, following the style "
         "guide exactly. Use only facts stated in the sources. If a detail isn't in the sources, "
-        "leave it out. Return JSON only: "
-        '{"headline": str, "summary": str, "why_it_matters": str, "category": str, '
-        '"source_name": str, "source_url": str}\n\n'
+        "leave it out. Give the headline, summary, why it matters, category, and the name "
+        "and URL of the main source.\n\n"
         + "\n\n---\n\n".join(material))
-    story = claude(prompt, style, max_tokens=1500)
+    story = claude(prompt, style, STORY_SCHEMA)
     if not isinstance(story, dict):
         raise ValueError("Claude didn't return a story")
     for k in ("headline", "summary", "why_it_matters"):
