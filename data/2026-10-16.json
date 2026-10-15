@@ -1,6 +1,6 @@
 [
   {
-    "headline": "Meta's new open AI model runs on a pair of Macs",
+    "headline": "Meta's new open AI model can run on two Macs",
     "summary": "Meta released Muse Spark Open on 15 October. It's an open-weight AI model, meaning anyone can download its files and run it on their own hardware. Meta calls it the most capable US model of its kind, though that claim rests on Meta's own test results rather than independent checks. Built with Apple's help, it can run on two of Apple's upcoming M5 Ultra Mac Studios, but Engadget reports you'll need about 1TB of memory. It's available now on Hugging Face and through several online platforms. Apple hasn't priced the 512GB Mac Studio, and Australian pricing is not yet announced.",
     "why_it_matters": "If your business pays per use for AI coding or writing tools, running a model in-house could one day cut that bill. For now, the hardware cost suits larger firms first.",
     "category": "New models",
