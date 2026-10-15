@@ -40,6 +40,15 @@ Optional, custom address:
 - Change the `NEWS_SITE_URL` variable to `https://news.emberseedautomation.com.au`.
 - Point the `/news` URL mapping in Squarespace (Settings → Developer Tools → URL Mappings) at the new address.
 
+## Icons
+
+`static/` holds the site's icons: the EmberSeed flame and seed in amber on navy. They're used for browser tabs, the iPhone home screen (`apple-touch-icon.png`, labelled "AI News") and Android (`manifest.webmanifest`).
+
+- `favicon.svg` is the master.
+- The PNGs were rendered from it at 180, 192, 512 and 32 pixels with headless Chrome.
+- Every build copies `static/` into the site.
+- iPhones keep the icon they saved when the page was added, so to see a new icon, remove the home-screen shortcut and add it again from Safari.
+
 ## Running it by hand
 
 Go to **Actions → Nightly AI news → Run workflow** and choose a mode:
