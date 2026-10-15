@@ -4,11 +4,10 @@ on:
   schedule:
     # GitHub runs on UTC. 14:30 UTC is 1am in Adelaide during daylight saving
     # (UTC+10:30); 15:30 UTC is 1am the rest of the year (UTC+9:30).
-    # The later runs are backups in case GitHub starts one late or skips it.
-    # build.py only does the work from 1am to 4am in Adelaide, once a day.
-    - cron: "30 14 * * *"
-    - cron: "30 15 * * *"
-    - cron: "30 16 * * *"
+    # GitHub often starts scheduled runs late (by hours on a busy night) or
+    # skips them, so this tries every hour until 22:30 UTC. build.py only makes
+    # an edition from 1am to 10am in Adelaide, and only one a day.
+    - cron: "30 14-22 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -29,6 +28,8 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-24.04
+    outputs:
+      publish: ${{ steps.save.outputs.publish }}
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
@@ -63,7 +64,10 @@ jobs:
         if: github.event_name == 'workflow_dispatch' && inputs.mode == 'test'
         run: python3 build.py --dry-run
 
+      # Publish when there's a new edition, or when a build or render was run by
+      # hand. The quiet hourly runs leave the site alone.
       - name: Save the edition
+        id: save
         if: inputs.mode != 'test'
         run: |
           git config user.name "EmberSeed News"
@@ -74,16 +78,20 @@ jobs:
           else
             git commit -m "AI news $(TZ=Australia/Adelaide date +%Y-%m-%d)"
             git push
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 
       - uses: actions/upload-pages-artifact@v3
-        if: inputs.mode != 'test'
+        if: steps.save.outputs.publish == 'true'
         with:
           path: site
 
   deploy:
     needs: build
-    if: inputs.mode != 'test'
+    if: needs.build.outputs.publish == 'true'
     runs-on: ubuntu-24.04
     environment:
       name: github-pages

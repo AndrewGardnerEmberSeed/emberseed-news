@@ -12,13 +12,14 @@ unless run with --no-ai (a test mode that uses the feed text as-is).
 Usage:
   python3 build.py              # normal nightly run
   python3 build.py --no-ai      # test the feeds and pages without calling Claude
-  python3 build.py --force      # run now, even outside 1am to 4am in Adelaide
+  python3 build.py --force      # run now, even outside 1am to 10am in Adelaide
   python3 build.py --dry-run    # full run with Claude that prints the stories and saves nothing
 """
 
 import argparse
 import datetime as dt
 import email.utils
+import gzip
 import hashlib
 import html
 import json
@@ -42,6 +43,7 @@ MODEL = os.environ.get("NEWS_MODEL") or "claude-opus-5-5"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
 MIN_STORIES, MAX_STORIES = 4, 8
+USAGE = {"calls": 0, "input": 0, "output": 0}
 
 # Robotics is out of scope, and so is very technical material.
 EXCLUDE = re.compile(
@@ -59,7 +61,9 @@ CATEGORIES = ["Trends", "New models", "Industry", "Safety & policy", "Business",
 def fetch(url, timeout=20):
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
-        return r.read()
+        raw = r.read()
+    # Some servers (Google DeepMind's blog, for one) send gzip even when it wasn't asked for.
+    return gzip.decompress(raw) if raw[:2] == b"\x1f\x8b" else raw
 
 
 def strip_tags(s):
@@ -136,7 +140,7 @@ def collect(feeds, now):
         try:
             items = parse_feed(fetch(feed["url"]), feed)
         except Exception as e:  # noqa: BLE001 - keep going if one feed fails
-            problems.append(f"{feed['name']}: {e.__class__.__name__}")
+            problems.append(f"{feed['name']}: {str(e)[:80] or e.__class__.__name__}")
             continue
         for it in items:
             when = dt.datetime.fromisoformat(it["published"])
@@ -190,6 +194,9 @@ def claude(prompt, system, max_tokens=4000):
         try:
             with urllib.request.urlopen(req, timeout=180) as r:
                 data = json.load(r)
+            USAGE["calls"] += 1
+            USAGE["input"] += data.get("usage", {}).get("input_tokens", 0)
+            USAGE["output"] += data.get("usage", {}).get("output_tokens", 0)
             break
         except urllib.error.HTTPError as e:
             detail = e.read().decode("utf-8", "ignore")[:400]
@@ -438,7 +445,7 @@ def write_feed(all_stories):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--no-ai", action="store_true", help="test run without calling Claude")
-    ap.add_argument("--force", action="store_true", help="run now, even outside 1am to 4am in Adelaide")
+    ap.add_argument("--force", action="store_true", help="run now, even outside 1am to 10am in Adelaide")
     ap.add_argument("--render-only", action="store_true", help="rebuild pages and feed from data/ without fetching")
     ap.add_argument("--dry-run", action="store_true", help="full run with Claude that prints the stories and saves nothing")
     args = ap.parse_args()
@@ -448,10 +455,10 @@ def main():
 
     now = dt.datetime.now(dt.timezone.utc)
     here = now.astimezone(TZ)
-    # GitHub can start a scheduled run late, or skip it when it's busy, so any
-    # run from 1am to 4am counts. The check below stops a second edition.
-    if not (args.force or args.dry_run) and not 1 <= here.hour < 4:
-        print(f"It's {here:%H:%M} in Adelaide, outside 1am to 4am. Nothing to do.")
+    # GitHub can start a scheduled run hours late, or skip it when it's busy, so
+    # any run from 1am to 10am counts. The check below stops a second edition.
+    if not (args.force or args.dry_run) and not 1 <= here.hour < 10:
+        print(f"It's {here:%H:%M} in Adelaide, outside 1am to 10am. Nothing to do.")
         return
     edition_date = here.date()
     DATA.mkdir(exist_ok=True)
@@ -493,7 +500,7 @@ def main():
     if len(stories) < MIN_STORIES and not args.no_ai:
         sys.exit("Too few stories passed the checks; leaving yesterday's edition up.")
 
-    published = here.replace(hour=1, minute=0, second=0, microsecond=0).isoformat()
+    published = here.replace(second=0, microsecond=0).isoformat()
     for s in stories:
         s["slug"] = f"{edition_date}-{slugify(s['headline'])}"
         s["edition_published"] = published
@@ -518,4 +525,8 @@ def rebuild_site():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    finally:
+        if USAGE["calls"]:
+            print(f"Claude: {USAGE['calls']} calls, {USAGE['input']:,} input and {USAGE['output']:,} output tokens.")
