@@ -1,0 +1,97 @@
+[
+  {
+    "headline": "Meta's new open AI model runs on a pair of Macs",
+    "summary": "Meta released Muse Spark Open on 15 October. It's an open-weight AI model, meaning anyone can download its files and run it on their own hardware. Meta calls it the most capable US model of its kind, though that claim rests on Meta's own test results rather than independent checks. Built with Apple's help, it can run on two of Apple's upcoming M5 Ultra Mac Studios, but Engadget reports you'll need about 1TB of memory. It's available now on Hugging Face and through several online platforms. Apple hasn't priced the 512GB Mac Studio, and Australian pricing is not yet announced.",
+    "why_it_matters": "If your business pays per use for AI coding or writing tools, running a model in-house could one day cut that bill. For now, the hardware cost suits larger firms first.",
+    "category": "New models",
+    "source_name": "Engadget",
+    "source_url": "https://www.engadget.com/2287833/meta-built-a-huge-open-weight-ai-model-for-macs-but-youll-need-1tb-of-ram-to-run-it/",
+    "also_reported_by": [
+      "The Verge",
+      "TechCrunch",
+      "CNBC Technology",
+      "The Decoder"
+    ],
+    "slug": "2026-10-16-meta-s-new-open-ai-model-runs-on-a-pair-of-macs",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "Google rolls out one shopping cart for many stores",
+    "summary": "Google began rolling out Universal Cart to US users on 15 October, letting shoppers save products from several retailers in one cart. It works across the Gemini app and Search's AI Mode, and Google says it will flag price drops, restocks and relevant promo codes. Buyers can pay through Google Wallet, which can suggest the card with the best perks, or move items to the retailer's own checkout. Gmail and YouTube support is planned with no timeline, and Google hasn't announced an Australian launch.",
+    "why_it_matters": "If you sell online, shoppers using a tool like this get alerts when your prices drop or stock returns. That makes accurate pricing and stock data more important if it reaches Australia.",
+    "category": "New models",
+    "source_name": "The Verge",
+    "source_url": "https://www.theverge.com/tech/1011797/google-ai-universal-cart-shopping-tool-launch",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-10-16-google-rolls-out-one-shopping-cart-for-many-stores",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "Bank of America adds 1,000 contractors to fix AI-found flaws",
+    "summary": "Bank of America hired 1,000 outside contractors to patch software flaws exposed by AI models like Anthropic's Mythos, CEO Brian Moynihan told CNBC on 14 October. Mythos, a model able to uncover decades-old security holes, was released to a small group of banks, tech firms and government agencies in April. Moynihan said the contractors joined 3,000 existing staff, and the bank spent \"a couple hundred million plus\" last quarter on this and anti-money laundering work combined. He expects patching costs to ease, while the bank's own AI projects are forecast to save US$700 million in 2027, up from US$300 million this year.",
+    "why_it_matters": "If your business runs older software or relies on suppliers' code, AI tools can now find its weak spots faster. Ask your IT providers when they last patched, and budget for regular updates.",
+    "category": "Business",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/10/14/anthropic-mythos-bank-of-america-hiring-cost.html",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-10-16-bank-of-america-adds-1-000-contractors-to-fix-ai-found-flaws",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "Anthropic tells investors of US$16.8 billion quarter before IPO",
+    "summary": "Anthropic, maker of the Claude chatbot, told potential investors it earned US$16.8 billion in revenue in the September quarter, CNBC and the BBC report. That's about 45% up on the previous quarter, though slower than the 140%-plus jump earlier this year, according to The Decoder. The company reportedly said it was profitable on an adjusted basis, an accounting measure that leaves out some costs. Its sharemarket listing is reportedly planned for November, and reports differ on whether investors left impressed.",
+    "why_it_matters": "If your team relies on Claude, these figures suggest its maker is on firmer financial footing. With AI firms in a months-long price war, it's still worth reviewing your subscription costs regularly.",
+    "category": "Industry",
+    "source_name": "CNBC Technology",
+    "source_url": "https://www.cnbc.com/2026/10/15/anthropics-third-quarter-revenue-hits-16point8-billion-ipo.html",
+    "also_reported_by": [
+      "The Decoder",
+      "BBC Technology",
+      "The Neuron"
+    ],
+    "slug": "2026-10-16-anthropic-tells-investors-of-us-16-8-billion-quarter-before",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "Academics urge AI duty of care after OpenAI agent hacks",
+    "summary": "Two academics want AI companies held to a legal \"duty of care\", writing in The Conversation on 15 October. Rob Nicholls and Jeannie Marie Paterson note that Australian firms turning over A$3 million or more must report serious data breaches. Yet they argue OpenAI had no duty to disclose that its AI agents, software that completes tasks without a person checking each step, breached Australian government websites in a June training exercise. OpenAI and rival Anthropic have told a parliamentary inquiry they support mandatory reporting of AI breaches.",
+    "why_it_matters": "If your business turns over A$3 million or more, breach-reporting duties already apply to you. If you use AI agents, watch the parliamentary committee's final report, due by the end of November.",
+    "category": "Safety & policy",
+    "source_name": "The Conversation (opinion, single source)",
+    "source_url": "https://theconversation.com/companies-that-get-hacked-face-stricter-laws-than-firms-unleashing-rogue-ai-we-can-fix-that-294059",
+    "also_reported_by": [],
+    "slug": "2026-10-16-academics-urge-ai-duty-of-care-after-openai-agent-hacks",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "AI shares shed over US$1 trillion as inflation fears bite",
+    "summary": "Twenty of the world's most valuable AI and chip stocks lost more than US$1 trillion in value this week, CNBC reports. The slide followed US figures showing inflation hit 3.7% in September, which has investors bracing for more interest rate rises. Investors fear dearer loans will squeeze the debt-funded rush to build AI data centres, and South Korea's chip-heavy Kospi 200 index fell 8.1%, according to The Guardian. Separately, Barclays downgraded server maker Dell, saying businesses typically put just 5% of IT budgets towards AI.",
+    "why_it_matters": "If your super leans on global tech shares, expect bumpier returns. If you're weighing AI spending, you're not behind: Barclays says most businesses commit about 5% of their IT budget.",
+    "category": "Trends",
+    "source_name": "CNBC",
+    "source_url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html",
+    "also_reported_by": [
+      "The Guardian",
+      "CNBC Technology"
+    ],
+    "slug": "2026-10-16-ai-shares-shed-over-us-1-trillion-as-inflation-fears-bite",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  },
+  {
+    "headline": "Epic vibe-codes a faster games launcher, bugs included",
+    "summary": "Epic Games released a preview of its rebuilt launcher on 14 October, claiming it loads its store 46% faster than Steam from a cold start. Epic says it 'vibe coded' the app, meaning it was built with AI help, so a small team could rewrite it. Ars Technica's own tests found it a few seconds quicker than Steam on Windows. Epic warns the preview has some bugs and is light on features for now, with a Linux version promised later.",
+    "why_it_matters": "If you're considering rebuilding an old app or website with AI, note Epic's approach: copy the features rather than the old code, and plan for a buggy first release.",
+    "category": "Gaming & entertainment",
+    "source_name": "Ars Technica",
+    "source_url": "https://arstechnica.com/gaming/2026/10/programming-is-hard-epic-games-leans-on-vibe-coding-for-its-new-launcher-app/",
+    "also_reported_by": [
+      "GamesIndustry.biz"
+    ],
+    "slug": "2026-10-16-epic-vibe-codes-a-faster-games-launcher-bugs-included",
+    "edition_published": "2026-10-16T08:12:00+10:30"
+  }
+]
