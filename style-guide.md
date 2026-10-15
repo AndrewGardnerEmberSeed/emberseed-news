@@ -55,4 +55,4 @@ Summary: Online retailer Kogan now has an AI agent handling customer service, an
 
 Why it matters: if one question dominates your inbox, that's your first AI project. Connect it to your order system, then expand.
 
-Source: iTnews (single source)
+Source: iTnews

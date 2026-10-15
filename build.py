@@ -72,7 +72,9 @@ SELECT_SCHEMA = {
         "required": ["ids", "category"], "additionalProperties": False}}},
     "required": ["stories"], "additionalProperties": False}
 
-STORY_FIELDS = ["headline", "summary", "why_it_matters", "category", "source_name", "source_url"]
+STORY_FIELDS = ["headline", "summary", "why_it_matters", "category", "source_url"]
+HEADLINE_SCHEMA = {"type": "object", "properties": {"headline": {"type": "string"}},
+                   "required": ["headline"], "additionalProperties": False}
 STORY_SCHEMA = {
     "type": "object",
     "properties": {f: ({"type": "string", "enum": CATEGORIES} if f == "category" else {"type": "string"})
@@ -276,7 +278,8 @@ def select_stories(candidates, style, recent=()):
         f"Pick the {MIN_STORIES}-{MAX_STORIES} most interesting stories for small-business "
         f"owners, following the editorial scope in the style guide. Group items that cover the "
         f"same story. YouTube and podcast items are tip-offs only: never pick a story unless a news "
-        f"outlet or the company itself also covers it. Spread across categories where you can. "
+        f"outlet or the company itself also covers it. Spread across categories where you can, "
+        f"and pick at most two stories about any one company. "
         f"For each story, give the ids of the items that cover it and its category, "
         f"strongest story first.")
     if recent:
@@ -307,8 +310,8 @@ def write_story(group, candidates, style):
     prompt = (
         "Write one EmberSeed news item from the source material below, following the style "
         "guide exactly. Use only facts stated in the sources. If a detail isn't in the sources, "
-        "leave it out. Give the headline, summary, why it matters, category, and the name "
-        "and URL of the main source.\n\n"
+        "leave it out. Give the headline, summary, why it matters, category, and the URL of "
+        "the main source.\n\n"
         + "\n\n---\n\n".join(material))
     story = claude(prompt, style, STORY_SCHEMA, WRITE_MODEL, cache=True)
     if not isinstance(story, dict):
@@ -320,9 +323,9 @@ def write_story(group, candidates, style):
     # Only ever link to an article Claude was given, and only list outlets that
     # actually covered the story in our feeds.
     if story.get("source_url") not in {s["link"] for s in srcs}:
-        story["source_url"], story["source_name"] = srcs[0]["link"], ""
+        story["source_url"] = srcs[0]["link"]
     main_src = next(s for s in srcs if s["link"] == story["source_url"])
-    story["source_name"] = str(story.get("source_name") or "").strip() or outlet(main_src["source"])
+    story["source_name"] = outlet(main_src["source"])
     also = []
     for s in srcs:
         name = outlet(s["source"])
@@ -330,6 +333,12 @@ def write_story(group, candidates, style):
             also.append(name)
     story["also_reported_by"] = also
     story["category"] = story.get("category") if story.get("category") in CATEGORIES else group.get("category", "Trends")
+    # Haiku sometimes runs a word or two over the ten-word limit.
+    if len(story["headline"].split()) > 10:
+        shorter = claude("Rewrite this news headline in ten words or fewer. Keep it specific "
+                         "(who did what) and keep its facts: " + story["headline"],
+                         style, HEADLINE_SCHEMA, WRITE_MODEL, cache=True)
+        story["headline"] = str(shorter.get("headline") or story["headline"]).strip()
     story["_source_text"] = " ".join(material)
     return story
 
