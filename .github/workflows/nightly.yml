@@ -1,0 +1,82 @@
+name: Nightly AI news
+
+on:
+  schedule:
+    # GitHub runs on UTC. 14:30 UTC is 1am in Adelaide during daylight saving
+    # (UTC+10:30); 15:30 UTC is 1am the rest of the year (UTC+9:30).
+    # build.py only does the work when it's 1am in Adelaide.
+    - cron: "30 14 * * *"
+    - cron: "30 15 * * *"
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "build = make a new edition now; render = rebuild the pages from data/ after fixing a story"
+        type: choice
+        options: [build, render]
+        default: build
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: nightly-news
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      HAS_KEY: ${{ secrets.ANTHROPIC_API_KEY != '' }}
+      NEWS_SITE_URL: ${{ vars.NEWS_SITE_URL }}
+      NEWS_MODEL: ${{ vars.NEWS_MODEL }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Tonight's edition
+        if: github.event_name == 'schedule' && env.HAS_KEY == 'true'
+        run: python3 build.py
+
+      - name: Skip (no API key yet)
+        if: github.event_name == 'schedule' && env.HAS_KEY != 'true'
+        run: echo "ANTHROPIC_API_KEY isn't set yet, so there's no new edition tonight."
+
+      - name: New edition now
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'build'
+        run: python3 build.py --force
+
+      - name: Rebuild pages from data
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'render'
+        run: python3 build.py --render-only
+
+      - name: Save the edition
+        run: |
+          git config user.name "EmberSeed News"
+          git config user.email "news-bot@users.noreply.github.com"
+          git add data site
+          if git diff --cached --quiet; then
+            echo "Nothing new to save."
+          else
+            git commit -m "AI news $(TZ=Australia/Adelaide date +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

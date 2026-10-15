@@ -1,0 +1,282 @@
+[
+  {
+    "name": "Matt Wolfe (YouTube)",
+    "category": "Commentators & newsletters",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UChpleBmo18P08aKCIgti38g",
+    "site": "https://www.youtube.com/@mreflow",
+    "notes": "Tone benchmark. Weekly 'AI News' roundup plus hands-on model tests and tool demos. Some videos are sponsored (#ad) or robotics-themed, so filter those out. Feed holds the latest 15 videos with descriptions."
+  },
+  {
+    "name": "The AI Daily Brief (YouTube)",
+    "category": "Commentators & newsletters",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCKelCK4ZaO6HeEI1KQjqzWA",
+    "site": "https://www.youtube.com/@AIDailyBrief",
+    "notes": "Daily. Each description gives the main story plus an 'In the headlines' list, which makes it a good story radar. The podcast feed (https://anchor.fm/s/f7cac464/podcast/rss) also works but is about 8 MB with 1,100+ items, so use YouTube."
+  },
+  {
+    "name": "Matthew Berman (YouTube)",
+    "category": "Commentators & newsletters",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA",
+    "site": "https://www.youtube.com/@matthew_berman",
+    "notes": "Near-daily. Covers model launches with hands-on tests, plus some developer and coding content."
+  },
+  {
+    "name": "Wes Roth (YouTube)",
+    "category": "Commentators & newsletters",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqcbQf6yw5KzRoDDcZ_wBSw",
+    "site": "https://www.youtube.com/@WesRoth",
+    "notes": "Several videos a week. Titles are hype-heavy (caps, ellipses), so treat it as a signal only and confirm facts elsewhere."
+  },
+  {
+    "name": "The AI Advantage (YouTube)",
+    "category": "Commentators & newsletters",
+    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHhYXsLBEVVnbvsq57n1MTQ",
+    "site": "https://www.youtube.com/@aiadvantage",
+    "notes": "Practical how-to clips on new ChatGPT and Claude features. Descriptions are mostly promo boilerplate, so the titles carry the signal."
+  },
+  {
+    "name": "Hard Fork (NYT podcast)",
+    "category": "Commentators & newsletters",
+    "url": "https://feeds.simplecast.com/6HKOhNgS",
+    "site": "https://www.nytimes.com/column/hard-fork",
+    "notes": "Weekly (Fridays, US). The public feed only shows the latest 2 episodes and the show notes list the topics. The podcast is free; NYT articles are paywalled."
+  },
+  {
+    "name": "The Rundown AI",
+    "category": "Commentators & newsletters",
+    "url": "https://www.therundown.ai/feed",
+    "site": "https://www.therundown.ai",
+    "notes": "Daily newsletter. The feed carries only the headline and a 'PLUS' teaser, with no body text."
+  },
+  {
+    "name": "Ben's Bites",
+    "category": "Commentators & newsletters",
+    "url": "https://www.bensbites.com/feed",
+    "site": "https://www.bensbites.com",
+    "notes": "2-3 issues a week with full text in the feed (Substack). Written from a builder/startup angle."
+  },
+  {
+    "name": "The Neuron",
+    "category": "Commentators & newsletters",
+    "url": "https://rss.beehiiv.com/feeds/N4eCstxvgX.xml",
+    "site": "https://www.theneurondaily.com",
+    "notes": "Daily with full text in the feed (beehiiv). Plain-English explainers; the closest match to the target tone."
+  },
+  {
+    "name": "Last Week in AI",
+    "category": "Commentators & newsletters",
+    "url": "https://lastweekin.ai/feed",
+    "site": "https://lastweekin.ai",
+    "notes": "Weekly digest plus podcast posts, full text (Substack). Useful as a weekly catch-up; moderately technical."
+  },
+  {
+    "name": "The Verge (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml",
+    "site": "https://www.theverge.com/ai-artificial-intelligence",
+    "notes": "Several posts a day; the feed holds the 10 latest. Some Verge articles are subscriber-only (JSON-LD marks isAccessibleForFree=false), but news posts were fully readable."
+  },
+  {
+    "name": "TechCrunch (AI)",
+    "category": "Mainstream tech",
+    "url": "https://techcrunch.com/category/artificial-intelligence/feed/",
+    "site": "https://techcrunch.com/category/artificial-intelligence/",
+    "notes": "Many posts a day covering startups, funding and product news. Free. Feed summaries are short and some items are event promos (filter out 'Disrupt' ticket posts)."
+  },
+  {
+    "name": "Wired (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.wired.com/feed/tag/ai/latest/rss",
+    "site": "https://www.wired.com/tag/artificial-intelligence/",
+    "notes": "About daily. Metered paywall; feed summaries are short."
+  },
+  {
+    "name": "MIT Technology Review (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.technologyreview.com/topic/artificial-intelligence/feed",
+    "site": "https://www.technologyreview.com/topic/artificial-intelligence/",
+    "notes": "About one a day. Metered paywall. Analysis and long reads, some of them research-heavy."
+  },
+  {
+    "name": "Ars Technica (AI)",
+    "category": "Mainstream tech",
+    "url": "https://arstechnica.com/ai/feed/",
+    "site": "https://arstechnica.com/ai/",
+    "notes": "Several a day, free. Strong on legal and policy stories and on sceptical hands-on testing."
+  },
+  {
+    "name": "Engadget (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.engadget.com/category/ai/feed/",
+    "site": "https://www.engadget.com/ai/",
+    "notes": "Consumer-focused and free. The commonly cited /ai/rss.xml returns 404; this category feed is the one that works."
+  },
+  {
+    "name": "The Guardian (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.theguardian.com/technology/artificialintelligenceai/rss",
+    "site": "https://www.theguardian.com/technology/artificialintelligenceai",
+    "notes": "Many a day, free. Strong on policy, work and society, with UK and Australian angles. Includes opinion pieces and the odd non-AI economics story."
+  },
+  {
+    "name": "BBC Technology",
+    "category": "Mainstream tech",
+    "url": "https://feeds.bbci.co.uk/news/technology/rss.xml",
+    "site": "https://www.bbc.com/news/technology",
+    "notes": "Several a day, free. About 60% AI; the rest is general tech, so filter."
+  },
+  {
+    "name": "Fast Company (AI)",
+    "category": "Mainstream tech",
+    "url": "https://www.fastcompany.com/section/artificial-intelligence/rss",
+    "site": "https://www.fastcompany.com/section/artificial-intelligence",
+    "notes": "Business and leadership angle. Feed summaries are short, and article pages returned 403 to curl, so expect scripted fetches to be blocked. The /technology/rss feed carries full text but is only about 40% AI."
+  },
+  {
+    "name": "CNBC Technology",
+    "category": "Mainstream tech",
+    "url": "https://www.cnbc.com/id/19854910/device/rss/rss.html",
+    "site": "https://www.cnbc.com/technology/",
+    "notes": "Business and markets: deals, earnings, funding, IPOs. About 60% AI. CNBC Pro items are paywalled."
+  },
+  {
+    "name": "The Decoder",
+    "category": "Mainstream tech",
+    "url": "https://the-decoder.com/feed/",
+    "site": "https://the-decoder.com",
+    "notes": "AI-only news site, quick on model launches and safety stories. Free; the subscription is optional."
+  },
+  {
+    "name": "ABC News (AI topic)",
+    "category": "Australian",
+    "url": "https://www.abc.net.au/news/feed/13876586/rss.xml",
+    "site": "https://www.abc.net.au/news/topic/ai",
+    "notes": "Free, Australian angle, about 80% AI. Topic ID found in the ABC topic page; the feed title just says 'ABC News'. Summaries are short."
+  },
+  {
+    "name": "The Conversation (AI)",
+    "category": "Australian",
+    "url": "https://theconversation.com/topics/artificial-intelligence-ai-90/articles.atom",
+    "site": "https://theconversation.com/au/topics/artificial-intelligence-ai-90",
+    "notes": "Free, full text in the feed, written by academics (many Australian). The /au/ URL redirects to this global topic feed. Articles are Creative Commons licensed."
+  },
+  {
+    "name": "InnovationAus",
+    "category": "Australian",
+    "url": "https://www.innovationaus.com/feed/",
+    "site": "https://www.innovationaus.com",
+    "notes": "Daily coverage of Australian tech policy, government and startups. About 40% AI. Paywalled: most stories show only the standfirst and first paragraph to non-subscribers."
+  },
+  {
+    "name": "iTnews",
+    "category": "Australian",
+    "url": "https://www.itnews.com.au/RSS/rss.ashx",
+    "site": "https://www.itnews.com.au",
+    "notes": "Daily Australian enterprise IT news, about 35% AI, free. Feed summaries are very short. Feed times are labelled +1000 even during daylight saving (the article page shows +11:00), so they run 1 hour late."
+  },
+  {
+    "name": "SmartCompany (Technology)",
+    "category": "Australian",
+    "url": "https://www.smartcompany.com.au/technology/feed/",
+    "site": "https://www.smartcompany.com.au/technology/",
+    "notes": "Written for Australian small business. About 3 tech items a week. Some articles are SmartCompany Plus (paywalled). The tag/artificial-intelligence feed does not exist."
+  },
+  {
+    "name": "Information Age (ACS)",
+    "category": "Australian",
+    "url": "https://ia.acs.org.au/articles.rss",
+    "site": "https://ia.acs.org.au",
+    "notes": "Free Australian tech news, about one a day, often with local pricing and availability. Summaries are very short."
+  },
+  {
+    "name": "National AI Centre (Australian Government)",
+    "category": "Australian",
+    "url": "https://www.ai.gov.au/rss.xml",
+    "site": "https://www.ai.gov.au/news-and-insights",
+    "notes": "Official National AI Centre (DISR) feed: SME events, guidance and AI Adoption Tracker posts. Low frequency, about weekly or less. The only working Australian government AI feed found."
+  },
+  {
+    "name": "GamesIndustry.biz",
+    "category": "Gaming & entertainment",
+    "url": "https://www.gamesindustry.biz/feed",
+    "site": "https://www.gamesindustry.biz",
+    "notes": "Games business news (deals, layoffs, AI in development). Only about 15% AI, so a keyword filter is needed. 100 items in the feed."
+  },
+  {
+    "name": "The Verge (Gaming)",
+    "category": "Gaming & entertainment",
+    "url": "https://www.theverge.com/rss/games/index.xml",
+    "site": "https://www.theverge.com/games",
+    "notes": "AI-in-games stories show up here (Xbox Labs, Epic). Use a keyword filter."
+  },
+  {
+    "name": "Variety (AI tag)",
+    "category": "Gaming & entertainment",
+    "url": "https://variety.com/t/artificial-intelligence/feed/",
+    "site": "https://variety.com/t/artificial-intelligence/",
+    "notes": "Film, TV and music AI stories, a few a week. Some VIP+ articles are paywalled."
+  },
+  {
+    "name": "Deadline (AI tag)",
+    "category": "Gaming & entertainment",
+    "url": "https://deadline.com/tag/artificial-intelligence/feed/",
+    "site": "https://deadline.com/tag/artificial-intelligence/",
+    "notes": "Hollywood and media AI, about 2 a week. Includes some listicles and galleries."
+  },
+  {
+    "name": "OpenAI News",
+    "category": "AI labs & companies",
+    "url": "https://openai.com/news/rss.xml",
+    "site": "https://openai.com/news/",
+    "notes": "Official. Many posts are customer case studies, so prioritise product, model and policy posts. Article pages return 403 to curl. Large feed (1,293 items, about 790 KB)."
+  },
+  {
+    "name": "Anthropic News (unofficial mirror)",
+    "category": "AI labs & companies",
+    "url": "https://raw.githubusercontent.com/Olshansk/rss-feeds/main/feeds/feed_anthropic_news.xml",
+    "site": "https://www.anthropic.com/news",
+    "notes": "Anthropic has no official RSS (anthropic.com/rss.xml returns 404). This community-maintained GitHub feed (Olshansk/rss-feeds) scrapes anthropic.com/news and could break without notice, so monitor it."
+  },
+  {
+    "name": "Google Keyword (AI)",
+    "category": "AI labs & companies",
+    "url": "https://blog.google/innovation-and-ai/technology/ai/rss/",
+    "site": "https://blog.google/technology/ai/",
+    "notes": "Official Google product and model announcements. The old /technology/ai/rss/ URL redirects here."
+  },
+  {
+    "name": "Google DeepMind blog",
+    "category": "AI labs & companies",
+    "url": "https://deepmind.google/blog/rss.xml",
+    "site": "https://deepmind.google/blog/",
+    "notes": "Official model launches plus research. The feed carries titles only. Skip pure research and robotics posts."
+  },
+  {
+    "name": "Meta Newsroom",
+    "category": "AI labs & companies",
+    "url": "https://about.fb.com/feed/",
+    "site": "https://about.fb.com/news/",
+    "notes": "Official. About 25% AI (Muse models, Meta AI features, small-business tools). ai.meta.com/blog/rss/ returns HTTP 400."
+  },
+  {
+    "name": "Official Microsoft Blog",
+    "category": "AI labs & companies",
+    "url": "https://blogs.microsoft.com/feed/",
+    "site": "https://blogs.microsoft.com",
+    "notes": "Big Microsoft and Copilot announcements, about weekly, full text. The old AI blog feed (blogs.microsoft.com/ai/feed/) returns 410 Gone. Microsoft Source (https://news.microsoft.com/source/feed/) is a busier alternative."
+  },
+  {
+    "name": "Mistral AI news",
+    "category": "AI labs & companies",
+    "url": "https://mistral.ai/news/rss",
+    "site": "https://mistral.ai/news",
+    "notes": "Official. Low frequency (2 posts in 21 days); last post was Mistral Large 4 on 6 Oct. Not weekly, but it's the only official launch signal for Mistral."
+  },
+  {
+    "name": "Apple Newsroom",
+    "category": "AI labs & companies",
+    "url": "https://www.apple.com/newsroom/rss-feed.rss",
+    "site": "https://www.apple.com/newsroom/",
+    "notes": "Official, about one a day. Only AI-relevant when Apple Intelligence or Siri AI is involved, so filter."
+  }
+]
