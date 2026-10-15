@@ -58,22 +58,32 @@ Go to **Actions → Nightly AI news → Run workflow** and choose a mode:
 - `python3 build.py --no-ai --force` checks the feeds and pages without calling Claude.
 - `ANTHROPIC_API_KEY=... python3 build.py --dry-run` does a full run that prints the stories and saves nothing.
 
-## Costs
+## Models and costs
 
-GitHub Actions and Pages are free for a public repository.
+Since 16 October 2026, Claude Sonnet 5.5 picks the stories and Claude Haiku 5.5 writes them. Andrew chose this to bring the cost down from about US$0.47 a night on Opus 5.5.
 
-Claude (Opus 5.5 at medium effort) costs about US$0.45 a run, roughly US$14 a month. The first editions used about 55,000 input and 12,000 output tokens a run, at US$4 and US$20 per million. Each run's log ends with its token count.
+| Setup | Cost a night | A month |
+|---|---|---|
+| Sonnet 5.5 picks, Haiku 5.5 writes (current) | about US$0.04 | about US$1.20 |
+| Opus 5.5 for both (until 16 October) | about US$0.47 | about US$14 |
 
-To make it cheaper, set a repository variable:
+- Most of the cost is Sonnet reading the list of 120 or so candidates. The eight Haiku write-ups together cost about a cent.
+- GitHub Actions and Pages are free for a public repository.
+- Each run's log ends with its tokens and approximate cost per model.
 
-- `NEWS_EFFORT` to `low`
-- or `NEWS_MODEL` to `claude-sonnet-5-5`, which is half the price per token
+### Changing the models
 
-Check the stories still read well after either change.
+- **To change them for good,** set the repository variables `NEWS_PICK_MODEL` and `NEWS_WRITE_MODEL`, for example both to `claude-opus-5-5` for the best quality.
+- **To try a model on one test run,** fill in the `pick_model` and `write_model` boxes when running the workflow in **test** mode. The nightly setup isn't affected.
+- **To change how hard the models think,** set `NEWS_EFFORT` to `low`, `medium` (the default) or `high`. Higher costs more.
 
 ## How the Claude calls work
 
-- Opus 5.5 always thinks before it answers, and its thinking counts toward `max_tokens`. That's why the limit is 16,000: the first test, at 1,500, ran out before writing anything.
+- Current Claude models always think before they answer, and the thinking counts toward `max_tokens`. That's why the limit is 16,000: the first test, at 1,500, ran out before writing anything.
 - The replies use structured outputs, so they always match the JSON shape `build.py` expects.
-- `fallbacks: "default"` reruns a request on a suitable model if a safety check declines it.
+- Sonnet and Opus calls send `fallbacks: "default"`, which reruns a request on a suitable model if a safety check declines it. Haiku has no such fallback.
+- The style guide is cached across the write-up calls, so each read after the first costs a tenth as much.
+- Code, not Claude, fills in the source name and "also reported by", from the feeds the story came from.
+- A headline over ten words gets one quick extra call to shorten it.
+- Picking allows at most two stories about any one company.
 - Rate limits and busy errors are retried automatically.
