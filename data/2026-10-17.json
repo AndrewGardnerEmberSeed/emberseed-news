@@ -1,0 +1,98 @@
+[
+  {
+    "headline": "ChatGPT's Chrome extension can now read and act on tabs",
+    "summary": "OpenAI has upgraded its ChatGPT Chrome extension so it can read your open browser tabs and, in Work mode, act on them. Users tag Chrome in ChatGPT to pull information from tabs, and OpenAI's demo compares sofas across three open pages. Work mode can send messages, fill out forms, download files and group tabs, while the sidebar keeps your full chat history beside the page you're viewing. The Verge notes that OpenAI's ChatGPT Atlas browser is gone, and neither source mentions Australian availability.",
+    "why_it_matters": "If staff compare suppliers or fill in online forms, the extension works on all ChatGPT plans. Set rules before Work mode starts sending messages on their behalf.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-10-17-chatgpt-s-chrome-extension-can-now-read-and-act-on-tabs",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "Meta's new terms may open news sites to AI training",
+    "summary": "Meta's updated commercial terms, effective 30 October, appear to let it crawl websites linked to business accounts and use that content to train its AI products, according to Nieman Lab. Legal experts quoted by Nieman Lab say the terms could be used to argue they override robots.txt blocking instructions, a reading Meta disputes. A Meta spokesperson says there is no change to how it uses web crawlers, and that site owners can still use robots.txt. Businesses that refuse the terms may lose access to Meta's products for commercial purposes.",
+    "why_it_matters": "If you run a business page on Facebook or Instagram, check whether your website could be crawled under these terms. Review your robots.txt settings before 30 October.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1012846/meta-business-terms-scrape-news-publishers",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Ars Technica"
+    ],
+    "slug": "2026-10-17-meta-s-new-terms-may-open-news-sites-to-ai-training",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "FTC subpoenas OpenAI and Anthropic over AI safety incidents",
+    "summary": "The US Federal Trade Commission has subpoenaed OpenAI and Anthropic over recent safety incidents with their AI models, a spokesperson confirmed to CBS News. Axios reports the demands seek documents on security incidents, safeguards and privacy-related marketing. An Axios source said the agency plans to seek testimony from top executives and is exploring possible consumer protection violations. Eight state attorneys general sued OpenAI this week on consumer protection grounds. Neither company responded to Ars Technica's request for comment.",
+    "why_it_matters": "If your team uses ChatGPT or Claude, check how your provider reports security incidents and what its privacy terms promise, as regulators are now asking these questions.",
+    "category": "Safety & policy",
+    "source_url": "https://www.engadget.com/2288104/ftc-subpoenas-open-ai-and-anthropic-following-safety-failures/",
+    "source_name": "Engadget",
+    "also_reported_by": [
+      "Ars Technica"
+    ],
+    "slug": "2026-10-17-ftc-subpoenas-openai-and-anthropic-over-ai-safety-incidents",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "Australia proposes social media algorithm off switch for feeds",
+    "summary": "Australia's Digital Duty of Care bill would force social media platforms to let users turn off recommended content, so they see only accounts they follow. Announced in September, the algorithm switch stops short of defaulting to off, as campaigner Chanel Contos had sought. Breaches could attract fines of up to A$100m, but the Trump administration and some Australian right-wing parties say the reforms threaten free speech. Meta, Snap, TikTok, X and Google have declined BBC requests for comment.",
+    "why_it_matters": "If you post or advertise on social media, fewer non-followers may see your content if users switch off recommendations. The rules aren't final, so watch how they settle.",
+    "category": "Safety & policy",
+    "source_url": "https://www.bbc.co.uk/news/articles/cwr7y8er1n8vo?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-10-17-australia-proposes-social-media-algorithm-off-switch-for-fee",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "Sega pulls Total War: Shogun 2 remaster over AI concerns",
+    "summary": "Sega and Creative Assembly have temporarily withdrawn Total War: Shogun 2 – Complete Edition from sale, within days of its 13 October launch. Steam reviews are overwhelmingly negative, with players pointing to AI upscaling and artwork showing flaws such as extra fingers. In a joint statement, the companies admit the game falls short of their standards and say they will reinstate the original game while they investigate. Existing owners can still access and play the remaster.",
+    "why_it_matters": "If you publish products with AI-generated visuals, check quality before launch. Customers spot flaws quickly, and a public pull can damage trust and sales.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://www.gamesindustry.biz/sega-and-creative-assembly-remove-total-war-shogun-2-remaster-from-sale-as-it-falls-short-of-both-your-expectations-and-our-own-standards",
+    "source_name": "GamesIndustry.biz",
+    "also_reported_by": [
+      "The Verge"
+    ],
+    "slug": "2026-10-17-sega-pulls-total-war-shogun-2-remaster-over-ai-concerns",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "Soaring memory costs push smartphone shipments down 22%",
+    "summary": "Smartphone shipments plunged a record 22%, according to IDC, as soaring memory costs forced manufacturers to raise prices. The same pressure is pushing makers to drop their cheaper models. Fast Company's headline ties the memory squeeze to AI demand, though the excerpt doesn't explain how that link works. The source doesn't give the time period or markets covered by the 22% fall, so treat the figure as provisional until the full IDC data is checked.",
+    "why_it_matters": "If you plan to buy or replace staff phones, expect prices to rise and cheaper models to become harder to find.",
+    "category": "Industry",
+    "source_url": "https://www.fastcompany.com/91624656/ais-memory-chip-crunch-is-crushing-the-smartphone-market?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=1&partner=newsletter&campaign_date=10162026",
+    "source_name": "Fast Company",
+    "also_reported_by": [],
+    "slug": "2026-10-17-soaring-memory-costs-push-smartphone-shipments-down-22",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "ChatGPT ads can target users by prompt or email",
+    "summary": "Advertisers can target ChatGPT users by the topics they ask about, or by uploaded lists of emails, phone numbers or Android advertising IDs. Reporter Joseph Cox ran tests for 404 Media, which bought two ads inside the chatbot. OpenAI says topic keywords only guide matching and aren't exact-match rules, and that it deletes uploaded files, usually within 24 hours. Lists above 25,000 entries can target people, while smaller lists can only exclude them, and 404 Media says turning off ads personalisation doesn't stop ads entirely.",
+    "why_it_matters": "If your team uses ChatGPT for work, the ads personalisation switch doesn't fully stop tracking, so keep sensitive client details out of chats.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theneurondaily.com/p/october-16-friday-1362",
+    "source_name": "The Neuron",
+    "also_reported_by": [],
+    "slug": "2026-10-17-chatgpt-ads-can-target-users-by-prompt-or-email",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  },
+  {
+    "headline": "China drafts tighter export rules for open-weight AI models",
+    "summary": "China's commerce and science ministries have released a draft update to its export control list, covering 23 key AI technologies. Large models face controls at 10^26 FLOPs of training compute, 2 trillion parameters or a global top-10 ranking. Tools that autonomously write or alter malware to attack critical infrastructure face a total export ban. Publishing restricted technology as open source qualifies for automatic licensing, and companies must register exports through a commerce ministry portal.",
+    "why_it_matters": "If you use AI through apps, APIs or SaaS tools, the draft leaves you free of these controls. Running restricted models on your own overseas servers would need a standard export licence.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/china-tightens-export-controls-on-open-weight-models-and-23-key-ai-technologies/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-17-china-drafts-tighter-export-rules-for-open-weight-ai-models",
+    "edition_published": "2026-10-17T04:43:00+10:30"
+  }
+]
