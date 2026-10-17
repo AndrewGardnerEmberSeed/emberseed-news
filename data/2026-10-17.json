@@ -63,17 +63,6 @@
     "edition_published": "2026-10-17T04:43:00+10:30"
   },
   {
-    "headline": "Soaring memory costs push smartphone shipments down 22%",
-    "summary": "Smartphone shipments plunged a record 22%, according to IDC, as soaring memory costs forced manufacturers to raise prices. The same pressure is pushing makers to drop their cheaper models. Fast Company's headline ties the memory squeeze to AI demand, though the excerpt doesn't explain how that link works. The source doesn't give the time period or markets covered by the 22% fall, so treat the figure as provisional until the full IDC data is checked.",
-    "why_it_matters": "If you plan to buy or replace staff phones, expect prices to rise and cheaper models to become harder to find.",
-    "category": "Industry",
-    "source_url": "https://www.fastcompany.com/91624656/ais-memory-chip-crunch-is-crushing-the-smartphone-market?utm_source=postup&utm_medium=email&utm_campaign=artificial-intelligence&position=1&partner=newsletter&campaign_date=10162026",
-    "source_name": "Fast Company",
-    "also_reported_by": [],
-    "slug": "2026-10-17-soaring-memory-costs-push-smartphone-shipments-down-22",
-    "edition_published": "2026-10-17T04:43:00+10:30"
-  },
-  {
     "headline": "ChatGPT ads can target users by prompt or email",
     "summary": "Advertisers can target ChatGPT users by the topics they ask about, or by uploaded lists of emails, phone numbers or Android advertising IDs. Reporter Joseph Cox ran tests for 404 Media, which bought two ads inside the chatbot. OpenAI says topic keywords only guide matching and aren't exact-match rules, and that it deletes uploaded files, usually within 24 hours. Lists above 25,000 entries can target people, while smaller lists can only exclude them, and 404 Media says turning off ads personalisation doesn't stop ads entirely.",
     "why_it_matters": "If your team uses ChatGPT for work, the ads personalisation switch doesn't fully stop tracking, so keep sensitive client details out of chats.",
@@ -87,7 +76,7 @@
   {
     "headline": "China drafts tighter export rules for open-weight AI models",
     "summary": "China's commerce and science ministries have released a draft update to its export control list, covering 23 key AI technologies. Large models face controls at 10^26 FLOPs of training compute, 2 trillion parameters or a global top-10 ranking. Tools that autonomously write or alter malware to attack critical infrastructure face a total export ban. Publishing restricted technology as open source qualifies for automatic licensing, and companies must register exports through a commerce ministry portal.",
-    "why_it_matters": "If you use AI through apps, APIs or SaaS tools, the draft leaves you free of these controls. Running restricted models on your own overseas servers would need a standard export licence.",
+    "why_it_matters": "If you use Chinese AI models through apps, APIs or SaaS tools, the draft leaves that use untouched. It isn't yet clear how it treats foreign businesses that install the largest models on their own servers.",
     "category": "Safety & policy",
     "source_url": "https://the-decoder.com/china-tightens-export-controls-on-open-weight-models-and-23-key-ai-technologies/",
     "source_name": "The Decoder",
