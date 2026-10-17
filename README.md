@@ -73,10 +73,13 @@ Since 16 October 2026, Claude Sonnet 5.5 picks the stories and Claude Haiku 5.5 
 
 | Setup | Cost a night | A month |
 |---|---|---|
-| Sonnet 5.5 picks, Haiku 5.5 writes (current) | about US$0.04 | about US$1.20 |
+| Sonnet 5.5 picks and checks, Haiku 5.5 writes (current, from 17 October) | about US$0.09–0.11 | about US$3 |
+| Sonnet 5.5 picks, Haiku 5.5 writes (16–17 October) | about US$0.04 | about US$1.20 |
 | Opus 5.5 for both (until 16 October) | about US$0.47 | about US$14 |
 
-- Most of the cost is Sonnet reading the list of 120 or so candidates. The eight Haiku write-ups together cost about a cent.
+- Most of the cost is Sonnet: reading the list of 70–120 candidates, then checking the finished stories against their
+  sources. The eight Haiku write-ups together cost about a cent.
+- The workspace's spend limit is US$5 a month. Test runs count too (about US$0.10 each).
 - GitHub Actions and Pages are free for a public repository.
 - Each run's log ends with its tokens and approximate cost per model.
 
@@ -94,5 +97,25 @@ Since 16 October 2026, Claude Sonnet 5.5 picks the stories and Claude Haiku 5.5 
 - The style guide is cached across the write-up calls, so each read after the first costs a tenth as much.
 - Code, not Claude, fills in the source name and "also reported by", from the feeds the story came from.
 - A headline over ten words gets one quick extra call to shorten it.
+
+## The checks (from 17 October 2026)
+
+The first night on the cheaper models (17 October) had problems:
+- five of eight stories were in one category;
+- a story was written from a feed's 600-character excerpt, so it had no period or market for its main figure;
+- a "why it matters" told Australian businesses they'd need a Chinese export licence.
+
+Before anything is published now:
+- **Tip-offs.** YouTube, podcasts and newsletters (the "Commentators & newsletters" feeds) are tip-offs. A story needs a
+  news outlet or the company itself.
+- **Spread.** At most three stories in any one category. The picker ranks three reserves for when stories fail.
+- **Something to read.** A story is skipped when its article couldn't be read and only the feed's excerpt is left. The
+  log names it.
+- **Numbers.** Every number in a story must appear in its sources.
+- **Sub-editor.** Sonnet reads every story against the sources the writer had: the main article to 12,000 characters,
+  the others shorter. It flags only real errors: claims the sources don't make, lost conditions, and advice that
+  doesn't follow or is aimed at the wrong reader. It passes, corrects or drops each story, and the log lists what it
+  found. Corrections must pass the numbers check too. If the check itself fails, the stories go out as written and
+  the log says so.
 - Picking allows at most two stories about any one company.
 - Rate limits and busy errors are retried automatically.

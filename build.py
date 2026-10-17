@@ -335,7 +335,7 @@ def write_story(group, candidates, style):
                         f"TITLE: {s['title']}\nTEXT:\n{text}")
     # (17 Oct 2026: a story written from a feed's excerpt had no period or market for its main figure)
     if longest < MIN_SOURCE_CHARS:
-        raise ValueError("only a short excerpt to go on (the article couldn't be read)")
+        raise ValueError(f"only a short excerpt to go on (the article couldn't be read): {srcs[0]['source']}: {srcs[0]['title']}")
     prompt = (
         "Write one EmberSeed news item from the source material below, following the style "
         "guide exactly. Use only facts stated in the sources. If a detail isn't in the sources, "
@@ -394,7 +394,8 @@ def check_stories(stories, style):
         "Give one result per story, by its number:\n"
         "- 'ok' if it has no real errors: leave headline, summary and why_it_matters empty.\n"
         "- 'fix' if it can be corrected from the sources: give only the fields you corrected, changed as little as "
-        "possible and within the style guide's lengths, and leave the others empty.\n"
+        "possible and within the style guide's lengths, and leave the others empty. Write corrections as finished "
+        "copy for readers: never mention 'the source' or 'the sources'; attribute as the style guide says.\n"
         "- 'drop' if the sources are too thin to support it.\n"
         "Problems: at most three, a few plain words each (none for 'ok').\n\n"
         + "\n\n=====\n\n".join(blocks))
