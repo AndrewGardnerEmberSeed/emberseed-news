@@ -369,6 +369,7 @@ def write_story(group, candidates, style):
                          style, HEADLINE_SCHEMA, WRITE_MODEL, cache=True)
         story["headline"] = str(shorter.get("headline") or story["headline"]).strip()
     story["_source_text"] = " ".join(material)
+    story["_sources"] = [(s["link"], m) for s, m in zip(srcs[:3], material)]   # (for the check)
     return story
 
 
@@ -379,17 +380,23 @@ def check_stories(stories, style):
     cheaper writer told Australian businesses they'd need a Chinese export licence.)"""
     if not stories:
         return stories
+    def sources(s):   # what the writer had: the main article in full (to 12,000 characters), the others shorter
+        out = [m[:12000] if url == s.get("source_url") else m[:3000] for url, m in s.get("_sources") or []]
+        return "\n\n".join(out) or s["_source_text"][:12000]
     blocks = [f"STORY {i}\nHEADLINE: {s['headline']}\nSUMMARY: {s['summary']}\nWHY IT MATTERS: {s['why_it_matters']}\n"
-              f"SOURCES:\n{s['_source_text'][:6000]}" for i, s in enumerate(stories)]
+              f"SOURCES:\n{sources(s)}" for i, s in enumerate(stories)]
     prompt = (
         "You are the sub-editor. Check each story below against its own sources before it is published to "
-        "Australian small-business owners. Look for: a claim the sources don't make; a lost condition or "
-        "qualifier (who a rule applies to, thresholds, dates); advice in 'why it matters' that doesn't follow from "
-        "the facts, or applies them to the wrong reader or country; and anything else that breaks the style guide. "
-        "Give one result per story, by its number. Verdict 'ok' if it's sound (repeat the text unchanged); 'fix' if "
-        "it can be corrected from the sources (give the corrected headline, summary and why it matters, changed as "
-        "little as possible and still within the style guide's lengths); 'drop' if the sources are too thin to "
-        "support it. List the problems you found, in plain words (none for 'ok').\n\n"
+        "Australian small-business owners. Flag only real errors: a claim the sources don't make, or contradict; a "
+        "lost condition or qualifier (who a rule applies to, thresholds, dates); advice in 'why it matters' that "
+        "doesn't follow from the facts, or applies them to the wrong reader or country. Facts anywhere in the "
+        "sources count. Don't flag what a story leaves out, and don't rewrite for style.\n"
+        "Give one result per story, by its number:\n"
+        "- 'ok' if it has no real errors: leave headline, summary and why_it_matters empty.\n"
+        "- 'fix' if it can be corrected from the sources: give only the fields you corrected, changed as little as "
+        "possible and within the style guide's lengths, and leave the others empty.\n"
+        "- 'drop' if the sources are too thin to support it.\n"
+        "Problems: at most three, a few plain words each (none for 'ok').\n\n"
         + "\n\n=====\n\n".join(blocks))
     try:
         out = claude(prompt, style, CHECK_SCHEMA, PICK_MODEL)
@@ -648,6 +655,7 @@ def main():
         stories = check_stories(stories, style)
         for s in stories:
             s.pop("_source_text", None)
+            s.pop("_sources", None)
     if args.dry_run:
         print(json.dumps(stories, indent=2, ensure_ascii=False))
         print(f"Test run: {len(stories)} stories passed the checks. Nothing was saved.")
