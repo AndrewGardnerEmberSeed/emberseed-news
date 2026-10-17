@@ -23,7 +23,7 @@ Leave out:
 - Sponsored posts, ads and event promotions
 - Celebrity gossip with no AI substance
 
-Prefer stories that more than one outlet has reported. YouTube videos and podcasts are tip-offs, not sources: confirm the facts with a news outlet or the company's own post. Include an Australian story when there's a good one. Spread the edition across categories and companies rather than running five versions of the same launch.
+Prefer stories that more than one outlet has reported. YouTube videos, podcasts and newsletters are tip-offs, not sources: confirm the facts with a news outlet or the company's own post. Include an Australian story when there's a good one, and a Business story (AI in real companies) when there's a good one. Spread the edition across categories and companies: no more than three stories in any one category, and never five versions of the same launch.
 
 ## How to write each story
 
@@ -38,7 +38,7 @@ Prefer stories that more than one outlet has reported. YouTube videos and podcas
 7. **Headline in our own words.** Ten words or fewer, specific (company plus action). A gentle pun is fine. No clickbait, no questions, no colons where a verb will do.
 8. **Length.**
    - Summary: 60–110 words, in two to four sentences that average about 15 words, in the active voice.
-   - "Why it matters": one or two sentences, 15–40 words, written to "you", the business owner. Make it specific: "If you sell online…", "If your team uses Copilot…". Tie it to cost, time, risk or customer expectations. Never generic.
+   - "Why it matters": one or two sentences, 15–40 words, written to "you", the business owner. Make it specific: "If you sell online…", "If your team uses Copilot…". Tie it to cost, time, risk or customer expectations. Never generic. It must follow from the facts in the story: don't apply another country's rules to Australian readers unless the source says they apply, and if the source says something is unclear, say so.
 9. **Australian conventions.**
    - Use Australian spelling: organise, analyse, colour, centre, licence (noun), program.
    - Write dates as "14 October".

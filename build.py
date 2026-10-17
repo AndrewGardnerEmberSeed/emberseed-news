@@ -49,6 +49,9 @@ EFFORT = os.environ.get("NEWS_EFFORT") or "medium"  # how hard Claude thinks: lo
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
 MIN_STORIES, MAX_STORIES = 4, 8
+MAX_PER_CATEGORY = 3   # (17 Oct 2026: five of eight stories were Safety & policy)
+RESERVES = 3           # the picker ranks a few more, in case some don't pass the checks
+MIN_SOURCE_CHARS = 1000  # a story needs more than a feed's excerpt to go on (a feed gives at most 600 characters)
 # US$ per million input and output tokens, for the cost line at the end of each
 # run. Check https://platform.claude.com/docs/en/about-claude/pricing if they change.
 PRICES = {"claude-opus-5-5": (4, 20), "claude-sonnet-5-5": (2, 10), "claude-haiku-5-5": (0.10, 0.50)}
@@ -60,6 +63,11 @@ EXCLUDE = re.compile(
     r"exoskeleton|arxiv|preprint)\b", re.I)
 
 TIP_ONLY = re.compile(r"YouTube|podcast", re.I)
+TIP_ONLY_CATEGORY = "Commentators & newsletters"   # YouTube, podcasts and newsletters: tip-offs, not sources
+
+
+def tip_only(item):
+    return bool(TIP_ONLY.search(item["source"])) or item.get("category_hint") == TIP_ONLY_CATEGORY
 
 CATEGORIES = ["Trends", "New models", "Industry", "Safety & policy", "Business",
               "Gaming & entertainment", "Applications"]
@@ -75,6 +83,18 @@ SELECT_SCHEMA = {
     "required": ["stories"], "additionalProperties": False}
 
 STORY_FIELDS = ["headline", "summary", "why_it_matters", "category", "source_url"]
+CHECK_SCHEMA = {
+    "type": "object",
+    "properties": {"results": {"type": "array", "items": {
+        "type": "object",
+        "properties": {"index": {"type": "integer"},
+                       "verdict": {"type": "string", "enum": ["ok", "fix", "drop"]},
+                       "problems": {"type": "array", "items": {"type": "string"}},
+                       "headline": {"type": "string"}, "summary": {"type": "string"},
+                       "why_it_matters": {"type": "string"}},
+        "required": ["index", "verdict", "problems", "headline", "summary", "why_it_matters"],
+        "additionalProperties": False}}},
+    "required": ["results"], "additionalProperties": False}
 HEADLINE_SCHEMA = {"type": "object", "properties": {"headline": {"type": "string"}},
                    "required": ["headline"], "additionalProperties": False}
 STORY_SCHEMA = {
@@ -272,25 +292,28 @@ def claude(prompt, system, schema, model, max_tokens=16000, cache=False):
 
 def select_stories(candidates, style, recent=()):
     listing = "\n".join(
-        f"[{c['id']}] {c['source']} | {c['published'][:16]} | {c['title']} | {c['description'][:160]}"
+        f"[{c['id']}] {c['source']}{' (tip-off)' if tip_only(c) else ''} | {c['published'][:16]} | {c['title']} | "
+        f"{c['description'][:160]}"
         for c in candidates)
     prompt = (
         f"Here are today's AI news items from our feeds, one per line as "
         f"[id] source | published (UTC) | title | description.\n\n{listing}\n\n"
-        f"Pick the {MIN_STORIES}-{MAX_STORIES} most interesting stories for small-business "
-        f"owners, following the editorial scope in the style guide. Group items that cover the "
-        f"same story. YouTube and podcast items are tip-offs only: never pick a story unless a news "
-        f"outlet or the company itself also covers it. Spread across categories where you can, "
-        f"and pick at most two stories about any one company. "
-        f"For each story, give the ids of the items that cover it and its category, "
-        f"strongest story first.")
+        f"Rank the {MAX_STORIES + RESERVES} most interesting stories for small-business owners, "
+        f"strongest first, following the editorial scope in the style guide: we publish the first "
+        f"{MAX_STORIES} that pass our checks. Group items that cover the same story. Items marked "
+        f"(tip-off) are YouTube, podcasts and newsletters: never pick a story unless a news outlet "
+        f"or the company itself also covers it. Prefer stories more than one outlet covers. Spread "
+        f"across categories: at most {MAX_PER_CATEGORY} stories in any one category, and include a "
+        f"Business story (AI in real companies, jobs, productivity) when there is a good one. Pick at "
+        f"most two stories about any one company. "
+        f"For each story, give the ids of the items that cover it and its category.")
     if recent:
         prompt += ("\n\nThese stories ran in the last few editions. Skip them unless there's a "
                    "significant new development:\n" + "\n".join(f"- {h}" for h in recent))
     picked = claude(prompt, style, SELECT_SCHEMA, PICK_MODEL)
     if isinstance(picked, dict):
         picked = picked.get("stories", [])
-    return picked[:MAX_STORIES]
+    return picked[:MAX_STORIES + RESERVES]
 
 
 def outlet(feed_name):
@@ -301,14 +324,18 @@ def outlet(feed_name):
 def write_story(group, candidates, style):
     ids = [int(i) for i in group.get("ids", []) if str(i).isdigit()]
     srcs = [candidates[i] for i in ids if i < len(candidates)]
-    srcs = [s for s in srcs if not TIP_ONLY.search(s["source"])]
+    srcs = [s for s in srcs if not tip_only(s)]
     if not srcs:
-        raise ValueError("only YouTube or podcast sources")
-    material = []
+        raise ValueError("only YouTube, podcast or newsletter sources")
+    material, longest = [], 0
     for s in srcs[:3]:
         text = article_text(s["link"]) or s["description"]
+        longest = max(longest, len(text))
         material.append(f"SOURCE: {s['source']}\nURL: {s['link']}\nPUBLISHED: {s['published']}\n"
                         f"TITLE: {s['title']}\nTEXT:\n{text}")
+    # (17 Oct 2026: a story written from a feed's excerpt had no period or market for its main figure)
+    if longest < MIN_SOURCE_CHARS:
+        raise ValueError("only a short excerpt to go on (the article couldn't be read)")
     prompt = (
         "Write one EmberSeed news item from the source material below, following the style "
         "guide exactly. Use only facts stated in the sources. If a detail isn't in the sources, "
@@ -343,6 +370,55 @@ def write_story(group, candidates, style):
         story["headline"] = str(shorter.get("headline") or story["headline"]).strip()
     story["_source_text"] = " ".join(material)
     return story
+
+
+def check_stories(stories, style):
+    """Before anything is published, the picking model reads every story against its own sources, as a sub-editor
+    would: claims the sources don't make, lost conditions, and advice that doesn't follow from the facts or is aimed
+    at the wrong reader. It can pass a story, correct it from the sources, or drop it. (Added 17 Oct 2026, when the
+    cheaper writer told Australian businesses they'd need a Chinese export licence.)"""
+    if not stories:
+        return stories
+    blocks = [f"STORY {i}\nHEADLINE: {s['headline']}\nSUMMARY: {s['summary']}\nWHY IT MATTERS: {s['why_it_matters']}\n"
+              f"SOURCES:\n{s['_source_text'][:6000]}" for i, s in enumerate(stories)]
+    prompt = (
+        "You are the sub-editor. Check each story below against its own sources before it is published to "
+        "Australian small-business owners. Look for: a claim the sources don't make; a lost condition or "
+        "qualifier (who a rule applies to, thresholds, dates); advice in 'why it matters' that doesn't follow from "
+        "the facts, or applies them to the wrong reader or country; and anything else that breaks the style guide. "
+        "Give one result per story, by its number. Verdict 'ok' if it's sound (repeat the text unchanged); 'fix' if "
+        "it can be corrected from the sources (give the corrected headline, summary and why it matters, changed as "
+        "little as possible and still within the style guide's lengths); 'drop' if the sources are too thin to "
+        "support it. List the problems you found, in plain words (none for 'ok').\n\n"
+        + "\n\n=====\n\n".join(blocks))
+    try:
+        out = claude(prompt, style, CHECK_SCHEMA, PICK_MODEL)
+    except Exception as e:  # noqa: BLE001 - publish as written rather than lose the edition
+        print("  the check didn't run:", e)
+        return stories
+    results = {r.get("index"): r for r in (out.get("results") or [] if isinstance(out, dict) else [])}
+    kept = []
+    for i, s in enumerate(stories):
+        r = results.get(i)
+        if not r or r.get("verdict") == "ok":
+            kept.append(s)
+            continue
+        why = "; ".join(r.get("problems") or []) or "no reason given"
+        if r.get("verdict") == "drop":
+            print(f"  dropped by the check: {s['headline']} ({why})")
+            continue
+        fixed = dict(s)
+        for k in ("headline", "summary", "why_it_matters"):
+            if str(r.get(k) or "").strip():
+                fixed[k] = str(r[k]).strip()
+        if len(fixed["headline"].split()) > 10:
+            fixed["headline"] = s["headline"]
+        if not numbers_check(fixed):
+            print(f"  dropped (the check's correction has numbers the sources don't): {s['headline']}")
+            continue
+        print(f"  corrected by the check: {s['headline']} ({why})")
+        kept.append(fixed)
+    return kept
 
 
 def numbers_check(story):
@@ -550,7 +626,12 @@ def main():
                             "why_it_matters": "(test mode: no AI rewrite)", "category": "Trends",
                             "source_name": c["source"], "source_url": c["link"], "also_reported_by": []})
     else:
+        per_category = {}
         for group in select_stories(candidates, style, [s["headline"] for s in recent]):
+            if len(stories) >= MAX_STORIES:
+                break
+            if per_category.get(group.get("category"), 0) >= MAX_PER_CATEGORY:
+                continue   # (a reserve from a category that's full)
             try:
                 s = write_story(group, candidates, style)
             except Exception as e:  # noqa: BLE001
@@ -559,8 +640,14 @@ def main():
             if not numbers_check(s):
                 print("  dropped (numbers not in source):", s.get("headline"))
                 continue
-            s.pop("_source_text", None)
+            if per_category.get(s["category"], 0) >= MAX_PER_CATEGORY:
+                print(f"  skipped (already {MAX_PER_CATEGORY} {s['category']} stories):", s.get("headline"))
+                continue
+            per_category[s["category"]] = per_category.get(s["category"], 0) + 1
             stories.append(s)
+        stories = check_stories(stories, style)
+        for s in stories:
+            s.pop("_source_text", None)
     if args.dry_run:
         print(json.dumps(stories, indent=2, ensure_ascii=False))
         print(f"Test run: {len(stories)} stories passed the checks. Nothing was saved.")
