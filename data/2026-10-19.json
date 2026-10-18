@@ -1,0 +1,92 @@
+[
+  {
+    "headline": "Anthropic hires fewer junior technical staff as AI agents grow",
+    "summary": "Anthropic's share of junior staff in technical roles fell from 21 percent to 14 percent since early 2025, according to an internal study the AI company published. Among new technical hires, the junior share dropped from 27 percent to 9 percent. Anthropic credits its AI agents, which by August 2026 were logging six times as many work hours as human employees. The company reports productivity gains across departments, such as 5.1 times as many engineering code commits, but says it is a special case that does not map easily onto the wider economy.",
+    "why_it_matters": "If you're considering AI in place of junior hires, note Anthropic's own study says its results may not carry over to your business. Test tools on your own workload before cutting entry-level roles.",
+    "category": "Business",
+    "source_url": "https://the-decoder.com/anthropic-has-nearly-stopped-hiring-junior-staff-because-ai-agents-now-work-six-times-as-many-hours/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-10-19-anthropic-hires-fewer-junior-technical-staff-as-ai-agents-gr",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Google faces second German ruling over false AI answers",
+    "summary": "A second German court has held Google responsible for false claims in its AI search answers. The Aachen Regional Court barred Google from spreading certain false statements about a local physician, whose AI Mode entries allegedly tied him to a criminal case against a different former professor. Google said in mid-September it would take no action after he complained. The decision, dated 24 September 2026, was issued as an emergency order without hearing Google. It is not final, and it relied on the Munich ruling from May.",
+    "why_it_matters": "These are German rulings, so the source doesn't say how Australian courts would treat AI summaries. If your business appears in AI search results, check what they say about you regularly.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-19-google-faces-second-german-ruling-over-false-ai-answers",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Anthropic lets safety watchdog METR inside its office",
+    "summary": "Anthropic has given METR, a nonprofit that has worked with OpenAI, Google and Meta, employee-like access to its hardware and internal systems. Six METR staff now work in the company's office with tools roughly on par with its own risk teams, Anthropic says. METR can publish its findings and Anthropic can't veto that, though it can require redaction of categories such as customer data. Critics warn of conflicts of interest and want tougher government regulation, while Anthropic compares the set-up to bank supervision.",
+    "why_it_matters": "If your business relies on Claude or other AI tools, ask vendors how independent evaluators check their safety claims.",
+    "category": "Safety & policy",
+    "source_url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+    "source_name": "Ars Technica",
+    "also_reported_by": [],
+    "slug": "2026-10-19-anthropic-lets-safety-watchdog-metr-inside-its-office",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Apple Watch and Amazon Bee test US wiretap laws",
+    "summary": "Amazon's Bee Frontier and Bee Eclipse wearables arrived on Thursday. Apple's Watch Series 12, unveiled in September, will have Siri Recap, which takes notes through the day. Apple and Amazon say their devices don't store audio, but legal experts say that may not settle the question under US state wiretap laws. A New Hampshire law professor says a wearer there could potentially face civil or criminal liability, though he stressed prosecution is far less likely.",
+    "why_it_matters": "If your team uses AI recorders or note-taking wearables in meetings, get everyone's consent first. The article covers US state laws only, so check Australian rules with an adviser.",
+    "category": "Safety & policy",
+    "source_url": "https://www.cnbc.com/2026/10/18/ai-wearables-privacy-wiretap-laws.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-10-19-apple-watch-and-amazon-bee-test-us-wiretap-laws",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Tasmanian scientists use AI to track individual lobsters",
+    "summary": "Scientists at the University of Tasmania have built AI that recognises individual southern rock lobsters from their shell features. A smartphone photo either matches a lobster already in the database or adds a new one. The tool has picked out a lobster three years on, even under barnacles and algae. Exporter Michael Blake hopes it will help Tasmanian lobsters reach new markets, including the European Union.",
+    "why_it_matters": "If you run a seafood business, proof of origin could become a selling point. The scientists are still developing the tool for processors and fishers, so it isn't yet a ready-made product.",
+    "category": "Applications",
+    "source_url": "https://www.abc.net.au/news/2026-10-18/lobster-industry-ai-tools-helping-tracing-landline/107211678",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-10-19-tasmanian-scientists-use-ai-to-track-individual-lobsters",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Microsoft exits Nscale's Essex AI datacentre over power",
+    "summary": "Microsoft has pulled out of a planned AI datacentre at Loughton, Essex, being built by UK firm Nscale, according to The Guardian. The Telegraph first reported the deal's end, which leaves Nscale without its only publicly announced customer for the site. UK Power Networks has told Nscale it cannot supply enough power to the site until the early to mid-2030s. Nscale says it remains committed to Loughton and is exploring alternative power, and that its Microsoft ties remain strong.",
+    "why_it_matters": "This is a UK project, so it doesn't directly affect Australian services. Still, if your business relies on an AI provider, it's worth asking whether its service depends on datacentre capacity that is still being built.",
+    "category": "Industry",
+    "source_url": "https://www.theguardian.com/uk-news/2026/oct/18/microsoft-drops-huge-ai-datacentre-project-in-essex-over-power-supply-concerns",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-10-19-microsoft-exits-nscale-s-essex-ai-datacentre-over-power",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "Anthropic enlists law firms to set AI negotiation rules",
+    "summary": "Anthropic is working out how AI agents could negotiate for users, such as haggling over prices or resolving complaints. According to the Financial Times, it is consulting law firms on fair negotiation norms after its experiments found stronger models strike better deals, potentially widening inequality. The work stems from a data gap: law and the humanities lack the clear right-and-wrong answers that help improve maths and coding. Anthropic is hiring lawyers as four-month Conceptual Reasoning Fellows to test Claude, and Anthropic researcher Justin Curl says quality in law is \"notoriously hard to define\".",
+    "why_it_matters": "If you're thinking about letting AI agents negotiate for you, Anthropic's own experiments found stronger models strike better deals, so the tool you pick may matter. Fair-dealing norms are still being developed.",
+    "category": "Industry",
+    "source_url": "https://the-decoder.com/anthropic-consults-law-firms-to-set-fair-negotiation-norms-before-ai-agents-start-cutting-deals/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-19-anthropic-enlists-law-firms-to-set-ai-negotiation-rules",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  },
+  {
+    "headline": "World Bank urges developing countries to build small AI",
+    "summary": "The World Bank is urging developing countries to build 'small AI', specialised models that run on basic mobile phones with weak connectivity. Chief knowledge officer Paschal Donohoe says this could compress development that once took centuries into decades. He cited Indian farmers who need soil analysis in their own language. At the World Bank and IMF annual meetings in Bangkok, IMF managing director Kristalina Georgieva warned that 40% of jobs worldwide could be augmented or eliminated by AI over time.",
+    "why_it_matters": "If you export to or source from developing markets, the World Bank argues low-cost AI in local languages could help your customers and suppliers. It says the tools must be adapted locally, and gives no timeline.",
+    "category": "Trends",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/18/world-bank-artificial-intelligence-developing-economies",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-10-19-world-bank-urges-developing-countries-to-build-small-ai",
+    "edition_published": "2026-10-19T03:57:00+10:30"
+  }
+]
