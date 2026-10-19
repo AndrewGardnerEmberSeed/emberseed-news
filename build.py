@@ -497,7 +497,7 @@ footer.site p{{margin:0}}
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="{main}/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c1.6 2.6 4.8 4.8 4.8 9a4.8 4.8 0 0 1-9.6 0c0-2 1-3.4 2.1-4.3.1 1.8 1 3 2.1 3.3-.4-2.6-.9-5.3.6-8Z"></path><circle cx="12" cy="20.5" r="1.1"></circle></svg>EmberSeed</a>
-<nav aria-label="Main"><a href="{base}index.html">AI news</a><a href="{base}archive.html">Archive</a><a href="{main}/#prices">Prices</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
+<nav aria-label="Main"><a href="{base}index.html">AI news</a><a href="{base}archive.html">Archive</a><a href="{main}/playbook">Playbook</a><a href="{main}/#prices">Prices</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
 </div></header>
 <main>
 """
