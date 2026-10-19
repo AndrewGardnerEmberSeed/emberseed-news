@@ -20,6 +20,7 @@ GitHub often starts scheduled jobs late (on 15 October, by four hours) or skips 
 - The old Squarespace News page is switched off, at `/news-first-edition`.
 - The job made its first edition on 16 October 2026. It was run by hand, because GitHub started that night's scheduled runs too late.
 - InnovationAus refuses GitHub's servers (403 Forbidden), so its stories don't come through. The other 39 feeds work.
+- Since 20 October 2026 the header is the main site's own menu (How it works, Prices, About, News, Playbook, Book a free chat), with News in orange. The archive is linked beside each edition's story count and in the footer. Keep the menu in step with `Website/home-1-main.html`.
 
 ## Setup
 
