@@ -474,6 +474,7 @@ header.site .wrap{{display:flex;flex-wrap:wrap;align-items:center;justify-conten
 .brand{{display:flex;align-items:center;gap:10px;text-decoration:none;color:#1A1F2D;font-family:'Bricolage Grotesque',sans-serif;font-weight:700;font-size:23px;letter-spacing:-0.01em}}
 nav{{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;font-size:16px;font-weight:500}}
 nav a{{color:#1A1F2D;text-decoration:none;padding:10px 0}}
+nav a[aria-current]{{color:#C2410C}}
 nav a.cta{{background:#C2410C;color:#FFFFFF;padding:12px 20px;border-radius:999px;font-weight:600}}
 main{{display:block;max-width:820px;margin:0 auto;padding:72px 24px 96px}}
 .eyebrow{{margin:0 0 14px;font-weight:700;color:#C2410C;font-size:14px;letter-spacing:0.08em;text-transform:uppercase}}
@@ -492,12 +493,13 @@ footer.site{{background:#1A1F2D;color:#C3C7D1;font-size:14px}}
 footer.site .wrap{{display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;padding:22px 24px}}
 footer.site a{{color:#C3C7D1}}
 footer.site p{{margin:0}}
+footer.site .links{{display:flex;flex-wrap:wrap;gap:6px 20px}}
 </style>
 </head>
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="{main}/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c1.6 2.6 4.8 4.8 4.8 9a4.8 4.8 0 0 1-9.6 0c0-2 1-3.4 2.1-4.3.1 1.8 1 3 2.1 3.3-.4-2.6-.9-5.3.6-8Z"></path><circle cx="12" cy="20.5" r="1.1"></circle></svg>EmberSeed</a>
-<nav aria-label="Main"><a href="{base}index.html">AI news</a><a href="{base}archive.html">Archive</a><a href="{main}/playbook">Playbook</a><a href="{main}/#prices">Prices</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
+<nav aria-label="Main"><a href="{main}/#how">How it works</a><a href="{main}/#prices">Prices</a><a href="{main}/#about">About</a><a href="{base}index.html" aria-current="page">News</a><a href="{main}/playbook">Playbook</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
 </div></header>
 <main>
 """
@@ -505,7 +507,7 @@ footer.site p{{margin:0}}
 FOOT = """</main>
 <footer class="site"><div class="wrap">
 <p>EmberSeed is a trading name of Wilderness Properties Pty Ltd · ACN 614 946 897 · Mylor SA 5153</p>
-<p><a href="{base}feed.xml">RSS</a> · <a href="{main}/privacy">Privacy</a> · <a href="{main}/how-i-use-ai">How I use AI</a></p>
+<p class="links"><a href="{base}index.html">News</a><a href="{main}/playbook">Playbook</a><a href="{main}/privacy">Privacy</a><a href="{main}/how-i-use-ai">How I use AI</a><a href="{base}archive.html">Archive</a><a href="{base}feed.xml">RSS</a></p>
 </div></footer>
 </body>
 </html>
@@ -550,7 +552,8 @@ def render(edition_date, stories, history):
              f'safety, and what it all means for business.</p>'
              + LABEL.format(main=MAIN_SITE))
     def edition(base):
-        return f'<h2>{esc(day)}</h2><p class="note">{count}</p>\n' + "".join(story_block(s, base=base) for s in stories)
+        return (f'<h2>{esc(day)}</h2><p class="note">{count} · <a href="{base}archive.html">Past editions</a></p>\n'
+                + "".join(story_block(s, base=base) for s in stories))
     SITE.joinpath("index.html").write_text(page("AI news | EmberSeed", f"AI news for {day}, in plain English.", intro + edition("")))
     SITE.joinpath("editions", f"{edition_date:%Y-%m-%d}.html").write_text(
         page(f"AI news, {day} | EmberSeed", f"AI news for {day}, in plain English.", intro + edition("../"), base="../"))
