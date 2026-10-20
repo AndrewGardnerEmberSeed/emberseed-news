@@ -16,7 +16,7 @@ GitHub often starts scheduled jobs late (on 15 October, by four hours) or skips 
 
 ## Status (16 October 2026)
 
-- Live at https://andrewgardneremberseed.github.io/emberseed-news/. The News links on emberseedautomation.com.au go to `/news`, which a Squarespace URL mapping redirects here.
+- Live at https://news.emberseedautomation.com.au/ since 21 October 2026 (before that at https://andrewgardneremberseed.github.io/emberseed-news/, which now forwards here). The News links on emberseedautomation.com.au go to `/news`, which a Squarespace URL mapping redirects here.
 - The old Squarespace News page is switched off, at `/news-first-edition`.
 - The job made its first edition on 16 October 2026. It was run by hand, because GitHub started that night's scheduled runs too late.
 - InnovationAus refuses GitHub's servers (403 Forbidden), so its stories don't come through. The other 39 feeds work.
@@ -34,7 +34,7 @@ Done:
 
   A separate workspace for the news lets it have its own spend limit (the Default workspace can't have one).
 
-Optional, custom address:
+The custom address (done 21 October 2026):
 
 - In Squarespace → Domains → DNS, add a CNAME record: host `news`, value `andrewgardneremberseed.github.io`.
 - Put `news.emberseedautomation.com.au` in **Settings → Pages → Custom domain** and tick **Enforce HTTPS**.
