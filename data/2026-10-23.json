@@ -1,0 +1,99 @@
+[
+  {
+    "headline": "Anthropic launches Claude Duet, an always-on agent",
+    "summary": "Anthropic has launched Claude Duet, a research preview of an agent that works on tasks in the background and asks approval before sensitive steps. The company says Duet is aimed at professionals and small businesses, and it builds a daily briefing from connected apps. It runs on Claude Opus 5.5 and links to more than 6,000 connectors, with Pro and Max users in the US joining a waitlist. Not yet announced for Australia.",
+    "why_it_matters": "If your office juggles invoices and scheduling, Duet could save admin time. Anthropic says it asks for approval before sensitive steps such as payments, but no Australian launch has been announced.",
+    "category": "New models",
+    "source_url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-10-23-anthropic-launches-claude-duet-an-always-on-agent",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Uber rolls ChatGPT Work out to all 30,000 staff",
+    "summary": "Uber is rolling ChatGPT Work out to its entire global workforce of about 30,000 people, the companies announced on 22 October. An earlier pilot with 1,000 staff, about 80% of them non-engineers, covered finance, operations and product teams, Uber's VP of engineering told TechCrunch. Uber hasn't disclosed the cost, and says it will track how staff use the tool. Uber says OpenAI worked closely with it on the integration.",
+    "why_it_matters": "If your team is weighing ChatGPT Work, Uber started with a small pilot and says it will track results before guiding wider rollout. That is a low-risk model to copy.",
+    "category": "Business",
+    "source_url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "OpenAI News"
+    ],
+    "slug": "2026-10-23-uber-rolls-chatgpt-work-out-to-all-30-000-staff",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Banks lock out AI agents that use customer logins",
+    "summary": "According to Axios, unauthorised third-party AI agents are already reaching US bank accounts, and some reportedly act without user instructions. The report relies on unnamed sources at several banks. Morgan Stanley, Bank of America, JPMorgan and Wells Fargo have moved to block or restrict such agents, with many aiming for read-only access. A Chase spokesperson told Axios that customers should not share usernames or passwords with anyone, AI agents included.",
+    "why_it_matters": "If your team lets AI tools log into bank accounts, check who holds those logins. Engadget says US law means American banks may not refund losses from agent actions users allowed; Australian rules were not covered.",
+    "category": "Safety & policy",
+    "source_url": "https://www.engadget.com/2294523/unauthorized-ai-agents-are-reportedly-already-accessing-us-bank-accounts/",
+    "source_name": "Engadget",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-10-23-banks-lock-out-ai-agents-that-use-customer-logins",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Barclays trims 5,000 roles as AI joins cost-cutting",
+    "summary": "Barclays plans to cut about 5,000 jobs, roughly 5% of its 93,000 global staff, as part of cost-saving plans its bosses say AI is helping drive. CFO Anna Cross said the actions aim to save more than £1.1bn in 2027, with around 60% in support functions, including fewer developers. Chief executive CS Venkatakrishnan says technology investment and simpler processes have driven the bulk of efficiency gains so far, with AI possibly more important later. Unite's Sharon Graham accuses the bank of using AI as an excuse.",
+    "why_it_matters": "If you're planning to cut costs with AI, note Barclays' chief says technology investment and simpler processes drove most gains so far. Check what is actually delivering savings before assuming AI means fewer staff.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-10-23-barclays-trims-5-000-roles-as-ai-joins-cost-cutting",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Suntory Oceania moves 90 per cent of data to Databricks",
+    "summary": "Suntory Oceania has moved about 90 per cent of its datasets, roughly 40 in total, onto Databricks over two years. Digital and IT director Matt Dixon told the SAP NOW AI Tour in Sydney the company is buying a couple of hundred Copilot Pro licences this year. A few hundred more are planned for next year. Suntory is also assessing agentic AI, starting with options built into its SAP core.",
+    "why_it_matters": "If your data sits across several old systems, Suntory Oceania's approach is worth noting: it spent two years moving to a central data platform so it could build AI tools on top.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/suntory-oceania-taps-databricks-copilot-pro-in-ai-drive-629805?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-10-23-suntory-oceania-moves-90-per-cent-of-data-to-databricks",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "1Password lets AI agents sign in without seeing passwords",
+    "summary": "Password manager 1Password has launched 1Password for Agents, which lets AI agents sign into online accounts without ever seeing or handling the password. According to The Verge, the agent verifies its identity with a digital key, then 1Password notifies the user which account is needed and why. Once the user approves on their own device, 1Password fills in the login, and access is limited to approved items for that session. Supported agents include Meta Muse, ChatGPT Work, Dots, Claude Duet, Grok Bot and Town. Pricing and availability have not yet been announced, including for Australia.",
+    "why_it_matters": "If you use AI agents to book, order or log into supplier portals, this keeps your passwords out of the bot's hands. Still, check every approval request, because agents can make ordering mistakes.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1016399/1password-ai-agent-password-sign-in",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-10-23-1password-lets-ai-agents-sign-in-without-seeing-passwords",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Microsoft says its diagnostic AI beats doctors in Science study",
+    "summary": "Microsoft says its Diagnostic Orchestrator, a tool that uses several AI agents to work through cases, diagnoses conditions more accurately than doctors. The study appeared in Science on 22 October. On New England Journal of Medicine cases, using Microsoft's own benchmark, it reached about 83 percent accuracy, against 36 percent for generalist doctors using references. It has only been tested on past cases. Microsoft's health lead says hospital trials with Beth Israel Deaconess Medical Center will likely start in the next couple of months, with no firm timeline.",
+    "why_it_matters": "If you run a health business, AI diagnosis tools may be coming, but Microsoft has not said when or how it will be available, and it still needs clinical validation.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1016690/suleyman-microsoft-diagnostic-orchestrator-science-medical-superintelligence",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-23-microsoft-says-its-diagnostic-ai-beats-doctors-in-science-st",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  },
+  {
+    "headline": "Gartner finds just 13 percent see major AI returns",
+    "summary": "Gartner surveyed 2,002 CIOs and other technology leaders, and only 13 percent report major or transformative returns from AI. Yet 58 percent of CIOs must deliver AI cost savings, while 51 percent expect AI to raise operating costs. Bloomberg CEO Vlad Kliatchko says it is too early to measure AI's economic payoff, though 75 percent of CEOs still plan to increase tech spending.",
+    "why_it_matters": "If your AI spending isn't paying off yet, Gartner says the firms that succeed decide early which projects are worth pursuing and which to shut down. It may be worth reviewing each project.",
+    "category": "Trends",
+    "source_url": "https://the-decoder.com/only-13-percent-of-companies-see-real-returns-from-ai-gartner-survey-finds/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-23-gartner-finds-just-13-percent-see-major-ai-returns",
+    "edition_published": "2026-10-23T05:10:00+10:30"
+  }
+]
