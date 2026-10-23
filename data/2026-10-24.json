@@ -1,0 +1,86 @@
+[
+  {
+    "headline": "Canva launches Craft, its first in-house image model",
+    "summary": "Canva has launched Canva Craft, its first in-house image model. The model plans a design before drawing it, and outputs images up to 2K resolution in more than 30 aspect ratios. Canva says it trained Craft mainly on millions of human-made templates from its library. It is available now to all users globally, and Canva says it ranks fourth on the Design Arena leaderboard.",
+    "why_it_matters": "If your team makes social posts or menus in Canva, Craft is already live in Dream Lab for everyone. Test it on text-heavy designs, since Canva says it handles legible text well.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "The Decoder",
+      "SmartCompany"
+    ],
+    "slug": "2026-10-24-canva-launches-craft-its-first-in-house-image-model",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "Google may use Gmail and Photos data for ads",
+    "summary": "Google's privacy policy now allows some personal data to be used for targeted ads. The change, dated 16 October, applies to users who have connected Gmail, Drive or Google Photos to AI Mode and other Search tools through Personal Intelligence. Google says advertisers never see that content or personal details such as names and email addresses. Ads also won't target sensitive categories such as health or religion.",
+    "why_it_matters": "If your team uses Google's AI search tools with work Gmail, Drive or Photos, review which apps are connected to Personal Intelligence. Disconnecting them, or turning off Personalised Recommendations, stops that content being used for ads.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-24-google-may-use-gmail-and-photos-data-for-ads",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "OpenAI nears $30 billion raise at lower valuation",
+    "summary": "OpenAI is reportedly close to raising up to US$30 billion at a US$1.25 trillion valuation, which excludes the new capital, according to CNBC, citing people familiar with the deal. UAE investors and Coatue are leading the round, which is positioned as a bridge ahead of a potential IPO. The Financial Times reports that OpenAI first pitched US$1.4 trillion but cut the target because demand was weaker than in earlier rounds. OpenAI declined to comment, and terms are still being negotiated.",
+    "why_it_matters": "If your business relies on ChatGPT, these funding talks suggest OpenAI has deep backing for now, though terms could still change.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/10/22/openai-funding-round-uae-investors.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "TechCrunch",
+      "The Decoder"
+    ],
+    "slug": "2026-10-24-openai-nears-30-billion-raise-at-lower-valuation",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "Etsy bans AI-generated recipes and patterns from marketplace",
+    "summary": "Etsy says it will stop merchants selling AI-generated recipes, patterns and other \"functional guides\" on its online marketplace. Sellers must also show a real item made from the instructions, with at least one unedited photo, and bot-only listings are barred. Etsy says many buyers can't tell which items involve AI, which it calls a top-three barrier to shopping more often. AI-generated art remains allowed if sellers play a clear role and disclose the AI use.",
+    "why_it_matters": "If you sell on Etsy, check your listings: AI-generated recipes and patterns are out, and every listing needs at least one unedited photo of the actual item. AI-generated art is still allowed if you play a clear role and disclose the AI use.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/10/22/etsy-bans-ai-generated-recipes-patterns-from-its-online-marketplace.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-10-24-etsy-bans-ai-generated-recipes-and-patterns-from-marketplace",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "Meta delays business terms after publisher pushback",
+    "summary": "Meta has pushed back the start date of its new business terms to 20 November, after publishers objected that the terms appeared to let it scrape news sites for AI training. The terms were due to take effect on 30 October. Meta removed the word \"train\" from the wording, but legal experts say the change does not rule out training. The News/Media Alliance has written to Mark Zuckerberg demanding revisions, and publishers in the EU and UK have urged regulators to halt the terms. Meta spokesperson Daniel Roberts says the delay allows time to explain the changes, and that the update gives Meta no new rights over robots.txt preferences.",
+    "why_it_matters": "If you publish content online and use Meta's business accounts, check your robots.txt file and watch for Meta's explanation of the terms before 20 November. Legal experts say the revised wording may still allow AI training.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-24-meta-delays-business-terms-after-publisher-pushback",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "Meta hit with Australian class action over children's harm",
+    "summary": "Meta faces a class action in Australia's Federal Court over Facebook and Instagram. Law firm MinterEllison filed the suit this month for eight plaintiffs who say they were harmed while under 18, alleging algorithms exposed them to harmful content and kept them addicted. Meta says it will defend itself vigorously. A court suppression order bars reporting that could reveal the applicants' identities, or the statement of claim. The claim seeks compensation and could be the first in Australia to blame social media for harming users.",
+    "why_it_matters": "If your business advertises on Facebook or Instagram, this case is only at the filing stage and the allegations are unproven. The sources don't say it will change how the platforms operate, so there is nothing to act on yet.",
+    "category": "Safety & policy",
+    "source_url": "https://www.itnews.com.au/news/meta-sued-in-australian-class-action-629847?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-10-24-meta-hit-with-australian-class-action-over-children-s-harm",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  },
+  {
+    "headline": "Spotify bets on being the music service AI agents pick",
+    "summary": "Spotify reported 788 million monthly active users and nearly €5 billion (about US$5.6 billion) in third-quarter revenue. Co-CEO Gustav Söderström says AI agents could help the streamer, which already integrates with Meta's Muse, ChatGPT and Claude. He says Spotify does not send listener data to partners, and its own systems choose what to play. TechCrunch notes Amazon has blocked Meta's Muse from shopping on its platform, an example of how major platforms may restrict outside agents.",
+    "why_it_matters": "If customers find you through apps, AI assistants may become another route to your business. As Amazon's block of Muse shows, platforms can restrict outside agents, so check who controls access.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/10/22/spotifys-current-ai-bet-is-about-being-the-music-service-that-agents-choose/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-10-24-spotify-bets-on-being-the-music-service-ai-agents-pick",
+    "edition_published": "2026-10-24T05:02:00+10:30"
+  }
+]
