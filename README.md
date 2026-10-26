@@ -17,6 +17,7 @@ GitHub often starts scheduled jobs late (on 15 October, by four hours) or skips 
 ## Status (16 October 2026)
 
 - Live at https://news.emberseedautomation.com.au/ since 21 October 2026 (before that at https://andrewgardneremberseed.github.io/emberseed-news/, which now forwards here). The News links on emberseedautomation.com.au go to `/news`, which a Squarespace URL mapping redirects here.
+- **Google** (27 October 2026): every page names its own address in a canonical tag, the site's own links go to `/` rather than `/index.html`, and each build writes `sitemap.xml` and a `robots.txt` that points to it. Search Console had left the front page out of Google as a "duplicate without user-selected canonical" (26 October). The sitemap is in Search Console under the domain property emberseedautomation.com.au.
 - The old Squarespace News page is switched off, at `/news-first-edition`.
 - The job made its first edition on 16 October 2026. It was run by hand, because GitHub started that night's scheduled runs too late.
 - InnovationAus refuses GitHub's servers (403 Forbidden), so its stories don't come through. The other 39 feeds work.

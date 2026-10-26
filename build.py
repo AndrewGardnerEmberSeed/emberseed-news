@@ -454,6 +454,7 @@ HEAD = """<!doctype html>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{title}</title>
 <meta name="description" content="{description}">
+<link rel="canonical" href="{canonical}">
 <link rel="alternate" type="application/rss+xml" title="EmberSeed AI News" href="{base}feed.xml">
 <link rel="icon" href="{base}favicon.svg" type="image/svg+xml">
 <link rel="icon" href="{base}favicon-32.png" sizes="32x32" type="image/png">
@@ -499,7 +500,7 @@ footer.site .links{{display:flex;flex-wrap:wrap;gap:6px 20px}}
 <body>
 <header class="site"><div class="wrap">
 <a class="brand" href="{main}/"><svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#E8A33D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.5c1.6 2.6 4.8 4.8 4.8 9a4.8 4.8 0 0 1-9.6 0c0-2 1-3.4 2.1-4.3.1 1.8 1 3 2.1 3.3-.4-2.6-.9-5.3.6-8Z"></path><circle cx="12" cy="20.5" r="1.1"></circle></svg>EmberSeed</a>
-<nav aria-label="Main"><a href="{main}/#how">How it works</a><a href="{main}/#prices">Prices</a><a href="{main}/#about">About</a><a href="{base}index.html" aria-current="page">News</a><a href="{main}/playbook">Playbook</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
+<nav aria-label="Main"><a href="{main}/#how">How it works</a><a href="{main}/#prices">Prices</a><a href="{main}/#about">About</a><a href="{home}" aria-current="page">News</a><a href="{main}/playbook">Playbook</a><a class="cta" href="{main}/#contact">Book a free chat</a></nav>
 </div></header>
 <main>
 """
@@ -507,7 +508,7 @@ footer.site .links{{display:flex;flex-wrap:wrap;gap:6px 20px}}
 FOOT = """</main>
 <footer class="site"><div class="wrap">
 <p>EmberSeed is a trading name of Wilderness Properties Pty Ltd · ACN 614 946 897 · Mylor SA 5153</p>
-<p class="links"><a href="{base}index.html">News</a><a href="{main}/playbook">Playbook</a><a href="{main}/privacy">Privacy</a><a href="{main}/how-i-use-ai">How I use AI</a><a href="{base}archive.html">Archive</a><a href="{base}feed.xml">RSS</a></p>
+<p class="links"><a href="{home}">News</a><a href="{main}/playbook">Playbook</a><a href="{main}/privacy">Privacy</a><a href="{main}/how-i-use-ai">How I use AI</a><a href="{base}archive.html">Archive</a><a href="{base}feed.xml">RSS</a></p>
 </div></footer>
 </body>
 </html>
@@ -519,9 +520,14 @@ LABEL = ('<p class="note"><strong style="color:#1A1F2D">Summarised by AI, read b
          'to its source. <a href="{main}/how-i-use-ai">How I use AI</a></p>')
 
 
-def page(title, description, body, base=""):
-    return (HEAD.format(title=esc(title), description=esc(description), base=base, main=MAIN_SITE)
-            + body + FOOT.format(base=base, main=MAIN_SITE))
+def page(title, description, body, base="", path=""):
+    # path is the page's place in the site ("" for the front page). Every page names its one address in a canonical
+    # tag: on 26 Oct 2026 Search Console left the front page out of Google as a "duplicate without user-selected
+    # canonical", since the same page was also at /index.html.
+    home = base or "./"
+    return (HEAD.format(title=esc(title), description=esc(description), base=base, home=home, main=MAIN_SITE,
+                        canonical=esc(f"{SITE_URL}/{path}"))
+            + body + FOOT.format(base=base, home=home, main=MAIN_SITE))
 
 
 def nice_date(d):
@@ -556,20 +562,23 @@ def render(edition_date, stories, history):
                 + "".join(story_block(s, base=base) for s in stories))
     SITE.joinpath("index.html").write_text(page("AI news | EmberSeed", f"AI news for {day}, in plain English.", intro + edition("")))
     SITE.joinpath("editions", f"{edition_date:%Y-%m-%d}.html").write_text(
-        page(f"AI news, {day} | EmberSeed", f"AI news for {day}, in plain English.", intro + edition("../"), base="../"))
+        page(f"AI news, {day} | EmberSeed", f"AI news for {day}, in plain English.", intro + edition("../"), base="../",
+             path=f"editions/{edition_date:%Y-%m-%d}.html"))
 
     for s in stories:
-        body = (f'<p class="eyebrow"><a href="../index.html">AI news</a> · {esc(day)}</p>'
+        body = (f'<p class="eyebrow"><a href="../">AI news</a> · {esc(day)}</p>'
                 + story_block(s, link_headline=False).replace('<article class="story">', '<article class="story" style="border-top:0;padding-top:0">')
                 + LABEL.format(main=MAIN_SITE))
         SITE.joinpath("stories", f"{s['slug']}.html").write_text(
-            page(f"{s['headline']} | EmberSeed AI news", s["summary"][:155], body, base="../"))
+            page(f"{s['headline']} | EmberSeed AI news", s["summary"][:155], body, base="../",
+                 path=f"stories/{s['slug']}.html"))
 
     rows = "".join(
         f'<li><a href="editions/{h["date"]}.html">{esc(h["label"])}</a> · {h["count"]} stories</li>'
         for h in history)
     SITE.joinpath("archive.html").write_text(page("AI news archive | EmberSeed", "Every edition of EmberSeed AI news.",
-        f'<p class="eyebrow">AI news</p><h1>Archive</h1><ul style="padding-left:22px;margin-top:28px">{rows}</ul>'))
+        f'<p class="eyebrow">AI news</p><h1>Archive</h1><ul style="padding-left:22px;margin-top:28px">{rows}</ul>',
+        path="archive.html"))
 
 
 def write_feed(all_stories):
@@ -592,6 +601,23 @@ def write_feed(all_stories):
            "<language>en-au</language>"
            + "".join(items) + "</channel></rss>\n")
     SITE.joinpath("feed.xml").write_text(xml)
+
+
+def write_sitemap(editions):
+    # Every page Google should index, newest date each, and a robots.txt that points to the list. Search Console has
+    # the sitemap too (added 27 Oct 2026).
+    urls = {}
+    for d, stories in editions:
+        urls[f"{SITE_URL}/editions/{d}.html"] = d
+        for s in stories:
+            urls[f"{SITE_URL}/stories/{s['slug']}.html"] = d
+    latest = editions[-1][0]
+    urls = {f"{SITE_URL}/": latest, f"{SITE_URL}/archive.html": latest, **urls}
+    xml = ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+           + "".join(f"<url><loc>{esc(u)}</loc><lastmod>{d}</lastmod></url>\n" for u, d in urls.items())
+           + "</urlset>\n")
+    SITE.joinpath("sitemap.xml").write_text(xml)
+    SITE.joinpath("robots.txt").write_text(f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n")
 
 
 # ---------------------------------------------------------------- main
@@ -688,6 +714,7 @@ def rebuild_site():
     for d, stories in editions:
         render(d, stories, history)
     write_feed([s for _, stories in reversed(editions) for s in stories])
+    write_sitemap(editions)
     shutil.copytree(STATIC, SITE, dirs_exist_ok=True)
     print(f"Site rebuilt: {len(files)} editions, latest {files[-1].stem}.")
 
