@@ -1,0 +1,99 @@
+[
+  {
+    "headline": "Google launches Genie 4 world model for trusted testers",
+    "summary": "Google DeepMind has released Genie 4, its newest world model, as a research preview for trusted testers. Google says it can keep a scene consistent for about two minutes, double Genie 3's one-minute limit, and users can change the scene mid-simulation with text prompts. The model adds real-time audio, including music and ambient noise, and Google says it uses Gemini 3.8 Flash to help run its simulations, according to The Verge. Google warns that details and objects can shift over longer simulations.",
+    "why_it_matters": "If your business prototypes products, creative content or training scenarios, Genie 4 is one to watch, but it is not yet announced for Australia.",
+    "category": "New models",
+    "source_url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+    "source_name": "Google DeepMind blog",
+    "also_reported_by": [
+      "The Verge",
+      "TechCrunch",
+      "Ars Technica",
+      "The Decoder"
+    ],
+    "slug": "2026-10-28-google-launches-genie-4-world-model-for-trusted-testers",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "OpenAI's GPT-6.1 Terra halves API prices",
+    "summary": "OpenAI has released GPT-6.1 Terra, which it says pushes cost-to-performance further than its predecessors. API prices are half those of GPT-5.6 Terra: US$1 per million input tokens and US$5 per million output tokens, the text chunks firms bill by. Artificial Analysis says it costs under a third per task at its highest reasoning setting, US$0.40 against US$1.40 for GPT-5.6 Terra. OpenAI says it is available now to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex, and through the API, though Australian pricing is not yet announced.",
+    "why_it_matters": "If your team uses ChatGPT or builds tools on OpenAI's API, lower prices could cut costs, but check Australian pricing before you budget.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/gpt-6-1-terra-halves-openais-api-prices-and-still-gains-ground-on-its-larger-models/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-28-openai-s-gpt-6-1-terra-halves-api-prices",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Apple adds AI assistants to Pages, Keynote and Numbers",
+    "summary": "Apple is adding an AI assistant to Keynote, Pages and Numbers, built on models from Apple and OpenAI. In Pages it can draft and restructure text, in Keynote it helps design and refine slides, and in Numbers it suggests chart types and builds tables. The assistant is rolling out in beta to Apple Intelligence devices running iOS 27, iPadOS 27 or macOS 27 or later, according to The Verge. Apple says the Creator Studio updates arrive in November as a free update for existing subscribers. Australian availability and pricing are not yet announced.",
+    "why_it_matters": "If your team builds proposals or slide decks on Apple devices, this could save drafting time. It's beta, and Australian availability isn't confirmed, so check your devices meet the iOS 27 or macOS 27 requirement first.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1019373/apple-pages-keynote-numbers-ai-chatbot-update",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Apple Newsroom"
+    ],
+    "slug": "2026-10-28-apple-adds-ai-assistants-to-pages-keynote-and-numbers",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Mozilla adds form filling and page watching to Firefox",
+    "summary": "Mozilla has added two features to Firefox's Smart Window, its AI browsing mode. The first, Fill from sources, appears on forms with at least four text fields and drafts answers from the tabs you select, such as a LinkedIn page for a job application. The second lets you type /watch to track webpages for sales or job listings, with notifications when a change is detected. Both are rolling out in the Smart Window beta on desktop in the US and Canada, with other countries due in the \"coming months\".",
+    "why_it_matters": "If your team fills in similar forms, Firefox can now draft answers from your open tabs, but check suggestions before submitting, as Mozilla says the page data goes to Google's Gemini. The features are US and Canada only for now; Australia is expected in the \"coming months\".",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1019551/firefox-smart-window-ai-fill-forms",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-28-mozilla-adds-form-filling-and-page-watching-to-firefox",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Southern Cross Credit Union puts AI agent on balance calls",
+    "summary": "Southern Cross Credit Union has deployed an AI phone agent called Nova to answer customers' account balance calls. Built in six weeks with Salesforce engineers, it is the first Agentforce Voice-based agent to launch in the A/NZ region, according to iTnews. Average waits had grown from under two minutes to nearly eight before the launch. Nova now handles seven percent of all calls, according to a written case study. The credit union also plans a website chat agent for general questions such as branch hours.",
+    "why_it_matters": "If your phone lines back up with simple questions, a voice agent that can look up live data may free your staff for harder calls. Start with one question type your systems can answer.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/southern-cross-credit-union-asks-ai-agent-to-handle-account-balance-requests-629940?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-10-28-southern-cross-credit-union-puts-ai-agent-on-balance-calls",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Amazon tells engineers to be pickier with AI tools",
+    "summary": "Amazon has issued AI usage guidelines for its software engineers, urging them to avoid \"tokenmaxxing\", where developers use AI as much as possible with little regard for output. The memo, circulated internally in September and posted publicly on 27 October, calls metrics such as token usage, the units of data AI models process, and adoption rates \"deeply flawed\" ways to measure AI use. An Amazon spokesperson says the company hasn't capped employees' token use, though it shut an internal leaderboard in May after staff tokenmaxxed to climb the ranks. Amazon also says work that doesn't benefit from current AI tools is \"a finding, not a failing\".",
+    "why_it_matters": "If your team uses AI tools, Amazon's memo suggests judging them by long-term outcomes such as finished work, not usage counts alone, which it says can drive up costs and complexity.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/10/27/amazon-ai-coding-tokenmaxxing.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-10-28-amazon-tells-engineers-to-be-pickier-with-ai-tools",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Survey: 18% of borrowers used AI on loan documents",
+    "summary": "Research platform OurTop10 says 18 per cent of Australian borrowers have used AI to create or alter documents for a home loan application. Its survey of 1,018 borrowers found bank statements were most often affected, followed by employment documents at 9 per cent and payslips at 6 per cent. The findings do not separate honest preparation from deliberate falsification, and OurTop10 warns that altering payslips or bank statements is fraud.",
+    "why_it_matters": "If you apply for a home loan, altered payslips or bank statements can get an application declined, the loan called in, or lead to criminal charges, according to OurTop10. If you check income documents, note it warns lenders' detection may lag.",
+    "category": "Safety & policy",
+    "source_url": "https://ia.acs.org.au/article/2026/1-in-5-borrowers-use-ai-to-fake-mortgage-documents-.html",
+    "source_name": "Information Age",
+    "also_reported_by": [],
+    "slug": "2026-10-28-survey-18-of-borrowers-used-ai-on-loan-documents",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  },
+  {
+    "headline": "Australian authors and publishers oppose AI copyright opt-out plan",
+    "summary": "A proposal leaked last month shows the government is considering an opt-out copyright system, where AI companies could train on authored work without permission until rights holders tell them to stop. At last week's Joint Select Committee hearings, writers and publishers urged the government not to pursue it. Hachette Australia and New Zealand head Louise Stark said an opt-out model asks government to reverse a basic principle: seek permission first. The Australian Publishers Association also wants laws requiring disclosure of AI use in texts.",
+    "why_it_matters": "If you write, publish or sell creative work online, the leaked proposal could let AI firms use it unless you object. It is only under consideration, and the committee's final report is due 30 November.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-10-28/can-australian-publishing-survive-rise-of-ai/107251850",
+    "source_name": "ABC News",
+    "also_reported_by": [
+      "The Guardian"
+    ],
+    "slug": "2026-10-28-australian-authors-and-publishers-oppose-ai-copyright-opt-ou",
+    "edition_published": "2026-10-28T06:00:00+10:30"
+  }
+]
