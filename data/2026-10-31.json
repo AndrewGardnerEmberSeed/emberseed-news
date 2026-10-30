@@ -1,0 +1,96 @@
+[
+  {
+    "headline": "Alphabet shares slide as AI answers dent Google search ads",
+    "summary": "Alphabet, Google's parent company, lost just over US$500bn in value on Thursday after reporting that its own AI summaries were hitting search advertising revenue. Chief business officer Philipp Schindler said Google's conversational \"AI mode\" was eating into ad income from traditional search results, and CNBC reports he partly blamed lower earnings from ads in AI Mode. Search revenue reached about US$63bn, up 12% but below analyst estimates, and shares fell about 13%, the steepest drop on record.",
+    "why_it_matters": "If you spend on Google search ads, check your enquiries and costs monthly. Google says AI Mode is cutting its ad income from traditional results, and ads inside AI answers are still being scaled up.",
+    "category": "Business",
+    "source_url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [
+      "CNBC Technology",
+      "Ars Technica",
+      "The Decoder"
+    ],
+    "slug": "2026-10-31-alphabet-shares-slide-as-ai-answers-dent-google-search-ads",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "Victorian lawyers adopt AI, but few pass savings on",
+    "summary": "More than half of Victorian lawyers now use AI, according to a 2026 census of 2,221 lawyers run by the Victorian Legal Services Board and the Commissioner's legal services research centre. Usage rose from 37% last year to 55%, but only 26% said AI had lowered their client fees. Nearly half said clients using AI increased their time and effort, and 46% said clients arrive with inaccurate or misleading information.",
+    "why_it_matters": "If you are a lawyer, or use one, expect AI-assisted clients to add checking time: nearly half of surveyed Victorian lawyers report more work, and only 26% have cut fees.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/law/2026/oct/30/victorian-lawyers-ai-clients-fees",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-10-31-victorian-lawyers-adopt-ai-but-few-pass-savings-on",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "Senators warn AI copyright change could breach constitution",
+    "summary": "Coalition senators and the recording industry warn that changing copyright law so AI companies can scrape music, books and journalism could breach section 51 of the constitution, which allows laws on \"the acquisition of property on just terms\". Constitutional expert Anne Twomey says this is \"potentially\" a concern, depending on how legislation is drafted, but notes no legislative proposal has been aired. The attorney general's spokesperson says the government is committed to supporting creatives and that any changes must deliver \"fair compensation\".",
+    "why_it_matters": "If you create or license writing, music or photos, watch the federal AI announcement the Guardian says is looming. Labor is reportedly weighing copyright changes, but nothing has been proposed yet.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/law/2026/oct/31/experts-warn-ai-copyright-changes-could-breach-australian-constitution-and-spark-huge-compensation-rights-case",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-10-31-senators-warn-ai-copyright-change-could-breach-constitution",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "OpenAI doubles usage limits on Pro plans",
+    "summary": "OpenAI has doubled the Work and Codex usage limits, or quotas (the caps on how much each plan allows), on its Pro 100 and Pro 500 plans, as it competes with Anthropic. On Pro 200, it doubled the lower quota and reversed a planned cut after user pushback. The Plus plan is unchanged, and existing customers get the new limits automatically. OpenAI says doubling a quota doesn't mean twice as many completed tasks, because usage varies by model, task type and settings.",
+    "why_it_matters": "If your team uses a Pro 100, 200 or 500 plan, expect more room before limits hit, but not double the output. Plus is unchanged. Australian pricing and availability were not covered.",
+    "category": "Industry",
+    "source_url": "https://the-decoder.com/openai-doubles-usage-limits-on-pro-plans-as-competition-with-anthropic-heats-up/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-10-31-openai-doubles-usage-limits-on-pro-plans",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "Gemini now edits Google Docs and PDFs within chats",
+    "summary": "Google has added file editing to Gemini, so users can generate, preview and edit PDFs, Google Docs, Google Sheets, slide decks, Markdown, TXT files and code inside the chat. The feature is available from 29 October for all Gemini users, though only PDFs work on web and mobile; other formats are web-only for now. Google says users can expand documents full-screen and highlight text to ask Gemini for changes, such as turning a table into a graph. The Verge notes Anthropic launched a similar feature for Claude earlier this year.",
+    "why_it_matters": "If your team drafts documents or slides in Gemini, you can now tidy them in the same chat instead of downloading them. Australian availability is not yet announced.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1022519/google-gemini-file-editing-documents-pdfs",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-31-gemini-now-edits-google-docs-and-pdfs-within-chats",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "Cursor pulls tampered Claude Code extension from marketplace",
+    "summary": "Cursor says a tampered Claude Code extension was available in its VS Code extension marketplace on Thursday for about eleven hours, potentially reaching up to 5,000 users. Anthropic had no involvement in developing it. The extension tried to collect hostname, username, operating system and public IP address, and attempted to set up remote access for the attacker, which Cursor says would likely have failed on most machines because it needs admin privileges. Cursor removed the extension, took the marketplace offline temporarily, and says no other extensions were affected.",
+    "why_it_matters": "If your team uses Cursor, check whether anyone installed the Claude Code extension on Thursday, as Cursor says the tampered version was live for about eleven hours. If so, ask your IT support for advice.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/malicious-claude-code-extension-in-cursors-marketplace-attempted-remote-access-and-data-theft/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "Fast Company"
+    ],
+    "slug": "2026-10-31-cursor-pulls-tampered-claude-code-extension-from-marketplace",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "OpenAI-backed Thrive Holdings buys security firm ADT",
+    "summary": "OpenAI-backed Thrive Holdings has acquired physical security company ADT for US$10 per share, about US$7.6 billion in equity, the companies announced on 29 October. ADT puts the total enterprise value at US$15.3 billion. Thrive Holdings, a holding company spun out of Thrive Capital, says it owns more than 75 companies and aims to revitalise them with AI. OpenAI supplies AI models and forward-deployed engineers, staff who work directly with its partners' businesses, to those companies. Neither firm has named its new AI security products yet, though both say they plan to invest in and release them.",
+    "why_it_matters": "If you use ADT, expect new AI-powered security products eventually, though none are named yet. ADT will form the base of Thrive Holdings' smart home security business. Nothing has been announced for Australia.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/10/29/openai-backed-thrive-holdings-acquires-adt/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-10-31-openai-backed-thrive-holdings-buys-security-firm-adt",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  },
+  {
+    "headline": "Starbucks explores AI drive-thru menus that recognise arriving customers",
+    "summary": "Starbucks is exploring AI-powered drive-thru experiences that recognise participating customers as they arrive and show personalised digital menus. CEO Brian Niccol outlined the plan on an earnings call on Thursday, calling it still early and saying the company will test, learn and scale what works. From 2027, Starbucks will also test background AI models to help baristas enter orders more accurately. Launch timing is unclear, and nothing has been announced for Australia.",
+    "why_it_matters": "If you run a café or takeaway, customers may come to expect personalised ordering, as Starbucks, Taco Bell and McDonald's all trial it. Ask your point-of-sale provider what it plans.",
+    "category": "Business",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1023440/starbucks-ai-personalized-menu-drive-thru",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-10-31-starbucks-explores-ai-drive-thru-menus-that-recognise-arrivi",
+    "edition_published": "2026-10-31T06:02:00+10:30"
+  }
+]
