@@ -1,0 +1,98 @@
+[
+  {
+    "headline": "OpenAI's funding round falls short of its target",
+    "summary": "OpenAI has reportedly secured about US$11 billion so far in its latest funding round, according to The Wall Street Journal. The Financial Times reports the company has lowered its target from US$30 billion to US$20 billion. The round was earlier reported at a US$1.4 trillion valuation, then US$1.25 trillion. TechCrunch says Wall Street investors have grown wary of heavy AI infrastructure spending amid a tech sell-off. OpenAI has been asked for comment.",
+    "why_it_matters": "If your business uses OpenAI's tools, the funding squeeze may affect pricing and product plans. Check contract terms before committing to long agreements.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/10/31/openai-reportedly-lowers-funding-target-for-new-round/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-01-openai-s-funding-round-falls-short-of-its-target",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Alphabet, Intel slide as investors question AI spending returns",
+    "summary": "Tech stocks fell sharply this week, with nearly US$1tn wiped off the tech-heavy Nasdaq in one week, according to The Guardian. Alphabet dropped more than 12% on Thursday, losing US$500bn in market value, after telling investors it burned more cash on AI investment. The BBC says Alphabet also revealed AI search summaries were affecting its search advertising revenue. Intel shares fell about 28% on Friday despite a stronger profit, after it gave a weak forecast.",
+    "why_it_matters": "If you rely on Google for customers, Alphabet says its AI search summaries are affecting its search advertising revenue, and Reddit warns of lower referral traffic. It's worth checking how people find your business.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/technology/2026/oct/30/tech-stocks-drop-earnings-report",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "BBC Technology",
+      "CNBC Technology",
+      "TechCrunch"
+    ],
+    "slug": "2026-11-01-alphabet-intel-slide-as-investors-question-ai-spending-retur",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Microsoft offers voluntary severance to a quarter of staff",
+    "summary": "Microsoft is offering voluntary severance to about 60,000 employees, roughly a quarter of its workforce. The offer covers staff at vice president level or below in the US, Canada, India and the UK, but excludes data centre, sales, cybersecurity and quantum computing teams. It is the company's second such program this year, after buyouts for 8,750 US staff in May and 4,800 job cuts in July. Chief People Officer Amy Coleman calls the packages \"another way to adapt their workforce to changing needs.\"",
+    "why_it_matters": "If your business uses Windows or Copilot, note that Microsoft's offer fully includes those teams, while data centre, sales and cybersecurity staff are excluded. Microsoft hasn't said how support or products might change.",
+    "category": "Business",
+    "source_url": "https://the-decoder.com/microsoft-offers-a-quarter-of-its-workforce-voluntary-severance-while-shielding-ai-critical-teams/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-01-microsoft-offers-voluntary-severance-to-a-quarter-of-staff",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Anthropic, OpenAI, Google and Microsoft back shared scraping opt-out",
+    "summary": "OpenAI, Google, Microsoft and Anthropic say they will adopt a shared way for publishers to opt out of AI scraping. The signal, a \"policy token\" in a site's robots.txt file, lets owners set AI training preferences once. Anthropic has already adopted it, Google and Microsoft plan to support it next year, and OpenAI says \"coming months\". Meta has voiced support but hasn't said whether it will honour the signal.",
+    "why_it_matters": "If you run a website, this could eventually let you set AI training preferences once, rather than firm by firm. Timing varies by company, and Meta hasn't committed, so check your settings.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-01-anthropic-openai-google-and-microsoft-back-shared-scraping-o",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Quantum DC's proposed Tungkillo AI data centre faces local protest",
+    "summary": "Quantum DC has proposed a 1,200-megawatt AI data centre across 120 hectares at Tungkillo, about 41 kilometres east of Adelaide's CBD. Residents held a rally in Mannum on Saturday, raising concerns about land, water, noise and light pollution. Local organiser Magdalene Lippett says Quantum DC declined to attend. The company postponed its consultations to 20 and 21 November and says it will lodge no application until they are held.",
+    "why_it_matters": "If your business relies on local water, land or power, watch this planning process closely, as proposals can change before any application is lodged.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-10-31/ai-data-centre-protest-adelaide-hills/107332222",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-01-quantum-dc-s-proposed-tungkillo-ai-data-centre-faces-local-p",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Zest's restaurant concierge books tables over text messages",
+    "summary": "Restaurant app Zest has launched an AI concierge that works inside text messages and can book tables. Founder Mario Gomez-Hall says users can text it for recommendations, and it can check availability and reserve through OpenTable, Resy and SevenRooms. In TechCrunch's tests, suggestions matched taste and conditions such as party size and time of day. Zest can also join group chats, blend everyone's preferences, and book for the whole group.",
+    "why_it_matters": "If your team organises group dinners or client lunches, texting a booking thread could save back-and-forth. Zest appears US-focused, with a US phone number, and Australian availability is not yet announced.",
+    "category": "Applications",
+    "source_url": "https://techcrunch.com/2026/10/30/zests-new-ai-agent-finds-restaurants-and-books-reservations-over-text/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-01-zest-s-restaurant-concierge-books-tables-over-text-messages",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Apple brings Apple Intelligence to China with iOS 27.3",
+    "summary": "Apple says it will bring Apple Intelligence to China through an iOS 27.3 beta launching 4 November, with a full release due in December. The rollout leaves out the new Siri, offering earlier features instead: notification summaries, real-time translation, writing and proofreading tools, visual intelligence and object removal from photos. Apple also says it has worked with Alibaba to add its Qwen chatbot to some experiences. Apple announced the plan on its Chinese newsroom, as reported by MacRumors.",
+    "why_it_matters": "If you sell to customers in China, Apple says its earlier AI tools arrive there in a 4 November beta, with a full release in December, but not the new Siri. Nothing here changes Australian availability.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-01-apple-brings-apple-intelligence-to-china-with-ios-27-3",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  },
+  {
+    "headline": "Reddit shares slump 29% as Google AI cuts search traffic",
+    "summary": "Reddit shares fell 29.22% on Friday, its worst day since listing in 2024. The drop followed a fourth-quarter sales forecast of US$1 billion to US$1.03 billion, below analysts' US$1.05 billion estimate. Q3 sales rose 53% and beat expectations. CEO Steve Huffman says Google search referrals fell \"meaningfully\" as AI grew, and Reddit plans to test requiring logins to view content.",
+    "why_it_matters": "If you sell online or publish content, track how much of your traffic comes from Google search, because Reddit says AI answers cut referrals. Plan for more than one source of visitors.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/10/30/reddit-stock-q3-earnings.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-01-reddit-shares-slump-29-as-google-ai-cuts-search-traffic",
+    "edition_published": "2026-11-01T05:09:00+10:30"
+  }
+]
