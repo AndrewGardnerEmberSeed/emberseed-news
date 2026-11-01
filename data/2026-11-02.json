@@ -1,0 +1,90 @@
+[
+  {
+    "headline": "OpenAI merges ChatGPT Chat and Work under one usage budget",
+    "summary": "OpenAI is merging the Chat and Work modes of ChatGPT, with Plus, Pro and Business plans sharing a single token budget across ChatGPT and Codex from December, according to an updated OpenAI support page. Tokens, the chunks of text AI firms use to measure usage, mean complex models and tasks drain the budget faster. Chats using Instant models won't count toward it, but The Decoder expects heavy use on cheaper plans will likely mean lower-quality results. Users can check balances in Settings and, once they hit the limit, wait for a reset, upgrade or buy extra credits.",
+    "why_it_matters": "If your team uses ChatGPT Plus, Pro or Business, check your usage in Settings before December, since heavy work could hit the shared limit sooner.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-02-openai-merges-chatgpt-chat-and-work-under-one-usage-budget",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Banks and retailers split on blocking AI shopping agents",
+    "summary": "Several large US firms, including JPMorgan Chase, Amazon and Kohl's, are moving to block personal AI agents such as Meta's Muse. Walmart is taking the opposite approach, opening its site to customer agents that see the same prices as human shoppers. An audit of 51 large US retailers found only 11 have a deliberate position, and none lets a verified agent complete a purchase. Amazon says it has asked Meta to remove Amazon from Muse, while Accenture's Michael Abbott argues blocking agents won't work long term.",
+    "why_it_matters": "If you run an online shop, check whether your site's bot rules accidentally block customers' shopping agents. An audit of 51 large US retailers found 37 did so by accident, through older rules written for scrapers.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/01/jpmorgan-amazon-ai-agents-meta-muse.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-02-banks-and-retailers-split-on-blocking-ai-shopping-agents",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Grayndler artists push back on Labor's AI copyright plan",
+    "summary": "Labor is considering giving AI companies access to Australian creatives' work by default, as it pursues a compromise with US tech giants, according to The Guardian. Artists in Grayndler, Anthony Albanese's inner-west Sydney seat, are pushing back. Anthropic has suggested an opt-out model, where content can be scraped unless a rights holder objects. Coalition senators and the recording industry warn this could amount to an acquisition of property by the government. Albanese has promised \"the strongest possible protection\".",
+    "why_it_matters": "If you publish photos, designs or writing online, watch for the government's draft laws, expected by the end of the year. Nothing is decided, and an opt-out model is only one option under discussion.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/01/artists-against-ai-proposal-anthony-albanese-grayndler-sydney-inner-west",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-02-grayndler-artists-push-back-on-labor-s-ai-copyright-plan",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Santander and Novartis start tallying AI payoffs in earnings",
+    "summary": "Some large companies now report financial gains from AI, as third-quarter earnings season begins. Spanish bank Santander said AI initiatives generated 194 million euros (US$216 million) in business value in the first nine months of 2026. Novartis CEO Vas Narasimhan said it was the first quarter AI had tangibly improved the bottom line, though the drugmaker did not quantify the amount. Carlsberg's CEO said the company isn't seeing AI benefits at scale.",
+    "why_it_matters": "If you're weighing AI spending, ask for measurable results, not promises. Track one figure, such as cost per enquiry or hours saved, before and after each project.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/11/01/ai-investments-company-earnings.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-02-santander-and-novartis-start-tallying-ai-payoffs-in-earnings",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Meta's AI ads pull ahead as chatbots pressure Google Search",
+    "summary": "Meta's ad revenue rose 26% to US$63.1 billion in the September quarter, while Google's search division grew 12% to US$63.4 billion. Meta CFO Susan Li said on an earnings call that advertisers adopting the Meta AI business assistant's recommendations drove almost 5% more conversions. Google faces a different pressure, as chatbots such as ChatGPT and Claude become alternatives to search. Alphabet shares fell more than 12% after a disappointing earnings report, amid investor jitters over AI spending.",
+    "why_it_matters": "If you advertise on Facebook or Instagram, Meta's AI campaign tools are worth testing, though the results so far are Meta's own claims. If customers find you through Google, expect their search habits to shift as more people try chatbots.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/11/01/ai-meta-ads-google-search.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-02-meta-s-ai-ads-pull-ahead-as-chatbots-pressure-google-search",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Artcraft offers free clones of Adobe's creative apps",
+    "summary": "Developer Brandon Thomas and his team have released Artcraft, free open-source clones of Adobe's Creative Cloud apps built with Claude Opus 5.5, according to Engadget. Thomas says Adobe's 'cancellation fee' was his trigger, and the team pitches the apps as free with no subscription. Engadget's reviewer found the Photoshop replacement, Photocraft, easy to use, though users report critical bugs and it cannot open native PSD files. Adobe's terms ban reverse engineering, and the trademark and patent risks remain unclear.",
+    "why_it_matters": "If your team pays for Creative Cloud, free alternatives are emerging, but Photocraft has reported bugs, including deleted images, and can't open PSD files. The legal risks are unclear, so test on spare copies of your files first.",
+    "category": "Industry",
+    "source_url": "https://www.engadget.com/2302459/ai-software-clones-coming-for-big-name-companies-adobe/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-02-artcraft-offers-free-clones-of-adobe-s-creative-apps",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Anthropic extends text watermark to four Claude models",
+    "summary": "Anthropic is adding its text watermark to four more Claude models: Mythos 5, Opus 4.7, Opus 4.6 and Sonnet 4.6, according to The Decoder. On Opus 4.6 and Sonnet 4.6, Anthropic says the mark applies only if three sampling settings stay at their defaults, so changing any one can dodge it. Anthropic says the mark adds no tokens, doesn't affect pricing and doesn't change quality, though that is disputed. It cites the EU AI Act's December deadline, and customers cannot switch the mark off.",
+    "why_it_matters": "If your business uses Claude through the API and needs the watermark for compliance, leave the three sampling settings at their defaults. A minor tweak to any one of them on Opus 4.6 or Sonnet 4.6 is enough to dodge the mark.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-02-anthropic-extends-text-watermark-to-four-claude-models",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  },
+  {
+    "headline": "Hikers partly blamed Gemini for Mount Shasta misadventure",
+    "summary": "Hikers relying on AI chatbots for trip planning are running into trouble, according to a High Country News report published by Wired. Three 20-year-olds said their poor preparation came partly from relying on Google's Gemini. They summited Mount Shasta at 7:30 pm, descended in the dark and were lost by morning. At Grand Teton National Park, the superintendent says the share of visitors reporting AI use for travel information went from zero to 26 percent over the past year.",
+    "why_it_matters": "If your business sends staff or customers into remote areas, check AI travel advice against official maps and guides before relying on it.",
+    "category": "Safety & policy",
+    "source_url": "https://www.wired.com/story/chatbots-are-leading-hikers-astray-with-dangerous-consequences/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-02-hikers-partly-blamed-gemini-for-mount-shasta-misadventure",
+    "edition_published": "2026-11-02T05:30:00+10:30"
+  }
+]
