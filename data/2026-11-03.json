@@ -1,0 +1,100 @@
+[
+  {
+    "headline": "Westpac says AI halved its data warehouse migration cost",
+    "summary": "Westpac says AI tools cut the cost of migrating its legacy St.George data warehouse from a budgeted A$70 million to around A$35 million. CEO Anthony Miller says the tools sped up code conversion, testing and documentation, finishing the work more than two years early. The bank expects the reusable AI migration approach to support other projects, and it expects to start booking benefits from FY27.",
+    "why_it_matters": "If your business is planning a big software or data move, ask whether AI tools can speed up code conversion and testing before you set the budget.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/westpac-reveals-ai-cut-data-warehouse-migration-cost-from-70m-to-35m-630064?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-03-westpac-says-ai-halved-its-data-warehouse-migration-cost",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "NYT sues Brave over alleged AI scraping and paywall bypass",
+    "summary": "The New York Times has sued Brave, the privacy-focused browser maker, in federal court in Manhattan. The suit alleges Brave scraped its copyrighted content and distributed it to AI firms including Anthropic, Perplexity, Mistral, xAI and Cohere, and says Brave built an index of more than 30 billion web pages. Separately, the Daily News, the Chicago Tribune and the Orlando Sentinel filed a similar suit. Brave did not immediately respond to a request for comment; Perplexity's communications chief called the Times suit's claims disinformation.",
+    "why_it_matters": "If your business publishes content online, these suits show publishers are fighting over who can copy and reuse it. Check where your AI tools get their information and whether that source is licensed.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1024588/brave-lawsuit-ai-scraping-new-york-times",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-11-03-nyt-sues-brave-over-alleged-ai-scraping-and-paywall-bypass",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "Goldman Sachs limits AI coding tools to its engineers",
+    "summary": "Goldman Sachs has cut most staff off from advanced AI coding tools, including Anthropic's Claude Code and Microsoft's GitHub, Bloomberg reports. Only engineers can still use them, under internal guidelines from October. Traders and bankers had spent months using the tools to monitor trading flows and create content. Spokesperson Nick Carcaterra cited productivity and risk management, and said the experimentation phase is over.",
+    "why_it_matters": "If non-technical staff build tools with AI, decide who gets access and why. Goldman Sachs says it limited the tools to those best suited to use them long term, citing productivity and risk management.",
+    "category": "Business",
+    "source_url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-03-goldman-sachs-limits-ai-coding-tools-to-its-engineers",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "WA Police's facial recognition trial leads to 122 arrests",
+    "summary": "WA Police ran a five-month trial of real-time facial recognition on marked vans at 43 locations, scanning 1,380,882 faces. According to police, the trial led to 122 arrests and nine incorrect alerts, an error rate they put at 0.00065%. Civil Liberties Australia said the figure was misleading, arguing it should be judged by how many arrested people are convicted. Police have pulled the vans from public deployment while they evaluate how the technology performed.",
+    "why_it_matters": "If your business uses cameras or face-matching, expect customers and regulators to ask tougher questions about consent and accuracy. The WA evaluation is still under way.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/02/wa-police-facial-recognition-technology-trial",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-03-wa-police-s-facial-recognition-trial-leads-to-122-arrests",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "Anthropic posts US$17 billion quarter as spending climbs",
+    "summary": "Anthropic has filed an amended S-1 with the US Securities and Exchange Commission, showing third-quarter revenue of about US$17 billion, up roughly 1,127% on a year earlier. Quarter-to-quarter growth slowed, with third-quarter revenue up about 47%, down from 144% in the second quarter and 132% in the first. The company reported a net loss of US$23.29 billion for the quarter and said it has committed about US$895.4 billion to purchases and leases, substantially all for compute and infrastructure.",
+    "why_it_matters": "If your business relies on Claude, note that Anthropic reported a US$23.29 billion quarterly loss as it spends heavily on compute. It's a reasonable prompt to check your contract terms and what happens if pricing or service changes.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/02/anthropic-ant-s-1-quarter-financials.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-03-anthropic-posts-us-17-billion-quarter-as-spending-climbs",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "Anthropic stops Claude Code cloning existing video games",
+    "summary": "Anthropic has updated Claude Code so it no longer builds recreations of specific existing video games. Anthropic's Addy Osmani confirmed the change on X, saying using Claude to infringe IP is against its usage policy. Original games, genre games and games built from a user's own designs and assets are meant to keep working. A user who spotted the change says it was pushed on 27 October and can't be switched off. GamesIndustry.biz, citing Game Developer, says it's unclear how effective the rule will be. Anthropic says it will keep iterating.",
+    "why_it_matters": "If your team uses Claude Code to build games, original work is meant to keep working. Requests to recreate a specific existing game may be refused, and Anthropic says the rule is still being refined.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget",
+      "GamesIndustry.biz",
+      "Ars Technica"
+    ],
+    "slug": "2026-11-03-anthropic-stops-claude-code-cloning-existing-video-games",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "Apple and Google pull apps hiding explicit deepfakes",
+    "summary": "Wired investigated a network of more than 400 linked domains and apps that pose as harmless services, such as the pet portrait app Viefur. When accessed under certain conditions, the apps load a hidden interface for making sexually explicit deepfake images from users' uploaded photos. Researchers say the network advertised through tens of thousands of explicit deepfake ads on Meta's platforms. Apple removed 19 apps after Wired raised the issue, and Google removed most of the apps before Wired contacted it, though it did not respond to Wired's comment request. Meta says it banned KeLing Technology Limited from advertising in 2025.",
+    "why_it_matters": "If your team installs AI apps from app stores, check the developer name and privacy policy first. Wired found apps that looked harmless but, under certain conditions, loaded a hidden explicit deepfake interface, and Apple says reviewed apps later changed their content.",
+    "category": "Safety & policy",
+    "source_url": "https://www.wired.com/story/hundreds-of-mundane-ai-apps-are-hiding-abusive-deepfake-features/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-03-apple-and-google-pull-apps-hiding-explicit-deepfakes",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  },
+  {
+    "headline": "SpaceX's Grok Bot tightens usage limits over costs",
+    "summary": "Some Grok Bot users found their weekly usage limits maxed out over the Halloween weekend, with reports on X of jumps from as low as 50% to 100%. SpaceX CEO Elon Musk confirmed on X that this was not a glitch, writing that \"the cost of serving Grok Bot was unsustainably high relative to revenue.\" Musk has not yet said how subscribers' limits will change. The Decoder, citing the Telegraph, reports that several users saw quotas halved.",
+    "why_it_matters": "If your team relies on an AI agent with a flat-rate plan, check its usage caps before you build it into daily work.",
+    "category": "Business",
+    "source_url": "https://techcrunch.com/2026/11/02/elon-musk-throttles-grok-bot-limits-due-to-unsustainably-high-costs/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-03-spacex-s-grok-bot-tightens-usage-limits-over-costs",
+    "edition_published": "2026-11-03T09:19:00+10:30"
+  }
+]
