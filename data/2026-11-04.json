@@ -1,0 +1,90 @@
+[
+  {
+    "headline": "Google makes schools choose between AI and Search",
+    "summary": "Google plans to switch off AI features for K-12 student accounts next year unless school administrators turn them on. The affected products are Gemini, Gemini Notebook, Gemini in Classroom and Google Search. Chris Phillips, Google's vice president of education, told The New York Times that schools which disable AI will also lose access to Search. Google says it will share details with schools in the coming months and will test its Guided Learning feature in select US schools this month.",
+    "why_it_matters": "If you run a school or an education business that relies on Google's tools, the choice is all or nothing: AI features and Search come together. Australian rollout is not yet announced.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Ars Technica",
+      "Engadget",
+      "The Guardian"
+    ],
+    "slug": "2026-11-04-google-makes-schools-choose-between-ai-and-search",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "Netflix tests AI Discover tab for mood-based picks",
+    "summary": "Netflix is rolling out an experimental AI Discover tab on its TV app, starting with US members who use English on supported TVs. Its first feature offers themed picks such as \"Something Light\" or \"Quick Watches\", and viewers can flag titles they don't like so the app remembers. Netflix calls the tab a test kitchen, with user feedback deciding which features stay. The rollout follows layoffs of around 1,000 staff, and Australian availability has not yet been announced.",
+    "why_it_matters": "If your customers expect personalised, instant suggestions from your own service, Netflix's test shows that bar rising. The tab is US-only for now, so there's nothing to act on in Australia yet.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://www.theverge.com/streaming/1025029/netflix-ai-discover-recommendations",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-11-04-netflix-tests-ai-discover-tab-for-mood-based-picks",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "OpenAI says ChatGPT search volume is a fifth of Google's",
+    "summary": "OpenAI says ChatGPT now runs about one-fifth as many web searches as Google. Adam Fry, its consumer product lead for ChatGPT, made the claim at a press event on Monday, counting any query that triggers a web search. He did not say where the Google figure came from. Fry also told reporters that ads have not hurt the product or its usage, as OpenAI approaches an IPO potentially slated for early next year.",
+    "why_it_matters": "If customers find you through search, more of them may get their answers inside chatbots first. Check that your business details and website are accurate across the sites they use.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1025482/openai-says-chatgpt-is-catching-up-to-google-in-search",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-04-openai-says-chatgpt-search-volume-is-a-fifth-of-google-s",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "Apple lets Siri AI act across third-party apps",
+    "summary": "Apple says developers can now integrate Siri AI into all apps, letting the voice assistant complete tasks across them. The change arrives with the iOS 27.3 update, rolling out on 3 November as a Developer Preview, a test version for developers. A new app skills feature lets developers bundle several tasks into one action, and users needn't name the app while it's in the foreground. Australian availability has not yet been announced.",
+    "why_it_matters": "If your team uses iPhones with business apps, voice requests like changing a ride pickup could eventually replace taps. The update is only a Developer Preview for now, so ask your software vendors whether they plan to support it.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-11-04-apple-lets-siri-ai-act-across-third-party-apps",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "Apple lifts age ratings for dating and AI companion apps",
+    "summary": "Apple is making it harder for minors to use dating apps and AI companions that involve sexual or romantic content, it told developers on Monday. Any app with dating or romantic relationship features must now carry an 18+ rating. From 16 November, developers must add new content descriptors so age ratings reflect each app's features. Apps that share a user's real-world location with another person or group must also disclose this. The source does not say how these rules will apply in Australia.",
+    "why_it_matters": "If your business app has dating, romantic relationship or location-sharing features, check its age rating and descriptors before 16 November. It's not clear from the reports how the rules apply in Australia.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-04-apple-lifts-age-ratings-for-dating-and-ai-companion-apps",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "CrowdStrike unveils AI kill switch for rogue internal agents",
+    "summary": "CrowdStrike has launched an AI kill switch to stop internal AI agents that go rogue. Security teams can block agents from relaunching and cut off their enterprise network access. The tool is built into the Falcon Guardian platform, launched in September, and a human must decide to cut an agent off. Critics argue, more broadly, that an emergency stop button is too complicated to implement across multiple systems and data centres.",
+    "why_it_matters": "If your team runs AI agents that touch customer or payment systems, ask your IT provider how you would switch one off quickly. Australian availability of this tool has not yet been announced.",
+    "category": "Safety & policy",
+    "source_url": "https://www.cnbc.com/2026/11/03/crowdstrike-ai-kill-switch-rogue-agents.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-04-crowdstrike-unveils-ai-kill-switch-for-rogue-internal-agents",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  },
+  {
+    "headline": "Apple brings conversation recaps to Apple Watch beta",
+    "summary": "Apple has begun developer beta testing of Audio Intelligence for Apple Watch, part of watchOS 27.3 and iOS 27.3. The opt-in features include Siri Recap, which uses ambient listening to summarise conversations, and Live Rewind, which shows a text snippet of the last 15 seconds of audio. Apple says raw audio is not saved as a file and is not accessible to Apple. TechCrunch reports the features work on Apple Watch Series 12.",
+    "why_it_matters": "If your team uses Apple Watch for meetings or client calls, the features are opt-in, so set a policy before they arrive. Check your privacy rules first, because they listen to conversations, including those of people nearby.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1025002/apple-watch-audio-intelligence-watchos-beta",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-11-04-apple-brings-conversation-recaps-to-apple-watch-beta",
+    "edition_published": "2026-11-04T07:03:00+10:30"
+  }
+]
