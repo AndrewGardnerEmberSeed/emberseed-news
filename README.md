@@ -32,9 +32,11 @@ models (Sonnet 5.5 picks and checks, Haiku 5.5 writes), effort and JSON schemas,
   `build.py` uses the newest each run. `CLAUDE_BIN` overrides it.
 - **The Mac has to be on** overnight. On mains power it doesn't sleep. If it's away, the edition comes when it wakes
   (before 10am), and GitHub's fallback covers the rest while it's there.
-- **GitHub's fallback:** until the Mac has proved itself, the workflow still runs at about 6am (UTC 19:30–22:30) and
-  makes the edition with the API if there isn't one. To end it, delete the workflow's `schedule` and the
-  `ANTHROPIC_API_KEY` secret. The workflow's manual `build` and `test` modes need that key too; `render` doesn't.
+- **No API any more** (5 November 2026, Andrew: switch off the API completely). GitHub's 6am fallback is gone, and so
+  are the workflow's manual `build` and `test` modes; the `ANTHROPIC_API_KEY` secret is to be deleted (Andrew).
+  GitHub only publishes what the Mac pushes, and `render` rebuilds the pages after a story is fixed. If the Mac
+  misses a night, there's no edition until it next runs (every hour from 1am to 9am); to make one by hand, run
+  `python3 mac_job.py` on the Mac, or `NEWS_BACKEND=mac python3 build.py --force` and push.
 - **By hand on the Mac:** `python3 mac_job.py --dry-run` (a full run that saves nothing),
   `NEWS_BACKEND=mac python3 build.py --force` (a new edition now, without publishing it).
 - **Stop or start the job:** `launchctl bootout gui/$(id -u)/au.com.emberseedautomation.news` stops it;
@@ -55,11 +57,7 @@ Done:
 
 - The public repository, with **Settings → Pages → Source** set to **GitHub Actions**.
 - The variable `NEWS_SITE_URL`, set to `https://andrewgardneremberseed.github.io/emberseed-news`.
-- The secret `ANTHROPIC_API_KEY` (Andrew only). The key must:
-  - belong to one workspace. A key for all workspaces is refused unless every request names a workspace.
-  - have no expiry, or the news stops when it lapses.
-
-  A separate workspace for the news lets it have its own spend limit (the Default workspace can't have one).
+- Until 5 November 2026, the secret `ANTHROPIC_API_KEY`. Not needed since: the edition is made on the Mac.
 
 The custom address (done 21 October 2026):
 
@@ -79,11 +77,12 @@ The custom address (done 21 October 2026):
 
 ## Running it by hand
 
-Go to **Actions → Nightly AI news → Run workflow** and choose a mode:
+On the Mac: `python3 mac_job.py` (what launchd runs; it builds only from 1am to 10am and once a day),
+`python3 mac_job.py --dry-run` (a full run that saves nothing), or `NEWS_BACKEND=mac python3 build.py --force`
+(a new edition now, replacing today's; then commit and push `data/` and `site/`).
 
-- **build** makes a new edition now. It replaces that day's edition if there already is one.
-- **render** rebuilds the pages and feed from `data/`, after fixing a story.
-- **test** does a full run with Claude and prints the stories in the log, but publishes nothing.
+On GitHub, **Actions → Publish AI news → Run workflow** (mode **render**) rebuilds the pages and feed from `data/`,
+after fixing a story.
 
 ## Fixing a story
 
@@ -93,7 +92,7 @@ Go to **Actions → Nightly AI news → Run workflow** and choose a mode:
 ## Testing locally
 
 - `python3 build.py --no-ai --force` checks the feeds and pages without calling Claude.
-- `ANTHROPIC_API_KEY=... python3 build.py --dry-run` does a full run that prints the stories and saves nothing.
+- `python3 build.py --dry-run` (on the Mac) does a full run that prints the stories and saves nothing.
 
 ## Models and costs
 
