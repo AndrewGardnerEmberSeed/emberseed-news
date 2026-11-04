@@ -2,7 +2,8 @@
 
 The nightly AI news round-up for emberseedautomation.com.au.
 
-Every night from 1am Adelaide time, a GitHub Action runs `build.py`, which:
+Every night from 1am Adelaide time, Andrew's Mac runs `build.py` (since 4 November 2026; GitHub ran it with the
+Claude API before that), which:
 
 1. reads the feeds in `feeds.json`
 2. keeps AI stories from the last day, dropping robotics, very technical items and articles already used in the last three editions
@@ -13,6 +14,31 @@ Every night from 1am Adelaide time, a GitHub Action runs `build.py`, which:
 Each edition is labelled "Summarised by AI, read by Andrew". Andrew reads each edition in the morning and corrects anything that's wrong.
 
 GitHub often starts scheduled jobs late (on 15 October, by four hours) or skips them, so the job tries every hour and accepts any run from 1am to 10am. There's only ever one edition a day, and the hourly runs that find nothing to do leave the site alone.
+
+## On the Mac (since 4 November 2026)
+
+Andrew: "Can we get everything off of the API plan and just run a scheduled task on my Mac? Including the AI News
+Edition?" So Claude is now asked through Claude Code on his Max plan, not the API: the same prompts, style guide,
+models (Sonnet 5.5 picks and checks, Haiku 5.5 writes), effort and JSON schemas, one turn, no tools.
+
+- **The job:** `mac_job.py`, run by launchd at 20 past every hour from 1am to 9am
+  (`mac/au.com.emberseedautomation.news.plist`, installed in `~/Library/LaunchAgents`). It brings the folder up to date,
+  runs `build.py` (one edition a day, from 1am to 10am), and pushes `data/` and `site/`. The push starts the GitHub
+  workflow, which publishes the site. Log: `~/Library/Logs/emberseed-news.log`.
+- **The sign-in:** a long-lived (one-year) Claude token, `CLAUDE_CODE_OAUTH_TOKEN` in `~/.emberseed-video/keys.env`,
+  made by Andrew with the studio's `Video/tools/claude_token.py`. Make a new one before 4 November 2027. A scheduled job
+  can't use the Claude app's own sign-in (tested 4 November 2026: "OAuth session expired").
+- **Claude Code** is the copy the Claude app keeps and updates (`~/Library/Application Support/Claude/claude-code/`);
+  `build.py` uses the newest each run. `CLAUDE_BIN` overrides it.
+- **The Mac has to be on** overnight. On mains power it doesn't sleep. If it's away, the edition comes when it wakes
+  (before 10am), and GitHub's fallback covers the rest while it's there.
+- **GitHub's fallback:** until the Mac has proved itself, the workflow still runs at about 6am (UTC 19:30–22:30) and
+  makes the edition with the API if there isn't one. To end it, delete the workflow's `schedule` and the
+  `ANTHROPIC_API_KEY` secret. The workflow's manual `build` and `test` modes need that key too; `render` doesn't.
+- **By hand on the Mac:** `python3 mac_job.py --dry-run` (a full run that saves nothing),
+  `NEWS_BACKEND=mac python3 build.py --force` (a new edition now, without publishing it).
+- **Stop or start the job:** `launchctl bootout gui/$(id -u)/au.com.emberseedautomation.news` stops it;
+  `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/au.com.emberseedautomation.news.plist` starts it again.
 
 ## Status (16 October 2026)
 

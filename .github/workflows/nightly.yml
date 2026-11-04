@@ -1,13 +1,17 @@
 name: Nightly AI news
 
 on:
+  # Since 4 November 2026 Andrew's Mac makes the edition overnight (mac_job.py, on his Max plan) and pushes it;
+  # this publishes what it pushes.
+  push:
+    branches: [main]
+    paths: ["site/**"]
   schedule:
-    # GitHub runs on UTC. 14:30 UTC is 1am in Adelaide during daylight saving
-    # (UTC+10:30); 15:30 UTC is 1am the rest of the year (UTC+9:30).
-    # GitHub often starts scheduled runs late (by hours on a busy night) or
-    # skips them, so this tries every hour until 22:30 UTC. build.py only makes
-    # an edition from 1am to 10am in Adelaide, and only one a day.
-    - cron: "30 14-22 * * *"
+    # The fallback, while the Mac proves itself: if there's no edition by about 6am, make one here with the API
+    # (ANTHROPIC_API_KEY). GitHub runs on UTC: 19:30 UTC is 6am in Adelaide during daylight saving (UTC+10:30),
+    # 5am the rest of the year. build.py makes nothing if today's edition is already there. To end the fallback,
+    # delete this schedule and the ANTHROPIC_API_KEY secret.
+    - cron: "30 19-22 * * *"
   workflow_dispatch:
     inputs:
       mode:
@@ -90,7 +94,7 @@ jobs:
             git push
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
-          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+          if [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ] || [ "$GITHUB_EVENT_NAME" = "push" ]; then
             echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
 

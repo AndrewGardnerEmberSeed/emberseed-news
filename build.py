@@ -6,8 +6,12 @@ from the last day, has Claude rewrite them in the EmberSeed news style, and
 writes a small static site (daily edition, one page per story, archive and an
 RSS feed) into ./site.
 
-Standard library only. Needs the ANTHROPIC_API_KEY environment variable,
-unless run with --no-ai (a test mode that uses the feed text as-is).
+Standard library only. Claude is asked one of two ways:
+  - on Andrew's Mac (since 4 November 2026), through Claude Code on his Max plan, with the long-lived
+    CLAUDE_CODE_OAUTH_TOKEN from ~/.emberseed-video/keys.env. mac_job.py runs it there overnight;
+  - elsewhere (GitHub), through the Claude API, with the ANTHROPIC_API_KEY environment variable.
+NEWS_BACKEND=mac or api chooses; by default it's the API when ANTHROPIC_API_KEY is set, else the Mac.
+--no-ai is a test mode that uses the feed text as-is.
 
 Usage:
   python3 build.py              # normal nightly run
@@ -19,6 +23,7 @@ Usage:
 import argparse
 import datetime as dt
 import email.utils
+import glob
 import gzip
 import hashlib
 import html
@@ -26,7 +31,9 @@ import json
 import os
 import re
 import shutil
+import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.request
@@ -46,6 +53,9 @@ MAIN_SITE = "https://emberseedautomation.com.au"
 PICK_MODEL = os.environ.get("NEWS_PICK_MODEL") or "claude-sonnet-5-5"
 WRITE_MODEL = os.environ.get("NEWS_WRITE_MODEL") or "claude-haiku-5-5"
 EFFORT = os.environ.get("NEWS_EFFORT") or "medium"  # how hard Claude thinks: low, medium or high
+# Where Claude runs (see the top): "mac" (Claude Code on the Max plan) or "api" (the Claude API).
+BACKEND = os.environ.get("NEWS_BACKEND") or ("api" if os.environ.get("ANTHROPIC_API_KEY") else "mac")
+KEYS_FILE = Path(os.environ.get("NEWS_KEYS_FILE") or "~/.emberseed-video/keys.env").expanduser()
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) EmberSeedNews/1.0"
 WINDOW_HOURS = 28
 MIN_STORIES, MAX_STORIES = 4, 8
@@ -228,7 +238,80 @@ def article_text(url, limit=12000):
 
 # ---------------------------------------------------------------- Claude
 
+def claude_bin():
+    """Claude Code on this Mac: CLAUDE_BIN if set, else the newest copy the Claude app keeps (it updates itself)."""
+    if os.environ.get("CLAUDE_BIN"):
+        return os.environ["CLAUDE_BIN"]
+    found = glob.glob(os.path.expanduser(
+        "~/Library/Application Support/Claude/claude-code/*/*/claude.app/Contents/MacOS/claude"))
+    if not found:
+        sys.exit("Claude Code isn't on this Mac (the Claude app keeps it in ~/Library/Application Support/Claude).")
+    def version(p):
+        return tuple(int(x) if x.isdigit() else 0 for x in p.split("/claude-code/")[1].split("/")[0].split("."))
+    return max(found, key=version)
+
+
+def mac_token():
+    token = os.environ.get("CLAUDE_CODE_OAUTH_TOKEN")
+    if not token and KEYS_FILE.exists():
+        for line in KEYS_FILE.read_text().splitlines():
+            if line.startswith("CLAUDE_CODE_OAUTH_TOKEN="):
+                token = line.split("=", 1)[1].strip()
+    if not token:
+        sys.exit(f"No CLAUDE_CODE_OAUTH_TOKEN in {KEYS_FILE}: Andrew makes one with Video/tools/claude_token.py")
+    return token
+
+
+def claude_on_mac(prompt, system, schema, model):
+    """The same request as claude() makes of the API (same prompt, style guide, model, effort and JSON schema),
+    through Claude Code on Andrew's Max plan: one turn, no tools, in an empty folder, so nothing on the Mac is read."""
+    cmd = [claude_bin(), "-p", "--model", model, "--effort", EFFORT, "--system-prompt", system,
+           "--output-format", "json", "--json-schema", json.dumps(schema),
+           "--tools", "", "--no-session-persistence", "--strict-mcp-config", "--setting-sources", ""]
+    # only what Claude Code needs: never the environment of whatever started this (a Claude session, say)
+    env = {"HOME": os.path.expanduser("~"), "USER": os.environ.get("USER", ""), "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+           "LANG": "en_US.UTF-8", "CLAUDE_CODE_OAUTH_TOKEN": mac_token()}
+    for attempt in range(1, 5):
+        with tempfile.TemporaryDirectory() as empty:
+            try:
+                r = subprocess.run(cmd, input=prompt, cwd=empty, env=env, capture_output=True, text=True, timeout=900)
+                out = json.loads(r.stdout)
+            except subprocess.TimeoutExpired:
+                out = {"is_error": True, "result": "no answer in 15 minutes"}
+            except ValueError:
+                out = {"is_error": True, "result": (r.stderr or r.stdout)[-400:]}
+        for name, u in (out.get("modelUsage") or {}).items():
+            used = USAGE.setdefault(model if name.startswith(model) else name,
+                                    {"calls": 0, "input": 0, "cache_write": 0, "cache_read": 0, "output": 0})
+            used["calls"] += 1
+            used["input"] += u.get("inputTokens", 0)
+            used["cache_write"] += u.get("cacheCreationInputTokens", 0)
+            used["cache_read"] += u.get("cacheReadInputTokens", 0)
+            used["output"] += u.get("outputTokens", 0)
+        if not out.get("is_error"):
+            break
+        why = str(out.get("result") or "no reason given")[:400]
+        # busy or overloaded clears within a minute or two; a used-up plan or a bad token doesn't, so stop
+        if attempt == 4 or not re.search(r"overload|\b(500|502|503|504|529)\b|timed? ?out|no answer|ECONN|network|temporar",
+                                         why, re.I):
+            raise RuntimeError(f"Claude Code on this Mac: {why}")
+        print(f"  Claude is busy (attempt {attempt}); trying again in {30 * attempt}s")
+        time.sleep(30 * attempt)
+    if out.get("stop_reason") == "max_tokens":
+        raise ValueError("Claude ran out of room before finishing")
+    if out.get("stop_reason") == "refusal":
+        raise ValueError("Claude declined")
+    if isinstance(out.get("structured_output"), (dict, list)):
+        return out["structured_output"]
+    m = re.search(r"\{.*\}|\[.*\]", str(out.get("result") or ""), re.S)
+    if not m:
+        raise ValueError("Claude did not return JSON")
+    return json.loads(m.group(0))
+
+
 def claude(prompt, system, schema, model, max_tokens=16000, cache=False):
+    if BACKEND == "mac":
+        return claude_on_mac(prompt, system, schema, model)
     key = os.environ.get("ANTHROPIC_API_KEY")
     if not key:
         sys.exit("ANTHROPIC_API_KEY is not set")
@@ -733,7 +816,8 @@ def usage_report():
             total += cost
             line += f", about US${cost:.3f}"
         lines.append(line)
-    lines.append(f"  Total about US${total:.3f}")
+    lines.append(f"  Total about US${total:.3f}" + (" at API prices; nothing to pay, as this ran on the Max plan"
+                                                   if BACKEND == "mac" else ""))
     return "\n".join(lines)
 
 
