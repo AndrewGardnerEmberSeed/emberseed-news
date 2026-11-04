@@ -1,0 +1,95 @@
+[
+  {
+    "headline": "Canva restructure affects 1,271 staff, 22% of workforce",
+    "summary": "Canva says its restructure will affect 1,271 staff, with more than 1,200 roles cut or relocated. That is 22% of its global workforce. Chief executive Melanie Perkins told staff in an email it was \"without doubt the hardest moment\" in the company's thirteen-year history. The company would not confirm how many people will lose their jobs, but leavers will get at least six months' salary.",
+    "why_it_matters": "If your team uses Canva, the reports describe internal restructuring and don't say products, pricing or support will change. It's still worth knowing the company is reorganising and relocating staff.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/04/canva-layoffs-job-cuts-restructure",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "SmartCompany",
+      "Information Age"
+    ],
+    "slug": "2026-11-05-canva-restructure-affects-1-271-staff-22-of-workforce",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "Thinktank urges audits of government algorithm decisions",
+    "summary": "The Centre for Public Integrity has called for urgent reform of how the federal government uses algorithms and AI in decisions. Its \"Computer Says No\" report recommends a mandatory audit and public register of all automated decision-making, plus an independent oversight body. The centre's concern centres on an aged care assessment tool that has reportedly been found to routinely under-assess older people's needs. The attorney general's department is developing an automated decision-making framework, but Michelle Rowland did not say when a draft would be released.",
+    "why_it_matters": "If your clients receive government support, such as aged care packages, automated assessments may affect what they're entitled to. Ask for the reasons behind any decision and how to request a review.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/05/albanese-government-warned-its-sleepwalking-into-another-robodebt-scenario-over-use-of-algorithms-and-ai",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-05-thinktank-urges-audits-of-government-algorithm-decisions",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI's Astra model designed a device in under a week",
+    "summary": "OpenAI says its hardware team used GPT-6 Astra to design a device for talking to the Codex coding agent. According to OpenAI, Astra handled the enclosure, circuit board layout and firmware, and a contract manufacturer built prototypes in under a month. Several revision rounds were needed, because Astra didn't always allow for manufacturing tolerances. OpenAI also reports a newer internal model scoring 0.875 on the BenchCAD 2.0 test, against 0.594 for Astra at its highest reasoning setting.",
+    "why_it_matters": "If you run product or packaging design, AI tools can speed up early work, but check drafts against manufacturing limits, since Astra didn't always account for them.",
+    "category": "Business",
+    "source_url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "OpenAI News"
+    ],
+    "slug": "2026-11-05-openai-s-astra-model-designed-a-device-in-under-a-week",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "UK minister admits £400b AI estimate came from Google report",
+    "summary": "AI minister Kanishka Narayan told parliament the £400 billion AI boost figure came from a Google-commissioned report. The government's own estimate is £55 billion to £140 billion by 2030, with a central figure of £120 billion. PF Global, which produced the report, says the gap partly reflects the government's slower adoption assumptions. Government agencies used the £400 billion figure for almost two years.",
+    "why_it_matters": "If you use big AI productivity figures in a business case or pitch, check who funded them and what they assume. The government's new central estimate is less than a third of the old one.",
+    "category": "Safety & policy",
+    "source_url": "https://www.wired.com/story/uk-officials-said-ai-would-add-400-billion-to-the-economy-that-figure-mainly-came-from-google/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-05-uk-minister-admits-400b-ai-estimate-came-from-google-report",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "Nexus Mods makes AI disclosure mandatory for new uploads",
+    "summary": "Nexus Mods, a major PC gaming mod repository, now requires authors of newly uploaded mods to declare whether AI was used in their work. Mods tagged AI-assisted must also include a public explanation of how and where AI was used. Site owner Victor Folmann says the platform won't ban AI-generated mods outright, arguing that a ban would discourage disclosure rather than stop AI use. Existing mods have 60 days to comply, and enforcement starts after 2 January.",
+    "why_it_matters": "If you publish add-ons or content on community platforms, check their AI disclosure rules before uploading. On Nexus Mods, existing uploads need updating by 2 January, when the 60-day grace period ends.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-05-nexus-mods-makes-ai-disclosure-mandatory-for-new-uploads",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "Graduates take AI roles as firms reshape entry-level jobs",
+    "summary": "London PR agency Fight or Flight has an AI team that has built around 30 agents, and 25-year-old graduate Lotte Underwood manages their outputs. Engineering software firm Stride turned an intern into an AI automation analyst within 18 months. Citing PwC's 2026 AI Jobs Barometer, the BBC says entry-level roles most influenced by AI are seven times more likely to require senior-level skills. Portman Finance Group, however, keeps its two-year graduate programme focused on learning the trade.",
+    "why_it_matters": "If you hire graduates, pair AI tools with core industry training. PwC's US data suggests AI-affected junior roles now require senior skills, so budget time for both.",
+    "category": "Business",
+    "source_url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-05-graduates-take-ai-roles-as-firms-reshape-entry-level-jobs",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "Meta seeks up to US$25 billion in bond sale",
+    "summary": "Meta is seeking to raise between US$20 billion and US$25 billion through a bond sale on Tuesday, 3 November, to fund its AI spending. People familiar with the matter say about two-thirds will be in US dollars and one-third in euros. Meta declined to comment, and Bloomberg first reported the plans. The sale follows S&P Global Ratings moving Meta's outlook to negative, citing uncertainty over capital spending of US$135 billion to US$145 billion and negative free cash flow.",
+    "why_it_matters": "Meta is borrowing heavily to pay for AI, and its spending is running ahead of the cash it brings in. Nothing reported says its ads or tools will change, so this is background for now.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/03/meta-bond-sale-ai-funding.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-05-meta-seeks-up-to-us-25-billion-in-bond-sale",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  },
+  {
+    "headline": "Fal doubles valuation to US$16B after US$1.3B raise",
+    "summary": "AI inference startup Fal, which runs trained AI models for customers, has raised US$1.3 billion, doubling its valuation to US$16 billion. Bessemer Venture Partners led the Series F round, with Nvidia, Sound Ventures and T. Rowe Price also investing. Bloomberg reports the valuation was US$8 billion in April and that annualised revenue passed US$800 million earlier this year. Fal says its Series E and F rounds raised US$1.65 billion combined.",
+    "why_it_matters": "If your business builds on hosted AI models, check your provider's pricing terms. Sources say inference firms' margins are thin because computing power is expensive.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-05-fal-doubles-valuation-to-us-16b-after-us-1-3b-raise",
+    "edition_published": "2026-11-05T01:20:00+10:30"
+  }
+]
