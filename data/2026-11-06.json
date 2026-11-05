@@ -1,0 +1,111 @@
+[
+  {
+    "headline": "US voters back data centre curbs in nearly every vote",
+    "summary": "Across 10 US states on 3 November, voters sided against data centres in all but one of 41 local ballot measures, according to Ballotpedia. The exception was Harwood, North Dakota, where voters rejected an extra review of large industrial projects. Ohio alone had 21 of the measures, and Democrat Sherrod Brown ousted Republican Senator Jon Husted in the Senate race. Engadget counted 45 measures, so tallies differ by tracker.",
+    "why_it_matters": "These were US local votes, so nothing changes in Australia yet. If your team relies on cloud or AI services, watch whether US data centre projects slow, as CNBC suggests they may.",
+    "category": "Trends",
+    "source_url": "https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "Wired",
+      "Engadget",
+      "The Verge",
+      "TechCrunch",
+      "Ars Technica",
+      "InnovationAus",
+      "iTnews",
+      "MIT Technology Review"
+    ],
+    "slug": "2026-11-06-us-voters-back-data-centre-curbs-in-nearly-every-vote",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "Meta quietly offers Australians an AI training opt-out",
+    "summary": "Meta has quietly offered Australians a way to stop their user data training its AI. The objection form has been live since July 2025, but Meta never announced it. Digital Rights Watch's Tom Sulston says people must dig through privacy settings to find it. The Office of the Australian Information Commissioner says it will publish the results of its investigation in coming months.",
+    "why_it_matters": "If you post publicly on Facebook or Instagram, your posts may be used to train Meta's AI unless you submit the objection form. Private accounts are already exempt.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-05/meta-facebook-instagram-changes-using-data-to-train-ai/107335708",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-06-meta-quietly-offers-australians-an-ai-training-opt-out",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "ChatGPT adds animated GIF creation with Images 2.6",
+    "summary": "OpenAI says ChatGPT can now create animated GIFs from a text prompt or an uploaded photo. The feature arrives with its new Images 2.6 model, rolling out to all ChatGPT and Codex users on web, desktop and mobile. Users can change a GIF's animation speed, edit individual frames and share the result. OpenAI also says users now generate over 4 billion images a week across ChatGPT and its API, up from 3 billion in September.",
+    "why_it_matters": "If your team makes social posts or simple product demos, ChatGPT can now produce a basic animated GIF from one prompt or photo. Timing for Australia is not yet announced, so check your app rather than assume.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-06-chatgpt-adds-animated-gif-creation-with-images-2-6",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI pledges to cover data centre power costs",
+    "summary": "On 5 November, OpenAI published a National Community Compact and a Compute Campus Policy Blueprint for its data centres. OpenAI says it will pay the full electricity cost of its sites, including upgrades power providers need. It also says it will publish water and power use per site and avoid non-disclosure deals with public officials. CNBC notes that all but one of 41 US local measures backed restrictions or rejected pro-development ones.",
+    "why_it_matters": "Not yet announced for Australia. If your business relies on AI services, these pledges preview what customers may ask providers about, such as power, water and local jobs.",
+    "category": "Safety & policy",
+    "source_url": "https://openai.com/index/setting-new-standard-responsible-ai-infrastructure",
+    "source_name": "OpenAI News",
+    "also_reported_by": [
+      "Engadget",
+      "CNBC Technology",
+      "The Decoder"
+    ],
+    "slug": "2026-11-06-openai-pledges-to-cover-data-centre-power-costs",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "Uber says AI agents arranged just four rides",
+    "summary": "Uber executives told analysts on the third-quarter earnings call that third-party AI agents arranged only four rides, plus around 500 Uber Eats orders. Against roughly 320 million rides and deliveries, TechCrunch reports the figures cover the week of Halloween. CEO Dara Khosrowshahi called the traction \"very, very early\" and said Uber will work with third-party AI firms. He also said the app takes about 50 seconds to book a ride.",
+    "why_it_matters": "If customers order or book through a platform, AI agents aren't sending much business yet, so your own app or website still matters most. Uber says it will work with third-party agents, so the channel may grow.",
+    "category": "Business",
+    "source_url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch"
+    ],
+    "slug": "2026-11-06-uber-says-ai-agents-arranged-just-four-rides",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "Apple trims daily AI spending caps for engineering teams",
+    "summary": "Apple is reportedly cutting the daily AI spending limits for its engineering teams, according to Bloomberg. The cap fell from US$300 to US$200 a day in October, with deeper cuts to US$100 for some allowances still planned. Outside engineering, Apple is weighing a limit as low as US$25 a day. The Decoder notes Microsoft, Tesla, Uber and Meta have also capped internal AI spending.",
+    "why_it_matters": "If your team pays for AI tools by usage, set a per-person daily or monthly limit now, before the bills arrive.",
+    "category": "Business",
+    "source_url": "https://techcrunch.com/2026/11/04/apple-is-reportedly-cutting-budgets-for-its-internal-ai-usage/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-06-apple-trims-daily-ai-spending-caps-for-engineering-teams",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "US midterms leave data centres politically contentious",
+    "summary": "An ABC News commentary argues that data centres became a major political issue at the US midterms. Of about 41 proposals put to voters in ten states, all but one are on track to lose. An NBC News exit poll found three-quarters of voters oppose data centres in their community. Recent Australian polling found 44 per cent of people would oppose one built near them, and the government's proposed data centre rules are expected by the end of the year.",
+    "why_it_matters": "If your business relies on cloud AI tools, watch the government's data centre rules, expected by year-end. Local opposition could slow where new capacity gets built.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-05/data-centres-ai-australia-us-midterms/107349238",
+    "source_name": "ABC News",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-06-us-midterms-leave-data-centres-politically-contentious",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  },
+  {
+    "headline": "Figma beats forecasts, but shares slip after results",
+    "summary": "Design software firm Figma beat Wall Street forecasts in its third quarter, with revenue up about 43% year on year, the company said. Its adjusted operating margin hit 12%, above the 6.1% analysts expected, and it raised its full-year revenue forecast. Shares fell about 7% in extended trading, and the company expects fourth-quarter growth to slow to about 33%. Figma also gave clients more AI credits while keeping prices unchanged.",
+    "why_it_matters": "If your team uses Figma, you may now get more AI credits at the same price, so check your plan before renewal.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/04/figma-fig-q3-earnings-report-2026.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-06-figma-beats-forecasts-but-shares-slip-after-results",
+    "edition_published": "2026-11-06T01:20:00+10:30"
+  }
+]
