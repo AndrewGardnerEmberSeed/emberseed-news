@@ -1,0 +1,107 @@
+[
+  {
+    "headline": "Anthropic brings read-only bank access to Claude",
+    "summary": "Anthropic has launched Personal Finance, a beta feature that links Claude to bank and card accounts through Plaid, a bank-linking service. Access is read-only, so Claude cannot move, manage or invest money, though it can see balances and up to two years of transactions. Users can ask where their money went this month, and Claude sorts spending by category and flags duplicate charges and unexpected fees. The tool rolls out this week to US Pro, Max and Ultra subscribers, and Anthropic says chats in the Personal Finance hub are not used for model training.",
+    "why_it_matters": "If you use Claude for business admin, this is US-only and not yet announced for Australia. Before anyone links business accounts, check your privacy settings and who has access.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1027652/anthropic-claude-plaid-personal-finance",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-11-07-anthropic-brings-read-only-bank-access-to-claude",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "NAB rolls out Ruby AI assistant to 40,000 staff",
+    "summary": "NAB has rolled out an AI tool called Ruby to more than 40,000 staff for personal productivity. CEO Andrew Irvine revealed Ruby, built on an Anthropic platform, on the FY26 results call. NAB claims an 18 percent increase in its change delivery cycle and a 20 percent cut in business loan approval times. The Finance Sector Union is concerned AI investment is contributing to a planned cut of about 2,500 staff.",
+    "why_it_matters": "If you're weighing AI, note NAB links its claimed 20% faster business loan approvals to agentic AI, not Ruby, and gave percentages without dollar figures. Ask any AI vendor for before-and-after numbers.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/nab-deploys-ai-for-staff-called-ruby-that-is-built-on-anthropic-630151?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-07-nab-rolls-out-ruby-ai-assistant-to-40-000-staff",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Perplexity launches Teammates, always-on AI agents for work",
+    "summary": "Perplexity has launched Teammates, always-on AI agents for ongoing work, according to The Verge and Engadget. Each Teammate takes its own role and works alongside the others, and can bring in more Teammates as workloads grow. You can track progress in the Perplexity app and Slack, and Teammates notify you when a decision is needed. Access is limited to Max subscribers, who pay US$200 a month, or US$2,000 a year, on the web and iOS.",
+    "why_it_matters": "If you're weighing up AI agents, note that Teammates cost US$200 a month and aren't yet announced for Australia, so budget and availability come first.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1028302/perplexity-teammates-ai-agents-work",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-07-perplexity-launches-teammates-always-on-ai-agents-for-work",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Marles says no data centres in suburbs amid backlash",
+    "summary": "Deputy Prime Minister Richard Marles said on 6 November that data centres should not be built in the suburbs, according to InnovationAus, which reports Labor is preparing a ban near homes and recreational facilities. In the US midterms, exit polls found some 56% of voters called AI data centres a crucial or major factor. The Australian government is developing mandatory national standards for large data centres covering energy, water and siting, though their strictness is unclear.",
+    "why_it_matters": "If your business buys cloud or hosting services, nothing yet shows a change in your costs or service. How strict Australia's data centre standards will be, and how they fit with state rules, is unclear.",
+    "category": "Safety & policy",
+    "source_url": "https://theconversation.com/us-voters-lashed-out-at-data-centres-what-does-that-mean-for-australias-ai-ambitions-295979",
+    "source_name": "The Conversation",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-07-marles-says-no-data-centres-in-suburbs-amid-backlash",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Airbnb plans AI trip-planning agent for first half 2027",
+    "summary": "Airbnb will launch an AI travel agent in the first half of 2027, its Q3 2026 shareholder letter says. Rather than a chat window, the agent will compose hundreds of travel elements, such as maps, photos, calendars and itineraries, in real time. Airbnb says the agent will also help guests change reservations, resolve payment issues, handle refunds and access 24-hour safety support. Over time it plans to cover homes, hotels, services and experiences, though Engadget notes it is unclear which will be available at launch. No Australian rollout has been announced.",
+    "why_it_matters": "If you list a property or experience on Airbnb, the agent could change how guests find and book you, though no Australian launch has been announced. Keep photos and listing details current, since they'll sit beside maps and comparisons.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1028412/airbnb-ai-travel-agent-q3-2026-earnings",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget"
+    ],
+    "slug": "2026-11-07-airbnb-plans-ai-trip-planning-agent-for-first-half-2027",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Amazon lets shoppers text its Alexa agent to buy",
+    "summary": "Amazon has launched a text-message feature that lets select US customers shop with its Alexa AI agent. Invited users can text Alexa to search, add items to their cart and buy, using everyday language. The agent can also track prices, compare products, check order status and search for items using a photo. Others can join a waitlist, and Amazon says the feature will roll out more broadly in the coming weeks.",
+    "why_it_matters": "Not yet announced for Australia, so Aussie shoppers can't use it. If you sell on Amazon, check how your product listings look to shopping agents that compare items for customers.",
+    "category": "Applications",
+    "source_url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-07-amazon-lets-shoppers-text-its-alexa-agent-to-buy",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Nasdaq falls 5.5% as AI regulation fears hit tech",
+    "summary": "US tech shares slumped on Thursday as investors bet the midterm results will slow AI growth. The Nasdaq fell 5.5%, its worst day in 19 months, wiping more than US$2 trillion off its value, The Guardian reports. Analysts expect tougher scrutiny of datacentre expansion now that Democrats have won both houses of Congress. Japan's Nikkei fell 6% and South Korea's Kospi closed down 6% on Friday.",
+    "why_it_matters": "If your business relies on AI software from listed tech firms, expect share-price swings. Ask your suppliers how any tighter US datacentre rules could affect their pricing and service.",
+    "category": "Trends",
+    "source_url": "https://www.theguardian.com/business/2026/nov/05/nasdaq-heading-for-worst-day-in-18-months-as-wall-street-sustains-widespread-losses",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "BBC Technology",
+      "CNBC Technology",
+      "InnovationAus"
+    ],
+    "slug": "2026-11-07-nasdaq-falls-5-5-as-ai-regulation-fears-hit-tech",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  },
+  {
+    "headline": "Google extends Gemini Omni video clips to 15 seconds",
+    "summary": "Google has made Gemini Omni 1.2 Flash generally available, with AI video clips now running up to 15 seconds long. Google says the price has dropped 30 percent to US$0.07 per second for 720p video, down from Omni 1.1. Users can refine a clip through an ongoing conversation, changing the background or lighting without regenerating it. Google also says faces, garments and brand colours stay consistent across camera angles. An Australian price is not yet announced.",
+    "why_it_matters": "If you make product videos or social ads, a 30 percent price cut and 15-second clips may lower production costs. Check the US$0.07 per second rate against your own likely usage before budgeting.",
+    "category": "New models",
+    "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+    "source_name": "Google Keyword",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-07-google-extends-gemini-omni-video-clips-to-15-seconds",
+    "edition_published": "2026-11-07T01:20:00+10:30"
+  }
+]
