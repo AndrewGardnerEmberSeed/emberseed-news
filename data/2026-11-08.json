@@ -1,0 +1,100 @@
+[
+  {
+    "headline": "OpenAI reportedly raises US$11 billion at US$1.25 trillion valuation",
+    "summary": "Bloomberg reports OpenAI has received about US$11 billion so far in a round valuing the AI lab at US$1.25 trillion. The full round could reach about US$20 billion, with the rest expected in the coming weeks. OpenAI first sought US$30 billion at US$1.4 trillion but scaled back after tech stocks dropped, according to The Verge. Rival Anthropic filed for an IPO last week, and some potential buyers reportedly see its valuation as low as US$1.1 trillion.",
+    "why_it_matters": "If your team relies on OpenAI or Anthropic tools, these reports concern investor funding and share-sale valuations, not prices or service. Nothing here changes your plans today, though both companies' finances are being closely watched.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "The Decoder"
+    ],
+    "slug": "2026-11-08-openai-reportedly-raises-us-11-billion-at-us-1-25-trillion-v",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Investors push back on Anthropic's US$1.5 trillion valuation",
+    "summary": "CNBC reports that investors now doubt Anthropic's US$1.5 trillion IPO valuation, down from a US$2 trillion target. Unnamed investors call US$1.5 trillion a \"stretch\", and one says US$1 trillion to US$1.25 trillion is more likely. Anthropic is set to list on Nasdaq under the ticker ANT, with its roadshow expected next week. After Thursday's Nasdaq drop of more than 5%, analyst Gil Luria says investors will expect pricing at least at the low end of earlier expectations.",
+    "why_it_matters": "If your business uses Claude, note that the IPO price and timing remain uncertain as investors question the valuation. The reports don't say anything about changes to Claude's pricing or service.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/06/investors-brace-for-anthropic-valuation-1point5-trillion-a-stretch.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-08-investors-push-back-on-anthropic-s-us-1-5-trillion-valuation",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Ramp finds AI spending flattening as usage keeps rising",
+    "summary": "Ramp's data shows AI token spending rose just 1.5% across August and September, after a 42% jump in July. Ramp's lead economist, Ara Kharazian, says price cuts from OpenAI and Anthropic have made AI cheaper to use. Median firms spend US$12–US$15 per employee monthly, while the top 10% spend US$600–US$1,000. Kharazian says the top 1% of spenders have slipped slightly below their summer peak of about US$10,000 per employee.",
+    "why_it_matters": "If your team pays for AI by usage, prices are falling, so check your plan. Set budgets and defaults that stop costly models being used for routine tasks.",
+    "category": "Trends",
+    "source_url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-08-ramp-finds-ai-spending-flattening-as-usage-keeps-rising",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic's AI is speeding up its own research, METR finds",
+    "summary": "AI safety group METR says Anthropic's models are improving roughly twice as fast as a year ago. After an eleven-week review, it found most of that speed-up comes from AI helping Anthropic's researchers. Employees self-reported being about 12 times as productive with AI, though METR calls such surveys \"very loose evidence.\" METR says Anthropic redacted a majority of the evidence it found most informative, while Anthropic argues the cuts protect commercially sensitive details.",
+    "why_it_matters": "If you choose AI suppliers, ask for the evidence behind their performance claims, not just summaries. Here, the auditor's most useful evidence was redacted.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-08-anthropic-s-ai-is-speeding-up-its-own-research-metr-finds",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Three men charged in US over AI impersonation scam",
+    "summary": "Three men have been charged in the US over an AI scheme that allegedly stole over US$129m. According to the Department of Justice, they cloned executives' voices and images to pressure staff into wiring payments. Victims included a Missouri hospital system and a UK tech company, and two suspects were arrested in Spain. The money was allegedly converted to cryptocurrency to conceal where it came from.",
+    "why_it_matters": "If your staff approve payments, agree on a call-back process: confirm any urgent transfer on a number you already hold, even if the request sounds like your boss.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/us-news/2026/nov/06/ai-ceo-impersonation-theft",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-08-three-men-charged-in-us-over-ai-impersonation-scam",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Handshake and Mercor race to buy workplace emails and files",
+    "summary": "Data buyers are paying for old work files, emails and chats to train AI models, a Wired newsletter reports. A freelance writer says Handshake offered her US$1,000 for one story, and the firm says it licenses professional documents. Mercor says it strips out personal details, though privacy critics doubt anonymising removes every trace. Bankrupt Spirit Airlines' data sale, including 500 million internal messages, is on hold after a flight attendants' union alleged it involved private information.",
+    "why_it_matters": "If your business holds staff emails, chats or client files, check who can license or sell them, since such records can end up in AI training deals.",
+    "category": "Industry",
+    "source_url": "https://www.wired.com/story/ai-companies-really-really-want-to-buy-your-work-files-and-emails/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-08-handshake-and-mercor-race-to-buy-workplace-emails-and-files",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "Meta lets Muse users build their own app-like Spaces",
+    "summary": "Meta has launched Spaces in its Muse app, custom app-like experiences that the AI builds from a plain description. Examples include a shopping hub, school dashboard and music tracker. Connected apps such as Gmail, Google Calendar and Notion let Spaces update prices and dates in the background. Meta says Spaces are available to all Muse users from 6 November, and it is exploring ways to share them.",
+    "why_it_matters": "If you or your staff already use Gmail, Google Calendar or Notion, a Muse space could keep a tracker current without manual updates. Australian availability isn't stated, so check with Meta before relying on it.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Meta Newsroom"
+    ],
+    "slug": "2026-11-08-meta-lets-muse-users-build-their-own-app-like-spaces",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  },
+  {
+    "headline": "White-collar workers quit careers over AI disruption fears",
+    "summary": "A Guardian feature reports that white-collar workers are leaving established careers for roles they see as more secure or meaningful. Examples, drawn from interviews, include a PR worker starting a master's degree and a software engineer who joined a US police department. Economic data so far does not show AI has caused mass job losses. According to The Economist, AI has created about 1m US jobs, against 200,000 layoffs attributed to it.",
+    "why_it_matters": "If you're rolling out AI at work, staff anxiety and burnout can drive resignations, so explain the plan before you start.",
+    "category": "Trends",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/06/ai-disruption-job-quitting",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-08-white-collar-workers-quit-careers-over-ai-disruption-fears",
+    "edition_published": "2026-11-08T01:20:00+10:30"
+  }
+]
