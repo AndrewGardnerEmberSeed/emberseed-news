@@ -1,0 +1,94 @@
+[
+  {
+    "headline": "AI helps solo founders run bigger businesses without staff",
+    "summary": "Solo operators are using AI to do work that once needed a team. Alex Willen runs 12 e-commerce brands with no employees and expects US$2.5 million to US$3 million in revenue this year. According to George Mason University's Liya Palagashvili, applications without early hiring signs in AI-exposed industries rose 26.8% from early 2024 to early 2026. Gusto, a payroll software firm, found AI adopters grew headcount about 7% more than comparable non-adopters after a year. Palagashvili cautions that the findings are preliminary and don't show AI caused the increase.",
+    "why_it_matters": "If you sell online or run a lean team, AI can replace contractor costs like bookkeeping and product photos. Early data is mixed, so test one task before reshaping your team.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/11/07/americas-new-no-employee-small-business-owners-start-hot-in-ai-era.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-09-ai-helps-solo-founders-run-bigger-businesses-without-staff",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "Music industry body warns Australia against loosening AI copyright",
+    "summary": "The global music industry body IFPI has warned Australia against weakening copyright law to let AI companies train on local material. Its chief executive, Victoria Oakley, told Guardian Australia that weakening the law would be \"ridiculous and dangerous\". AI firms say they need legal certainty before investing here, and Anthropic has proposed an opt-out model, letting it use content unless rights holders object. Labor is still considering copyright changes as part of a wider AI policy package, and Attorney-General Michelle Rowland says any changes must deliver \"meaningful control and fair compensation\".",
+    "why_it_matters": "If you create content such as photos, writing or music, the copyright changes being debated could affect whether AI firms need your permission. Nothing has been decided.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/09/weakening-ai-copyright-law-will-spell-disaster-for-creativity-australia",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-09-music-industry-body-warns-australia-against-loosening-ai-cop",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "Adecco's AI agents speed hiring and test agency fees",
+    "summary": "AI is speeding up hiring, and CNBC reports that recruitment agencies may need to rethink their fees. Agencies often charge employers a percentage of a successful candidate's first-year salary, and clients may now question what that covers. Adecco said in February that its six AI recruitment agents in the U.K. and France were saving around 15% of the time spent on U.K. recruitment processes. Some agency heads expect to hold their fees, while others predict AI will push hiring costs down.",
+    "why_it_matters": "If you pay a recruiter a percentage of a new hire's salary, ask which tasks still need a person. Screening CVs is the part software handles fastest.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/11/08/ai-recruitment-agency-fees.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-09-adecco-s-ai-agents-speed-hiring-and-test-agency-fees",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "NYT Cooking's AI tailors recipes on iOS, originals untouched",
+    "summary": "NYT Cooking has added an AI assistant to its app, currently in an iOS-only beta for subscribers. Users type a request into a \"Customize this recipe\" box, and the tool creates a separate version while the original stays unchanged. The Verge's reviewer found it useful for swaps and scaling, but it once quoted a butter amount from the modified version without saying so. Wired reported that 172 mostly angry comments followed the announcement before commenting was closed, and NYT says it trained the tool to refuse requests that would taste bad.",
+    "why_it_matters": "If you cook from recipe apps, check AI-changed amounts before baking, since one reviewer's cake nearly went in with half the required butter. The feature isn't yet announced for Australia.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1029489/nyt-cooking-ai-assistant-review",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Wired"
+    ],
+    "slug": "2026-11-09-nyt-cooking-s-ai-tailors-recipes-on-ios-originals-untouched",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic's Claude keeps finance chats out of training by default",
+    "summary": "Anthropic has announced Personal Finance for Claude, a rival to ChatGPT's Finances feature. Both tools link to bank accounts through Plaid, a bank-connection service, with read-only access. The main difference is privacy: Anthropic says Claude's Personal Finance chats are not used for training by default. ChatGPT follows its general training setting, which is on by default and can be turned off under Data controls.",
+    "why_it_matters": "Before linking any account, check the training setting, since ChatGPT's is on by default. Australian availability isn't mentioned in the source, and the banks named are US institutions.",
+    "category": "Applications",
+    "source_url": "https://www.engadget.com/2310182/claude-vs-chatgpt-personal-finance-comparison/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-09-anthropic-s-claude-keeps-finance-chats-out-of-training-by-de",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "UK public bodies swamped by chatbot-written complaints",
+    "summary": "Across the UK, public bodies say chatbot-written complaints, requests and appeals are overwhelming their staff. Transport for London logged a record 4,769 freedom of information requests in 2025-26, up 5% on its previous peak. Employment tribunal claims opened from April to June rose 28% on a year earlier, according to government figures. Lawyers in Local Government says most council complaints are now about ten times longer than the two-page average before chatbots, and some ombudsman services now impose word limits.",
+    "why_it_matters": "If you handle complaints, an employee relations expert says many AI-drafted ones skip what the sender actually wants fixed. Asking that up front could save your team time.",
+    "category": "Trends",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/08/ai-clog-public-bodies-local-authorities-onslaught-chatbot-generated-correspondence",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-09-uk-public-bodies-swamped-by-chatbot-written-complaints",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic presses on with IPO amid AI backlash",
+    "summary": "Anthropic, maker of the Claude models, is targeting a Nasdaq debut as soon as mid-November, CNBC reports. CNBC's investor sources put its valuation at US$1 trillion to US$1.5 trillion, while the Financial Times, via The Decoder, reports US$1.25 to US$1.75 trillion and a raise of US$80 to 100 billion. The listing comes after local communities opposed data centre ballot measures in 40 of 41 cases at the US midterms, according to CNBC.",
+    "why_it_matters": "If your team relies on Claude, a listed Anthropic will begin publishing quarterly financial updates, giving you more visibility of your supplier's finances.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/07/anthropic-ipo-ai-data-center-backlash.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-09-anthropic-presses-on-with-ipo-amid-ai-backlash",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  },
+  {
+    "headline": "SpaceXAI adds free Grok add-on to Google Workspace",
+    "summary": "SpaceXAI released a free Grok add-on for Google Docs, Sheets and Slides in July 2026. One installation covers all three apps, opening Grok in a side panel beside the file. Engadget reports that Grok asks for see, edit, create and delete access to all Google Docs files and every Slides presentation in the account. Optional connectors can also let it draw on recent Gmail and Drive files, and its Australian availability is not yet announced.",
+    "why_it_matters": "If your team uses Docs, Sheets or Slides, review the permissions before installing. Grok asks to see, edit and delete all your Docs and Slides, so decide who gets it.",
+    "category": "Applications",
+    "source_url": "https://www.engadget.com/2309543/how-to-set-up-use-spacexai-grok-in-google-workspace/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-09-spacexai-adds-free-grok-add-on-to-google-workspace",
+    "edition_published": "2026-11-09T01:20:00+10:30"
+  }
+]
