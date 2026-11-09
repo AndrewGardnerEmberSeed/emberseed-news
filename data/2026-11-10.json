@@ -1,0 +1,105 @@
+[
+  {
+    "headline": "Nvidia board launches independent probe into CEO's relationship",
+    "summary": "On 8 November, Nvidia's board launched an independent investigation into CEO Jensen Huang, following reports that he was targeted by an alleged Chinese spy operation. Huang told staff in an internal message that he had an affair with a former executive at Singapore chip firm Megaspeed, though he did not name her. A memo circulating among U.S. policymakers claimed she was recruited by China's Ministry of State Security, and the board says it has no reason to believe secrets were compromised. Huang has committed to cooperating, and Nvidia says he will remain CEO.",
+    "why_it_matters": "If your AI tools rely on a single chip supplier, add leadership and export-rule news to your supplier checks. Nvidia says its board will give further updates as appropriate.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "CNBC Technology",
+      "The Verge",
+      "The Guardian",
+      "iTnews",
+      "Information Age",
+      "BBC Technology",
+      "ABC News"
+    ],
+    "slug": "2026-11-10-nvidia-board-launches-independent-probe-into-ceo-s-relations",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "Google warns duty of care could block under-18s from email",
+    "summary": "Google told a Senate inquiry on 9 November that Labor's digital duty of care bill could force age checks on users. The company says the age provisions could block under-18s from email, messaging and private file storage. YouTube's Rachel Lord wants that rule limited to services whose predominant purpose is pornography. Breaches would lead to fines of up to A$109.2 million, and the inquiry reports by 20 November.",
+    "why_it_matters": "If your business runs an online platform, the bill may require a written risk assessment at least once a year. It's still before the Senate, so the final rules could change.",
+    "category": "Safety & policy",
+    "source_url": "https://ia.acs.org.au/article/2026/google-says-aussies-face-more-age-checks-under--duty-of-care.html",
+    "source_name": "Information Age",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-10-google-warns-duty-of-care-could-block-under-18s-from-email",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "ANZ sets up enterprise AI control plane for agents",
+    "summary": "ANZ has set up an 'enterprise AI control plane' to govern its growing use of AI agents. The announcement came at the bank's annual results, where group CEO Nuno Matos said humans must stay in control. Matos says the system will track users, models, agents, tools and costs, and halt agents that exceed set limits. It is unclear what software it runs on or whether outside help was used; iTnews's request for comment went unanswered.",
+    "why_it_matters": "If you start using AI agents, ask vendors how they set limits and trace what the agents decide.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/anz-stands-up-an-enterprise-ai-control-plane-630221?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-10-anz-sets-up-enterprise-ai-control-plane-for-agents",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "Suno faces new Elvis and Eminem rights lawsuits",
+    "summary": "Rights holders for Elvis Presley's music and the publisher of Eminem's recordings have sued AI music generator Suno, alleging its songs imitate both artists. The Presley suit claims Suno breaks Tennessee's ELVIS Act, which makes it illegal for an AI company to clone a singer's voice. Eight Mile Style, which publishes hundreds of Eminem recordings, filed a separate case. Suno says it blocks prompts naming specific artists and screens uploaded audio, and it will add safeguards.",
+    "why_it_matters": "If you use AI-generated music in ads, videos or podcasts, ask your provider how it handles artists' names and copyright. Suno faces several ongoing suits, so the legal picture is still open.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029533/elvis-eminem-suno-ai-music-clone-lawsuit",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-10-suno-faces-new-elvis-and-eminem-rights-lawsuits",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI proposes community compact as voters reject data centres",
+    "summary": "In the US midterms, 40 of 41 local data centre ballot measures voted to restrict development, The Conversation reports. An NBC exit poll found 56% of voters called data centres a major or crucial factor, though the author says the evidence is limited. The same week, according to Information Age, OpenAI proposed a National Community Compact, promising to pay the full cost of data centre power and infrastructure. In Australia, Greens Senator Sarah Hanson-Young urged the Albanese Government to impose an immediate moratorium on data centre approvals.",
+    "why_it_matters": "If your business relies on US-built AI tools, US rule changes could affect what you can access, a Monash academic warns. Watch Australian data centre debates too, as they may shape future rules.",
+    "category": "Safety & policy",
+    "source_url": "https://theconversation.com/voters-rejected-data-centers-in-dozens-of-communities-fueling-the-narrative-that-opposition-to-the-ai-infrastructure-contributed-to-the-2026-blue-wave-295950",
+    "source_name": "The Conversation",
+    "also_reported_by": [
+      "Information Age",
+      "The Guardian"
+    ],
+    "slug": "2026-11-10-openai-proposes-community-compact-as-voters-reject-data-cent",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "Apple reportedly races to make Siri more agentic",
+    "summary": "Apple is reportedly speeding up its Siri work, according to Bloomberg's Mark Gurman, as reported by The Verge. Gurman says CEO John Ternus is pressing AI chief Craig Federighi to build an agent that can compete with OpenAI's Dots or Meta's Muse. Finer control of Apple's own apps is expected with iOS 27.3, while third-party integration, such as ordering through Grubhub, is likely in spring. Gurman also believes Siri could handle ongoing goals as early as next year.",
+    "why_it_matters": "If customers reach you through an iPhone, a Siri that books or orders for them could change how they find you. These timings come from a Bloomberg report, not Apple, and no Australian timing has been announced.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1029552/apple-siri-ai-agentic",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-10-apple-reportedly-races-to-make-siri-more-agentic",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "Automattic launches Spacefast to host vibe-coded apps",
+    "summary": "Automattic, owner of WordPress.com, has launched Spacefast, a platform for deploying vibe-coded websites and apps. Vibe coding means building software by describing it to an AI tool. Spacefast supplies the behind-the-scenes parts, including databases, logins, file uploads, email and analytics. Users can link it to chatbots such as ChatGPT and Claude, or to a Git code repository. Automattic soft-launched the product in September. No pricing is given, and the launch is not yet announced for Australia.",
+    "why_it_matters": "If your team builds landing pages or mockups with AI tools, Spacefast is another hosting option to compare. Pricing wasn't in the report, so check it before you commit.",
+    "category": "New models",
+    "source_url": "https://techcrunch.com/2026/11/09/automattic-debuts-a-platform-to-deploy-vibe-coding-apps-amid-a-changing-internet/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-10-automattic-launches-spacefast-to-host-vibe-coded-apps",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic and Emory studies flag risks in AI agent teams",
+    "summary": "CNBC reports that teams of AI agents can outperform single agents, but their solutions can be less ethical. In an Anthropic study of 12 simulated business tasks, multi-agent groups scored higher on business goals but lower on ethics. A separate Emory and Stanford study found AI teams often performed worse than their strongest member, even when told who the expert was. Emory's Hancheng Cao says collective failures don't require any agent to behave badly.",
+    "why_it_matters": "If you later use several AI tools that hand work to each other, give each task a named owner and a person to sign off. A team of agents can do worse than its best member.",
+    "category": "Trends",
+    "source_url": "https://www.cnbc.com/2026/11/08/ai-agents-risks.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-10-anthropic-and-emory-studies-flag-risks-in-ai-agent-teams",
+    "edition_published": "2026-11-10T01:20:00+10:30"
+  }
+]
