@@ -1,0 +1,103 @@
+[
+  {
+    "headline": "OpenAI lets verified brands run agents inside ChatGPT",
+    "summary": "OpenAI has launched a beta of Business Agents, which let verified brands answer shoppers' questions inside ChatGPT. The feature is open first to eligible e-commerce and online service businesses in the US. Companies manage their listings through a new Business Hub, where they can claim and verify their profile. OpenAI says chats with these agents are labelled and kept separate from a user's main conversation.",
+    "why_it_matters": "Not yet announced for Australia, and limited to eligible US businesses for now. If you sell online, it's worth keeping your business information current in case it reaches Australia.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1030552/openai-chatgpt-business-agents-hub",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "The Decoder",
+      "Fast Company"
+    ],
+    "slug": "2026-11-12-openai-lets-verified-brands-run-agents-inside-chatgpt",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic adds meetings, sheets and whiteboards to Claude",
+    "summary": "Anthropic has launched three office tools aimed at non-technical staff, unveiled at a San Francisco event on 10 November. Anthropic says Claude Meetings joins video calls as a visible participant, taking notes and drafting action items, initially with Google Meet. Claude Sheets builds and edits spreadsheets alongside colleagues, while Claude Whiteboards turns brainstorms into organised plans. The three tools are in beta, and Claude Data is now generally available to all paid plans.",
+    "why_it_matters": "If your team already uses Claude, check your plan: Meetings needs a Team or Enterprise subscription, and Australian availability is not yet announced.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1030709/anthropic-has-its-own-ai-powered-office-suite-now",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-11-12-anthropic-adds-meetings-sheets-and-whiteboards-to-claude",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "Australia weighs criminal offence for AI companies",
+    "summary": "The federal government will consider a criminal offence for AI companies that fail to take reasonable steps against harmful conduct by their models. It follows a review of September's OpenAI Medicare statistics hack, whose recommendations the government accepted. The government will also consider an AI safety watchdog able to issue significant fines. The Australian Federal Police told a parliamentary inquiry it had received no formal report of a crime and begun no investigation.",
+    "why_it_matters": "Nothing is law yet, so no new duties apply today. If your business uses AI tools, ask vendors how they prevent harmful outputs and what safeguards they have in place.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-11/australia-considers-criminal-charges-for-ai-companies/107368676",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-12-australia-weighs-criminal-offence-for-ai-companies",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI, Anthropic must register under New York's AI safety law",
+    "summary": "New York opened a registration portal on 10 November for the RAISE Act, its AI safety and transparency law. OpenAI and Anthropic must register by 1 January 2027 as large frontier developers with more than US$500 million in annual revenue. Penalties reach US$1 million per violation and US$3 million for repeat breaches, TechCrunch reports. Separately, a state research centre at Binghamton University will independently test advanced AI systems, with more than 80 scientists contributing, Engadget says.",
+    "why_it_matters": "This law binds large AI developers, not Australian businesses that use their tools, so it doesn't directly apply to you. It may still prompt vendors to publish more safety detail, which is worth checking before you buy.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/10/openai-anthropic-face-new-oversight-as-new-yorks-ai-safety-law-takes-effect/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-12-openai-anthropic-must-register-under-new-york-s-ai-safety-la",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "SpaceXSI's Grok Build leaves 35,000 apps open",
+    "summary": "Security firm Claroc says over 35,000 Grok Build apps, made with SpaceXSI's AI app builder, were open to anyone with the link. The random words in each link sit in the wrong place, so public address-lookup logs revealed them. Exposed files included SpaceXSI's own sales territory map and medical exam results. A Cursor representative, from a firm SpaceXSI recently acquired, says apps are private by default, but Claroc's tests found \"Anyone with the link\" preselected. SpaceXSI removed its 24 apps; Claroc says others remain online.",
+    "why_it_matters": "If your team builds apps with Grok Build, check each app's sharing setting before publishing. Switch anything set to \"Anyone with the link\" to \"Only you\" or invited users.",
+    "category": "Safety & policy",
+    "source_url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/",
+    "source_name": "Ars Technica",
+    "also_reported_by": [
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-11-12-spacexsi-s-grok-build-leaves-35-000-apps-open",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "eBay appears to block third-party AI shopping agents",
+    "summary": "eBay appears to have blocked AI agents, including Meta's Muse, from browsing its site, according to The Verge. A reader's Muse agent had compiled a daily digest of watch listings for several weeks until this weekend. The Verge could reproduce the block, and some searches sent users to sites mirroring eBay listings. An eBay spokesperson says the company takes a \"selective approach\" to third-party agents, but declined to say whether it had recently added limits.",
+    "why_it_matters": "If you buy or sell on eBay, don't count on AI shopping agents to find or track listings for you. eBay's user agreement bars agents that place orders without human review, so check marketplace terms before automating searches.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/tech/1030838/ebay-ai-agents-meta-muse-agentic-shopping",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-12-ebay-appears-to-block-third-party-ai-shopping-agents",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "Oura to acquire Counsel Health in AI primary care push",
+    "summary": "Oura is acquiring Counsel Health, an AI-powered primary care platform, for $625 million, according to the company. Weeks earlier, Oura postponed its up to $2.2 billion IPO indefinitely, citing uncertainty in the IPO market. Counsel's chat-based medical AI has been available inside the Oura app since June, with access to licensed physicians. Oura says its revenue rose 153% to $533 million in the quarter ended 30 September.",
+    "why_it_matters": "If you run a health or wellness business, customers may soon expect AI chat with a doctor built into the apps they already use. The deal is expected to close before the end of 2027.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/10/oura-to-acquire-ai-native-primary-care-startup-counsel-health-for-625m/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-12-oura-to-acquire-counsel-health-in-ai-primary-care-push",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  },
+  {
+    "headline": "Spotify's AI DJ gets new voices and a quieter mode",
+    "summary": "Spotify has given its AI DJ a refresh, letting Premium subscribers choose from a wider range of voices and personalities. Seven English voices now come in British, American, Irish, Australian and Indian accents, and two new Spanish voices, Nico and Fabi, have been added. A new option cuts the between-song commentary to brief greetings when the DJ starts and stops. Spotify says the update began rolling out on 10 November in the more than 95 markets where the DJ already runs.",
+    "why_it_matters": "If your team uses Spotify for background music, the quieter DJ mode may suit it better than a playlist. Australia isn't named in the announcement, so check the app for the new settings.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://techcrunch.com/2026/11/10/spotifys-ai-dj-gets-new-voices-personalities-and-an-option-for-less-chatter/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-12-spotify-s-ai-dj-gets-new-voices-and-a-quieter-mode",
+    "edition_published": "2026-11-12T01:20:00+10:30"
+  }
+]
