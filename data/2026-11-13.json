@@ -1,0 +1,103 @@
+[
+  {
+    "headline": "Jensen Huang quits as Nvidia CEO, CFO steps in",
+    "summary": "Nvidia chief executive Jensen Huang resigned on Thursday, 12 November, effective immediately. The move follows a board investigation into his affair with Alice Huang, which he acknowledged in a company-wide email on Sunday. The New York Times and Financial Times alleged she spied for China, a claim China rejects. CFO Colette Kress will serve as interim CEO while the board considers internal and external candidates. Nvidia shares fell nearly 10% on the day, according to CNBC.",
+    "why_it_matters": "If your business uses AI services built on Nvidia chips, ask your suppliers how they're handling the leadership change. Nvidia says operations continue without disruption, but no permanent CEO has been named.",
+    "category": "Industry",
+    "source_url": "https://www.wired.com/story/nvidia-ceo-jensen-huang-steps-down/",
+    "source_name": "Wired",
+    "also_reported_by": [
+      "CNBC Technology",
+      "The Decoder",
+      "The Verge",
+      "BBC Technology"
+    ],
+    "slug": "2026-11-13-jensen-huang-quits-as-nvidia-ceo-cfo-steps-in",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Australia proposes mandatory safety rules for frontier AI makers",
+    "summary": "According to The Decoder, Australia's government proposes mandatory safety rules for frontier AI companies operating in Australia. Firms building the most advanced, high-risk models would face independent audits and ongoing safety checks. They would also publish safety frameworks and report security incidents to government immediately. A new oversight body would enforce compliance alongside the Australian AI Safety Institute, though ABC News reports the details are still thin.",
+    "why_it_matters": "If your business uses AI tools from major model makers, their Australian obligations could change, but the timing and penalties are still unsettled.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/australias-proposed-ai-safety-bill-would-force-frontier-model-makers-to-open-up-to-independent-testing/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "ABC News"
+    ],
+    "slug": "2026-11-13-australia-proposes-mandatory-safety-rules-for-frontier-ai-ma",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Government's AI guide urges employers to consult workers first",
+    "summary": "On 12 November, workplace relations minister Amanda Rishworth launched a best practice guide on AI adoption. InnovationAus describes the voluntary guide as a draft released for consultation, and it urges employers to consult staff first. It warns that entry-level work may be \"the first to be automated\" and flags intrusive worker surveillance as a hazard. The release follows job cuts at Qantas (850), National Australian Bank (2,500) and Canva (1,200), which the Guardian reports are linked partly to AI.",
+    "why_it_matters": "Before adding AI tools that monitor staff or change rosters, talk to your team first. The guide is voluntary, but the minister warns that unconsulted rollouts can add to workloads.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/12/fewer-hours-and-higher-wages-or-more-burnout-and-surveillance-employers-told-to-prepare-for-ai",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-13-government-s-ai-guide-urges-employers-to-consult-workers-fir",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Quantum DC pauses Adelaide Hills AI data centre plan",
+    "summary": "Quantum DC has paused its proposed 1200-megawatt AI data centre at Tungkillo in the Adelaide Hills. Chief executive Alby Tomassi says the company misread community feeling and will not seek development approval this year, though it has not ruled out the project later. The company says it will convene independent experts to review its specialist studies and make their findings public. More than 350 people have contacted the company, and residents submitted 432 questions on water, noise and bushfire risk.",
+    "why_it_matters": "If you're planning a major local project, expect community support to count as much as paperwork. South Australia is drafting laws to regulate where data centres can be built.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-12/quantum-dc-pauses-tungkillo-ai-data-centre/107376052",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-13-quantum-dc-pauses-adelaide-hills-ai-data-centre-plan",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "United blocks AI agents from booking its flights",
+    "summary": "United will block AI agents from completing flight bookings on its website and through third-party travel agencies and aggregators. The airline cites privacy risks, unintended purchases and federal rules requiring a human to confirm bags hold no explosives. Agents can still show United flights but cannot complete a booking. The Wall Street Journal reports that CEO Scott Kirby doesn't want to create another middleman, and United may reconsider as agent tools advance.",
+    "why_it_matters": "If your team uses AI tools to organise business travel, budget time for staff to finish United bookings themselves.",
+    "category": "Business",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1031623/united-unauthorized-ai-agents",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-13-united-blocks-ai-agents-from-booking-its-flights",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Google's Tabletop lets groups build AI planning hubs",
+    "summary": "Google Labs has introduced Tabletop, an experimental AI tool for building shared planning spaces. Users add their links and files, then prompt @tabletop to generate trip itineraries, expense splitters or tournament brackets. Google says groups can share an invite link in their chat and edit together in real time, much like a Google Doc. Access is by waitlist in the US, limited to people aged 18 and over, and Australian availability is not yet announced.",
+    "why_it_matters": "If you run a club, rec league or small team that juggles schedules and payments, Tabletop may be worth a look later. For now it's US-only, 18-plus and waitlisted, so there's no Australian access yet.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1031526/google-tabletop-ai-experiment-waitlist-availability",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Google Keyword"
+    ],
+    "slug": "2026-11-13-google-s-tabletop-lets-groups-build-ai-planning-hubs",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Big Walk's developer discloses minimal AI use, sparking debate",
+    "summary": "Developer House House says its co-operative puzzle game Big Walk used AI chatbot tools sparingly to fix a bug. The studio puts that use at well under 0.1% of the code, and says the chatbot's suggestion needed extensive rework. The disclosure came as 19 of more than 50 Independent Games Festival jurors pledged not to vote for any game using generative AI. Over 400 negative reviews have appeared on the game's Steam page, which still shows a \"Very Positive\" overall rating.",
+    "why_it_matters": "If you use AI in products or marketing, customers may ask how much, and rules differ between platforms and awards. Decide your disclosure policy before someone asks.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://arstechnica.com/gaming/2026/11/big-walk-used-ai-to-fix-a-bug-now-the-indie-gaming-world-is-having-a-reckoning/",
+    "source_name": "Ars Technica",
+    "also_reported_by": [],
+    "slug": "2026-11-13-big-walk-s-developer-discloses-minimal-ai-use-sparking-debat",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  },
+  {
+    "headline": "Adobe previews sneaks that turn photos into 3D scenes",
+    "summary": "At its Max conference, Adobe previewed experimental \"sneaks\" aimed at making photo, video and audio editing easier. Project Sight Span turns flat images into 3D scenes you can move through, with objects generated beyond the original frame. Project Rinse Repeat copies one edit, such as blemish removal, and applies it to other people in the same photo. The Verge notes these are previews with no guarantee of becoming Creative Cloud features.",
+    "why_it_matters": "If your team retouches product or team photos by hand, Rinse Repeat could one day save time. These are only previews with no guaranteed release, so don't budget around them yet.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1031505/adobe-max-2026-sneaks-experiments-ai",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-13-adobe-previews-sneaks-that-turn-photos-into-3d-scenes",
+    "edition_published": "2026-11-13T01:20:00+10:30"
+  }
+]
