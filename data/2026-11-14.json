@@ -1,0 +1,104 @@
+[
+  {
+    "headline": "Google's Gemini 4 Hydrogen becomes default in AI Mode",
+    "summary": "Google says its new Gemini 4 Hydrogen model is now the default in AI Mode, handling multi-part questions and messy typos better. Robby Stein, Google's VP of product for Search, calls it the biggest model upgrade to Search yet. Ars Technica reports everyone will get it in Search, while Gemini app access is live for paid AI Pro and Ultra subscribers. Google says it runs 2.5 times faster than its previous fast model, Gemini 3.8 Flash. Developers pay US$1.50 per million input tokens, the chunks of text AI firms bill by. Australian pricing and availability are not yet announced.",
+    "why_it_matters": "If your customers find you through Google, Google says AI Mode answers now link to a wider range of sources. If you use Google's API, input costs US$1.50 per million tokens, but Australian pricing is still unannounced.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Ars Technica",
+      "The Decoder",
+      "Google Keyword",
+      "Google DeepMind blog"
+    ],
+    "slug": "2026-11-14-google-s-gemini-4-hydrogen-becomes-default-in-ai-mode",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "Microsoft's global outage disrupts Outlook, Teams and Copilot",
+    "summary": "Microsoft's 365 services, including Outlook, Teams and Copilot, suffered a global outage detected on Thursday 12 November, which was still ongoing on Friday. Microsoft says a large number of servers became unexpectedly unavailable and has ruled out a cyber-attack. Downdetector logged 140,000 Outlook problem reports from 74 countries, though the true figure is likely higher. Australia's spy agency ASIO said the impact was mostly on email.",
+    "why_it_matters": "If your team relies on Outlook or Teams, keep a phone or text backup for urgent customers. Microsoft warns some users may still have intermittent problems.",
+    "category": "Business",
+    "source_url": "https://www.bbc.co.uk/news/articles/cwvg238zrnm5o?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [
+      "CNBC Technology",
+      "iTnews",
+      "SmartCompany",
+      "Information Age",
+      "InnovationAus"
+    ],
+    "slug": "2026-11-14-microsoft-s-global-outage-disrupts-outlook-teams-and-copilot",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "APRA plans AI stress tests for banks and super funds",
+    "summary": "Australia's banking and super regulator, APRA, says an AI-driven disruption to financial institutions is a matter of when, not if. From next year, APRA plans its first stress tests of hypothetical AI-driven disaster scenarios. Its chair, John Lonsdale, says major institutions are \"not where they need to be\" in preparing. APRA's April letter had already warned about cyber threats from advanced AI models such as Anthropic's Mythos.",
+    "why_it_matters": "If your bank, super fund or insurer is regulated by APRA, expect tougher questions about recovering quickly from an AI-driven outage. Ask your own software and IT providers how they would keep services running.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-13/regulator-apra-warns-of-interruptions-as-frontier-ai-evolves/107378944",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-14-apra-plans-ai-stress-tests-for-banks-and-super-funds",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "Perplexity cites risky shopping sites most often, study finds",
+    "summary": "Podqi, an IP protection firm, found chatbots sometimes link shoppers to fake or reregistered retail sites. The study tested ChatGPT, Gemini and Perplexity on 151 brands in September. Risky sites appeared in 15% of Perplexity answers, 8% of ChatGPT's and 4% of Gemini's. Queries about larger companies showed risky sites about half as often. OpenAI says it is improving safeguards, while Google says Gemini shows source links so users can verify answers.",
+    "why_it_matters": "If you sell online, check that chatbots point to your real site, and remind customers to verify a site before paying.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-14-perplexity-cites-risky-shopping-sites-most-often-study-finds",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "Meta's Muse starts calling US businesses for paid users",
+    "summary": "Meta's Muse agent can now phone US businesses for users, but only paid subscribers get the feature. Chief AI officer Alexandr Wang suggests using it for calls to the DMV, cable companies or restaurants. Plans start at US$20 a month for 500 million tokens weekly, the text chunks AI firms bill by. Engadget reports that a Meta Superintelligence employee shared a call in which Muse waited 15 minutes on hold at a Volvo dealership.",
+    "why_it_matters": "US-only for now, with no Australian launch announced. If your business takes phone bookings, expect some AI-placed calls, which TechCrunch says many businesses hang up on.",
+    "category": "Applications",
+    "source_url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-14-meta-s-muse-starts-calling-us-businesses-for-paid-users",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "Oakland workers secure AI job protections in tentative deal",
+    "summary": "Oakland, California's city government and the IFPTE Local 21 union have reached a tentative three-year deal that covers AI. Members had voted 94.1% to authorise a strike, which was due on 5 November but is now on hold. The deal requires the city to retrain or reassign workers displaced by AI rather than fire them. Elsewhere in the US, Pennsylvania's SEIU Local 668 pushed Governor Josh Shapiro to adopt a policy that AI won't be used to discipline workers.",
+    "why_it_matters": "If you run a team, bring staff into AI rollouts early. Public-sector unions are winning rules on retraining and on whether AI can be used to discipline workers.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/12/us-workers-governments-unions-ai",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-14-oakland-workers-secure-ai-job-protections-in-tentative-deal",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "ElevenLabs launches ElevenAI for meeting notes and dictation",
+    "summary": "Voice AI company ElevenLabs has released ElevenAI, an experimental app that combines meeting note-taking, dictation and agent integration. Launched at its 11/11 Summit in New York, the app is in preview, so users must sign up for early access rather than download it. According to TechCrunch, its dictation feature turns speech into cleaned-up text in any app, across more than 90 languages. The company positions ElevenAI as a team tool rather than an individual productivity app.",
+    "why_it_matters": "ElevenAI is positioned as an alternative to buying a separate notetaker, but it is still in preview and not yet announced for Australia.",
+    "category": "Applications",
+    "source_url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-14-elevenlabs-launches-elevenai-for-meeting-notes-and-dictation",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  },
+  {
+    "headline": "UK estate agents face scrutiny over AI-enhanced listing photos",
+    "summary": "One in five of 906 UK buyers surveyed had viewed listing photos enhanced to look better than reality. Buyer Olivia Nicole says a south-west London home's rooms were smaller than its Rightmove photos suggested. Trading Standards says agents may use AI for basic edits if labelled, but structural changes could break the law. Rightmove, Zoopla and Winkworth say they have removed the images; Howards now labels all AI-edited photos.",
+    "why_it_matters": "If you use AI to polish photos of your products or premises, label the edits and keep structural details accurate. This story covers UK rules only, so check how Australian consumer law applies to you.",
+    "category": "Business",
+    "source_url": "https://www.bbc.co.uk/news/articles/cm62y0wrnz9zo?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-14-uk-estate-agents-face-scrutiny-over-ai-enhanced-listing-phot",
+    "edition_published": "2026-11-14T01:29:00+10:30"
+  }
+]
