@@ -1,0 +1,100 @@
+[
+  {
+    "headline": "OpenAI's ChatGPT Wallet lets Dots agents shop after you approve",
+    "summary": "OpenAI has launched ChatGPT Wallet, which lets its Dots AI agents buy items on users' behalf. The rollout began on 13 November for US ChatGPT Pro subscribers aged 18 and over, with a US billing address and an eligible US-issued American Express, Chase, Mastercard or Visa card. Each purchase needs a biometric check, such as Face ID or a fingerprint scan. OpenAI says the merchant and agent never see the full card number, which is replaced by a payment token, a stand-in code. The agents can browse freely, but they can't check out without you. Availability in Australia has not yet been announced.",
+    "why_it_matters": "If you sell online, check that AI shopping agents can reach your site, as some retailers block them. Australian access to ChatGPT Wallet is not yet announced.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget",
+      "CNBC Technology",
+      "The Decoder",
+      "OpenAI News"
+    ],
+    "slug": "2026-11-15-openai-s-chatgpt-wallet-lets-dots-agents-shop-after-you-appr",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Researchers track AI-fuelled surge in ransomware attacks",
+    "summary": "Ransomware attacks are rising, according to researchers who track leak sites where criminal groups post alleged victims. Some researchers count nearly 3,000 alleged attacks on those sites over the summer, a 20 to 40 per cent rise since spring by some estimates. Halcyon's analysis counts around 111 groups that claimed attacks between July and September. Recorded Future's Allan Liska says AI helps with phishing emails and negotiations, but successful groups remain largely human-operated.",
+    "why_it_matters": "Attackers often start with phishing, and AI is making those scam emails more convincing. Make checking unexpected links and payment requests a routine part of your team's day.",
+    "category": "Safety & policy",
+    "source_url": "https://www.wired.com/story/beware-the-new-ai-fueled-ransomware-boom/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-15-researchers-track-ai-fuelled-surge-in-ransomware-attacks",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Amazon plans a database of products sold across the web",
+    "summary": "According to Reuters, Amazon's planned World Product Graph would index products sold across the internet, even those it doesn't stock. The aims reportedly include keeping shoppers on Amazon and making Alexa for Shopping more accurate. Reuters could not confirm if or when it will launch, though the internal draft lists 1 October 2027 as a release date. Amazon says the document doesn't necessarily reflect its current plans.",
+    "why_it_matters": "If you sell online, Amazon may crawl retailer websites for product data, so keep your product pages accurate and consistent. The plan is unconfirmed, so there's no action needed yet.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "iTnews"
+    ],
+    "slug": "2026-11-15-amazon-plans-a-database-of-products-sold-across-the-web",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic launches Claude for Manufacturing, linking AI to factory software",
+    "summary": "Anthropic has released Claude for Manufacturing, a plugin giving its AI direct access to industrial software used in factories. According to The Decoder, it connects to Autodesk Fusion, Oracle NetSuite, Microsoft 365 and Infor, and offers 17 skills, such as drafting quotes based on actual inventory. With the Infor add-on, Claude can order from backup suppliers when deliveries slip and reschedule production, but only after human approval. The plugin is available to Team and Enterprise customers and doesn't yet control physical machines.",
+    "why_it_matters": "If you run Oracle NetSuite or Infor, check your plan: the plugin is offered to Team and Enterprise customers, and Australian availability is not yet announced.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-15-anthropic-launches-claude-for-manufacturing-linking-ai-to-fa",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Google lets Gemini read bank accounts for budgeting",
+    "summary": "Google says Gemini users can now connect the chatbot to their bank accounts through Google Wallet, for spending analysis only. Engadget reports that Gemini can only read account information and cannot \"move, manage or invest\" money. The feature is opt-in, can be switched off in settings, and is rolling out now on web and mobile. Google says it has partnered with fintech firm Plaid but gave no details, and Australian availability is not yet announced.",
+    "why_it_matters": "If you link Gemini to your bank, it can read account details but can't move money, and you can turn the link off in settings. Check Australian availability before you plan around it.",
+    "category": "Applications",
+    "source_url": "https://www.engadget.com/2316384/google-now-lets-people-connect-gemini-to-their-bank-accounts/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-15-google-lets-gemini-read-bank-accounts-for-budgeting",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic's IPO orders run six times available shares",
+    "summary": "The developer of Claude is on track for the largest public offering in history, according to Bloomberg. Orders reportedly exceed available shares six times over, and the company and its co-founders aim to raise up to US$64.4 billion publicly, plus US$26 billion privately, at a valuation of roughly US$1.4 trillion. Annualised revenue, the current yearly sales pace, reached US$81 billion by late October, up from US$71 billion in September. Nvidia is buying US$10 billion of stock in the private placement, and trading on Nasdaq under the ticker ANT is expected to start on 19 November, according to CNBC.",
+    "why_it_matters": "If your business relies on Claude, a listed Anthropic will be expected to report its finances publicly, which helps when you assess a supplier. Public listing doesn't change your current terms, so check your contract as usual.",
+    "category": "Industry",
+    "source_url": "https://the-decoder.com/anthropics-ipo-is-six-times-oversubscribed-and-on-track-to-become-the-largest-public-offering-in-history/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "CNBC Technology"
+    ],
+    "slug": "2026-11-15-anthropic-s-ipo-orders-run-six-times-available-shares",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Microsoft warns of phishing riding the 365 outage",
+    "summary": "Microsoft Threat Intelligence has observed a phishing campaign impersonating Microsoft 365 service health notices during this week's outage. The fake emails cite a genuine Exchange Online incident, EX1550543, and claim held messages will be deleted within 24 hours unless recipients click to restore them. Microsoft says similar messages targeted organisations across multiple US sectors. The company describes the activity as consistent with credential phishing, but says this has not been confirmed.",
+    "why_it_matters": "If your team uses Microsoft 365, warn staff that urgent \"held email\" alerts asking for a click may be phishing, and to verify them via your IT provider.",
+    "category": "Safety & policy",
+    "source_url": "https://www.itnews.com.au/news/phishers-quick-to-exploit-extended-m365-outage-630347?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-15-microsoft-warns-of-phishing-riding-the-365-outage",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  },
+  {
+    "headline": "Hachette and Boréal drop books over AI accusations",
+    "summary": "Publishers are withdrawing books and deals as AI accusations spread through the industry. Hachette pulled the romance novel Shy Girl in March over evidence of AI use. Boréal dropped Canadian-Haitian author Thélyson Orélien in October after his novel left the Goncourt longlist, though he denies using AI to write it. Meanwhile, romance author Coral Hart says she has used AI to write 370 novels under 21 pen names since 2025.",
+    "why_it_matters": "If your business commissions writing, agree how AI may be used before work starts. Accusations are hard to disprove, so agents now advise saving multiple drafts.",
+    "category": "Industry",
+    "source_url": "https://www.theguardian.com/books/ng-interactive/2026/nov/14/its-like-the-wild-west-how-ai-has-rocked-the-literary-world",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-15-hachette-and-bor-al-drop-books-over-ai-accusations",
+    "edition_published": "2026-11-15T01:20:00+10:30"
+  }
+]
