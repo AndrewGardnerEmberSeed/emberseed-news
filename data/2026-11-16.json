@@ -1,0 +1,94 @@
+[
+  {
+    "headline": "RBA analysis finds AI pressure hitting young workers first",
+    "summary": "The Reserve Bank of Australia (RBA) has tracked where AI's job effects may appear first. An analysis by Mike Major finds job postings have fallen across all groups since ChatGPT launched in late 2022. The steepest drop is in the group most exposed to AI, where workers aged 15 to 24 have weaker employment and higher unemployment than older peers. Major cautions that the study does not establish causation and measures possible exposure, not actual company use.",
+    "why_it_matters": "If you hire juniors for admin, customer service or coding, watch those roles closely. The author warns the evidence is early, so test changes before cutting entry-level positions.",
+    "category": "Trends",
+    "source_url": "https://the-decoder.com/australias-central-bank-finds-ai-hitting-young-workers-first-especially-in-software-and-customer-service/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-16-rba-analysis-finds-ai-pressure-hitting-young-workers-first",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic's Nasdaq debut tests the AI trade",
+    "summary": "Anthropic is set to list on the Nasdaq on 19 November, at an expected US$70 to US$78 a share. Google, Microsoft and Nvidia are among the tech firms investing US$26 billion at the IPO price, CNBC reports. Its prospectus lists more than US$900 billion in outstanding spending commitments. At a JPMorgan event, CEO Dario Amodei called compute the company's \"deepest business dilemma.\"",
+    "why_it_matters": "If your business relies on an AI supplier, read its contract terms and check what happens if prices or service change.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/15/anthropic-ipo-is-make-or-break-for-the-technology-industry.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-16-anthropic-s-nasdaq-debut-tests-the-ai-trade",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic says old prompts are holding back Claude Opus 5.5",
+    "summary": "Anthropic says users of Claude Opus 5.5 are holding it back with outdated prompts. In Anthropic's tests, dropping phrases such as \"think hard\" made responses start faster with no measurable quality loss. It also recommends starting at Medium effort, the default reasoning setting, which it says matched Opus 5 on High in internal tests. It also advises setting out the goal, output format and check-in rules in a single message.",
+    "why_it_matters": "If your team uses Claude, review saved prompt templates written for older models. Starting at Medium effort may cut cost, since higher settings cost more.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/anthropic-says-outdated-prompting-habits-are-slowing-down-claude-opus-5-5/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-16-anthropic-says-old-prompts-are-holding-back-claude-opus-5-5",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "South Korean tax exam topper confesses to AI cheating",
+    "summary": "Han, who topped South Korea's tax accountant exam, has confessed to using generative AI to cheat. He says he photographed questions with a microcamera, sent them to an AI tool and checked answers on his smartphone. His first-round score of 397.5 out of 400, with one wrong answer from 160 questions, had prompted suspicion. Seoul police have received his written confession and assigned the case to investigators. The government says those found to have used AI in this exam will lose their qualification and face a five-year retake ban.",
+    "why_it_matters": "If you test job candidates or staff with timed exams, AI cheating is now a live risk. Review how your assessments stop phones and AI tools before you rely on the results.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/15/ai-cheating-south-korea-college-entrance-exam",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "BBC Technology"
+    ],
+    "slug": "2026-11-16-south-korean-tax-exam-topper-confesses-to-ai-cheating",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Liberal senator urges Labor to protect artists' AI copyright",
+    "summary": "Liberal senator Andrew McLachlan says artists' copyright must not be sacrificed for AI investment. He urges the Labor government to consider AI's impact on artists and the environment. Labor is considering copyright changes, while Anthropic has proposed an opt-out model that would let it scrape music, books and journalism unless rights holders object. Fellow Coalition members Ross Cadell and Michaelia Cash have backed concerns that such permission could amount to acquiring property, raising a constitutional question.",
+    "why_it_matters": "If you publish writing, music or images, Labor's AI package, expected before year's end, may decide whether AI firms can use your work without permission. Nothing is settled yet.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/15/art-over-profit-ai-policy-debate-andrew-mclachlan",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-16-liberal-senator-urges-labor-to-protect-artists-ai-copyright",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Quiggin doubts AI is behind NAB and Qantas job cuts",
+    "summary": "In an opinion piece for The Guardian, University of Queensland economist John Quiggin argues the role AI played in recent job cuts at NAB, Qantas, Canva and Atlassian is far from clear. NAB has denied that AI played a role, and Quiggin notes the bank has announced mass sackings in most years since 2010. He describes Qantas's plan to outsource 850 jobs to India as a simple offshoring case, with its later claim that AI will replace the roles weakening its case.",
+    "why_it_matters": "If you're weighing AI against staffing decisions, check what the work involves before you act. Quiggin argues some firms may cite AI for cuts that are really about offshoring or routine restructuring.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/commentisfree/2026/nov/16/is-the-ai-job-apocalypse-finally-here-the-evidence-suggests-otherwise",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-16-quiggin-doubts-ai-is-behind-nab-and-qantas-job-cuts",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Connect apps and save skills to sharpen Google Gemini",
+    "summary": "Engadget has published a how-to guide for getting better answers from Google's Gemini assistant. The guide recommends connecting your most-used apps under the customisation menu, and saving prompts as reusable skills that run with a slash command. It also highlights deep research, which requires Gemini to find multiple sources before responding, and guided learning, a study-guide mode. Users can import chat history from other chatbots via Gemini's settings menu.",
+    "why_it_matters": "If your team uses Gemini, connecting your apps and saving role-based skills could cut repeated typing. The guide doesn't say which features are available in Australia.",
+    "category": "Applications",
+    "source_url": "https://www.engadget.com/2312834/how-to-get-better-results-google-gemini/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-16-connect-apps-and-save-skills-to-sharpen-google-gemini",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  },
+  {
+    "headline": "Wired writer quits AI DJs in YouTube Music and Spotify",
+    "summary": "A Wired software reporter has stopped using AI DJs after testing YouTube Music's Beyond the Beat and Spotify's AI DJ. YouTube's version, a YouTube Labs beta launched in 2025, interjects for about 30 seconds between songs, and the reviewer found its commentary padded and its pronunciation of Charli XCX wrong. Spotify's tool, introduced in 2023, sounded tighter, but the writer still rejected it. Spotify says 80 percent of listeners come back to its DJ week after week, according to its launch blog.",
+    "why_it_matters": "If your team streams music at work, check the app settings. Both AI DJ features are optional, so you can switch the commentary off without losing playlists.",
+    "category": "Applications",
+    "source_url": "https://www.wired.com/story/ai-djs-completely-kill-my-groove/",
+    "source_name": "Wired",
+    "also_reported_by": [],
+    "slug": "2026-11-16-wired-writer-quits-ai-djs-in-youtube-music-and-spotify",
+    "edition_published": "2026-11-16T01:20:00+10:30"
+  }
+]
