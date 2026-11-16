@@ -1,0 +1,104 @@
+[
+  {
+    "headline": "Huang allies lobby Nvidia board for former CEO's return",
+    "summary": "Allies of Jensen Huang are lobbying for the former Nvidia chief executive to return, days after he resigned amid reports of affairs. According to the Financial Times, one ally says a group of Silicon Valley executives is pushing the board and seeking White House support. An open letter urging the board to \"bring Jensen back\" has more than 165,000 signatories, per the Guardian, including Elon Musk. Interim chief executive Colette Kress leads the company into quarterly results on Tuesday, while US Treasury Secretary Scott Bessent has called for a \"dramatic shake-up\".",
+    "why_it_matters": "If your business relies on cloud services or hardware built on Nvidia chips, keep an eye on this. Nvidia's board is running an independent probe and says no formal successor process has begun, so the outcome is unsettled.",
+    "category": "Industry",
+    "source_url": "https://arstechnica.com/ai/2026/11/jensen-huang-allies-build-a-war-room-to-get-him-back-at-nvidia/",
+    "source_name": "Ars Technica",
+    "also_reported_by": [
+      "The Guardian",
+      "BBC Technology",
+      "CNBC Technology",
+      "The Verge",
+      "Information Age"
+    ],
+    "slug": "2026-11-17-huang-allies-lobby-nvidia-board-for-former-ceo-s-return",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Google Maps' Ask Maps now plans your day-by-day trips",
+    "summary": "Google's Ask Maps chatbot inside Google Maps can now build day-by-day trip itineraries, rolling out from 16 November. You can ask for a one-day outing or a multi-day road trip, then share the schedule or export it to Google Docs on desktop. Finding appointments, where Ask Maps calls local businesses for you, is launching in the US first. Trip planning is available everywhere Ask Maps runs, but Australian availability has not yet been announced.",
+    "why_it_matters": "If you plan client visits or staff trips, Ask Maps can draft a day-by-day schedule and share it with your team. Australian availability has not yet been announced, so check whether the feature appears in your app.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1034110/google-ask-maps-ai-trip-planning",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Google Keyword"
+    ],
+    "slug": "2026-11-17-google-maps-ask-maps-now-plans-your-day-by-day-trips",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Virgin Australia maps 11 Oracle AI agents for finance",
+    "summary": "Virgin Australia has identified 11 AI agent use cases for its Oracle finance and procurement work. Sean Percy told Oracle AI World in the United States that invoice-scanning agent Document IO is in production. A general ledger agent and a couple of Q&A agents are in user acceptance testing. An accounts payable agent and an expenses agent are also of internal interest.",
+    "why_it_matters": "If invoice processing eats your team's time, start with one task and grow from there, as Virgin Australia is doing.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/virgin-australia-identifies-11-ai-agents-for-finance-and-procurement-630239?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-17-virgin-australia-maps-11-oracle-ai-agents-for-finance",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Checking AI's work can erase its productivity gains",
+    "summary": "In an opinion article for The Conversation, Georgia Tech cognitive engineer Karen Feigh argues that checking AI output costs time. She cites a randomised trial of experienced software developers that found no speed gains. Completion times rose 19% once a verification step was added, even though developers believed they had been faster. Feigh says productivity should be measured by whether the whole AI-assisted workflow produces trustworthy work at lower total cost.",
+    "why_it_matters": "If your team uses AI for drafts or reports, budget time for checking as well as generating, and judge tools on total time, not first-draft speed.",
+    "category": "Business",
+    "source_url": "https://theconversation.com/catching-ais-mistakes-is-a-mental-burden-and-a-drag-on-productivity-291748",
+    "source_name": "The Conversation",
+    "also_reported_by": [],
+    "slug": "2026-11-17-checking-ai-s-work-can-erase-its-productivity-gains",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Data centre opposition spreads across Australia amid inflation concerns",
+    "summary": "ABC News reports growing concern that data centre construction is stoking inflation. Planned Australian projects could reach 23 to 67 gigawatts of power capacity, according to the Australian Energy Market Operator. Communities in Port Melbourne, Sydney and Launceston have objected, and the Port Melbourne group is protesting the pace and scale of construction. Tasmanian Labor leader Josh Willie has called for a moratorium on new developments, according to InnovationAus.",
+    "why_it_matters": "If you pay for power or carry a loan, this is one factor to watch. The ABC links data centre building to inflation, which the RBA is trying to cool with higher interest rates.",
+    "category": "Trends",
+    "source_url": "https://www.abc.net.au/news/2026-11-16/when-community-concerns-collide-in-data-centre-fight/107344810",
+    "source_name": "ABC News",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-17-data-centre-opposition-spreads-across-australia-amid-inflati",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Dreamteam raises US$53M to challenge Salesforce, HubSpot",
+    "summary": "Dreamteam, founded by former Freshworks executives, has raised US$53 million to challenge Salesforce and HubSpot. Together Fund led the seed round and Accel the Series A, with Premji Invest participating; round sizes and valuation were not disclosed. CEO Anand Venkatraman says more than 100 customers in 13 countries signed up in its first three months of selling. Its four AI agents draft follow-ups and flag deal risks, using context pulled automatically from emails and meetings.",
+    "why_it_matters": "If you're considering a CRM change, expect newcomers to promise AI that logs emails and forecasts for you. Test those promises on your own deals first, since the customer figures come from the company itself.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/16/freshworks-alums-raise-53m-to-take-on-salesforce-hubspot-with-ai-native-crm/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-17-dreamteam-raises-us-53m-to-challenge-salesforce-hubspot",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "Apple recruits 200,000 users for AI health study",
+    "summary": "Apple has launched the Apple Health AI Usage Study with clinical AI platform OpenEvidence, seeking up to 200,000 US participants. Users aged 21 and over ask health questions in a new iOS app, then rate the answers for accuracy, detail and relevance. Answers link to peer-reviewed sources, and users can optionally share HealthKit data such as sleep or lab results. Apple says study data won't be used to train AI models. The app requires iOS 26 or later.",
+    "why_it_matters": "If your team or customers use chatbots for health questions, look for tools that cite clinical sources. The study is US-only, and no Australian version has been announced.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1033355/apples-new-study-looks-to-improve-the-effectiveness-of-ai-health-tools",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Apple Newsroom"
+    ],
+    "slug": "2026-11-17-apple-recruits-200-000-users-for-ai-health-study",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  },
+  {
+    "headline": "IMF warns global economy leans hard on AI",
+    "summary": "IMF chief Kristalina Georgieva warned on 16 November that the global economy is too reliant on AI. Speaking to CNBC at an ASEAN summit in the Philippines, she said a sudden drop in AI investment confidence could weaken growth. Circular financing, where investment flows back to investors as purchase orders, has reached a little over US$1 trillion. The IMF estimates about two-thirds of it is debt-funded. Georgieva called recent market swings \"orderly\" but urged caution: \"We have to be watchful.\"",
+    "why_it_matters": "If you're budgeting for AI tools, note Georgieva's view that investor expectations are running ahead of what AI has proven to deliver. Pilot a small project and measure results before committing big money.",
+    "category": "Trends",
+    "source_url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-17-imf-warns-global-economy-leans-hard-on-ai",
+    "edition_published": "2026-11-17T01:20:00+10:30"
+  }
+]
