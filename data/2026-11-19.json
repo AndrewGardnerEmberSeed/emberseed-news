@@ -1,0 +1,104 @@
+[
+  {
+    "headline": "OpenAI releases GPT-6.2 Astra and Sol, trimming Astra's API price",
+    "summary": "OpenAI has released two models: GPT-6.2 Astra for demanding professional work, and GPT-6.2 Sol for everyday use. Both are available now to Plus, Pro, Enterprise and Edu users in ChatGPT Work and Codex, and through the API for developers. According to OpenAI, Astra's API price is 20 percent lower than its predecessor's, at US$8 per million input tokens. Output costs US$40 per million tokens, the text chunks AI firms bill by, while Sol stays at US$2 input and US$10 output.",
+    "why_it_matters": "If your team builds on the OpenAI API, Astra now costs 20 percent less than its predecessor, so re-check your monthly bill. Pricing for Australia is not yet announced, so budget in US$ for now.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/openai-launches-gpt-6-2-astra-and-sol-with-lower-api-prices-and-some-benchmark-gains/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "OpenAI News"
+    ],
+    "slug": "2026-11-19-openai-releases-gpt-6-2-astra-and-sol-trimming-astra-s-api-p",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "Meta brings its Muse personal AI agent to Australia",
+    "summary": "Meta says its Muse personal AI agent is now available in Australia, with early local connectors including Kogan, Officeworks, Domain and Ticketek. Users can link services such as Gmail, Google Calendar and OpenTable, though connector features will roll out progressively after launch. Muse checks with the user before sensitive actions such as sending an email or making a purchase. It is free for most uses, with subscriptions for heavier use, and runs on iOS, Android, the web and Mac, with AI glasses coming soon.",
+    "why_it_matters": "If you buy supplies or handle bookings online, check which local connectors are live before relying on Muse, as some features are still rolling out.",
+    "category": "New models",
+    "source_url": "https://about.fb.com/news/2026/11/muse-is-now-available-in-australia/",
+    "source_name": "Meta Newsroom",
+    "also_reported_by": [],
+    "slug": "2026-11-19-meta-brings-its-muse-personal-ai-agent-to-australia",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "Microsoft puts Word, Excel and PowerPoint inside Copilot",
+    "summary": "Microsoft has made Word, Excel and PowerPoint generally available inside Copilot. CEO Satya Nadella calls Copilot \"the new OS for work.\" Announced at Ignite on 17 November, the setup lets AI agents drive tasks, with the Office apps acting as plugins. Copilot Autopilot, a cloud agent that works across email and calendars, will bill through usage-based Copilot Credits. Final pricing is still unannounced, and no Australian details were given.",
+    "why_it_matters": "If your team uses Microsoft 365, Microsoft wants Copilot to be where work starts. Autopilot's pricing is still unknown, so ask for it before you budget.",
+    "category": "Industry",
+    "source_url": "https://arstechnica.com/gadgets/2026/11/microsoft-calls-copilot-the-new-os-for-work-at-ignite-keynote/",
+    "source_name": "Ars Technica",
+    "also_reported_by": [
+      "Official Microsoft Blog"
+    ],
+    "slug": "2026-11-19-microsoft-puts-word-excel-and-powerpoint-inside-copilot",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "Google makes Spark agent free as Gemini Tasks",
+    "summary": "Google has renamed its Spark AI agent as Tasks and made it free, including for users in Australia. According to The Verge, the feature runs on Google's new Gemini 4 Hydrogen model and can book appointments, plan meals and dig through emails for recurring expenses. Spark was previously limited to Google AI Pro and Ultra subscribers. Calling businesses and paying with Google Pay are starting in the US first, and Google says Gemini will ask permission before making purchases.",
+    "why_it_matters": "If you already use Gmail and Google Calendar, Tasks is rolling out free in Australia. Review what it can access, and remember that Gemini asks before it buys anything.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/tech/1035756/google-spark-ai-tasks-free",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Google Keyword"
+    ],
+    "slug": "2026-11-19-google-makes-spark-agent-free-as-gemini-tasks",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "Google extends Gemini chat retention to two months",
+    "summary": "Google says it will keep temporary Gemini chats, including those made with history turned off, for about two months, up from 72 hours. The change rolls out globally in the Gemini app over coming weeks, with no Australian timing yet announced. Gemini also now has separate settings for chat history and AI training, which were previously tied to one Keep Activity switch. Google did not say whether the longer retention changes how conversations are accessed or reviewed.",
+    "why_it_matters": "If your staff use Gemini with chat history off, assume those chats are kept for about two months. Check the separate AI training toggle under Gemini's Activity settings and set it to suit your business.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Ars Technica",
+      "Engadget"
+    ],
+    "slug": "2026-11-19-google-extends-gemini-chat-retention-to-two-months",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "ANZ moves big data platform to AWS in six months",
+    "summary": "ANZ Banking Group moved its enterprise big data platform to Amazon Web Services in six months, a year ahead of its 18-month plan. The bank credits AI-assisted engineering, which it estimates cut migration effort by 35 percent. The 1.7 petabyte platform now runs on Amazon EMR, a rented service for open source data tools such as Hadoop and Spark. ANZ says tokenisation, which swaps sensitive customer data for stand-in values, now costs under US$3000 a month, down from over US$10,000 a day, though that figure covers tokenisation only.",
+    "why_it_matters": "If you're planning a major system move, ask vendors how they'll measure any AI savings. ANZ's 35 percent is its own estimate, for a far larger job than most small businesses run.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/anz-uses-ai-to-move-17pb-data-platform-to-aws-630399?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-19-anz-moves-big-data-platform-to-aws-in-six-months",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "Nvidia revenue doubles as board rules out Huang return",
+    "summary": "Nvidia says quarterly revenue doubled to US$115.8bn in its first results since Huang's resignation, beating forecasts. Chair Harvey Jones told investors the board does not intend to reinstate Jensen Huang as CEO. Interim chief executive Colette Kress says it is \"business as usual\" while the board searches for a permanent CEO. Huang has said he would be honoured to return if the board asked.",
+    "why_it_matters": "If your AI tools run on Nvidia chips, the company says it's business as usual, but it still has no permanent CEO. Worth watching for any shift in product plans.",
+    "category": "Industry",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/17/nvidia-third-quarter-revenue-jensen-huang",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "BBC Technology",
+      "Engadget",
+      "Fast Company"
+    ],
+    "slug": "2026-11-19-nvidia-revenue-doubles-as-board-rules-out-huang-return",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  },
+  {
+    "headline": "KPMG runs 100 AI agents through parallel audit",
+    "summary": "KPMG ran more than 100 AI agents through every phase of a parallel audit of a UK-listed company. Cath Burnet, its UK head of audit, says the agents sometimes dug deeper than the regular team. The official opinion still rests on the regular audit, according to a Financial Times report. The UK regulator sees a risk that AI findings could read as sales pitches for consulting work.",
+    "why_it_matters": "If an accountant or auditor uses AI on your books, ask how they tested its results. The UK regulator says the auditor stays accountable whatever technology they use.",
+    "category": "Business",
+    "source_url": "https://the-decoder.com/kpmgs-project-exponential-put-ai-agents-alongside-a-real-audit-team-and-found-the-bots-dug-deeper-on-individual-questions/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-19-kpmg-runs-100-ai-agents-through-parallel-audit",
+    "edition_published": "2026-11-19T01:20:00+10:30"
+  }
+]
