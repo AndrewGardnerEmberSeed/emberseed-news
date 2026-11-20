@@ -1,0 +1,104 @@
+[
+  {
+    "headline": "Google's Gemini on Mac gains computer use",
+    "summary": "Google has added computer use to its Gemini app for macOS, so the AI can run multi-step tasks across files, apps and websites. Users pick which apps Gemini may access, and can follow its progress in a live preview within the chat. They can pause, stop or approve actions as the AI works. The feature is rolling out in English to US users, and requires a Google AI Plus, Pro or Ultra subscription.",
+    "why_it_matters": "If you're in Australia, this isn't available yet, and Google hasn't said when it will expand. When it does, review which folders and apps you grant access to before approving any actions.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget"
+    ],
+    "slug": "2026-11-21-google-s-gemini-on-mac-gains-computer-use",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "Auto & General pilots AI agents for routine service queries",
+    "summary": "Insurer Auto & General is starting a pilot of Genesys' Agentic Virtual Agent (AVA) in one low-risk, high-volume part of its customer service. Head of unified communications Kelly Lyons told the Genesys Xperience APAC summit the insurer hopes the project becomes a blueprint for repeated customer journeys. The business already uses Genesys' Cloud Agent Copilot to summarise conversations, producing about 133,000 summaries a month in its service business.",
+    "why_it_matters": "If your inbox is full of simple, repeat questions, that's a sensible place to start with AI. Pick one well-understood workflow, prove it works, then expand.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/auto-general-is-starting-to-deploy-agentic-virtual-agents-630467?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-21-auto-general-pilots-ai-agents-for-routine-service-queries",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic lists on Nasdaq, closes first day 17% higher",
+    "summary": "Anthropic, maker of the Claude chatbot, has begun trading on the Nasdaq under the ticker ANT. Shares opened at US$111.50, above the US$83 IPO price, and closed near US$97, about 17% higher, according to The Guardian. TechCrunch reports the offering will raise over US$81 billion, while the wider market fell sharply that day. Its S-1 filing shows a US$80.7 billion first-half net loss, mostly from an accounting charge, against US$16.3 billion in revenue.",
+    "why_it_matters": "If your business relies on Claude, nothing changes for your plan today. Anthropic's filing says founders, not shareholders, keep control, but watch for any pricing or terms notices.",
+    "category": "Business",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1035384/anthropic-ipo-trading-nasdaq",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "The Guardian",
+      "CNBC Technology",
+      "BBC Technology",
+      "Anthropic News"
+    ],
+    "slug": "2026-11-21-anthropic-lists-on-nasdaq-closes-first-day-17-higher",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "US firms use more AI as token prices fall",
+    "summary": "US companies are using AI more than ever and paying less for it, according to the Ramp AI Index. Tokens, the units AI firms bill by, got 21.2 percent cheaper in six weeks, while volume hit a record high. Token spending fell 6.3 percent from its peak two weeks earlier, according to Ramp, which tracks more than 85,000 US companies. OpenRouter's separate data shows a similar pattern, though neither source represents the whole market.",
+    "why_it_matters": "If your business pays for AI by usage, per-token prices are falling, so check current rates before you renew.",
+    "category": "Trends",
+    "source_url": "https://the-decoder.com/ai-industry-growth-remains-strong-but-the-pace-is-slowing/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-21-us-firms-use-more-ai-as-token-prices-fall",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI tests Dots agents with some ChatGPT Plus users",
+    "summary": "OpenAI is testing Dots, its proactive AI agents, with a small group of ChatGPT Plus users. Dots first launched on Pro and higher plans, and can interact with over 4,000 apps while working on tasks in the background. Engadget reports that all ChatGPT Business Standard users are rolling out Dots from 20 November. Australian availability has not yet been announced, and OpenAI hasn't said whether the Plus access will be permanent.",
+    "why_it_matters": "If your team is on ChatGPT Business Standard, Dots can now act in your apps and on your PC, so decide what access they get. Plus access may be temporary, so don't build workflows around it yet.",
+    "category": "New models",
+    "source_url": "https://www.engadget.com/2322656/openai-is-testing-dots-personal-agents-on-its-20-per-month-plus-tier/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-21-openai-tests-dots-agents-with-some-chatgpt-plus-users",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "Meta's Muse agent reportedly mixing up users' private data",
+    "summary": "Meta employees have raised concerns that its AI agent Muse is mixing up conversations across accounts and exposing private user data, according to a Reuters report covered by TechCrunch. Staff described receiving childcare requests, product orders and bank balances that belonged to other people. One employee said Muse prompted her to reply to a Signal message from her sister, and that she had never granted it access to other apps. Meta says employee testing is core to development and that staff use versions of Muse different from the public one. Muse launched in September and has more than 10 million downloads.",
+    "why_it_matters": "If you let staff connect AI agents to email, banking or messaging apps, check what each one can see and switch off access you don't need. The report doesn't say whether Muse is available in Australia.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-21-meta-s-muse-agent-reportedly-mixing-up-users-private-data",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "Google adds recent AI chat sidebar to desktop homepage",
+    "summary": "Google has added a collapsible sidebar to AI Mode on its desktop homepage that lists recent searches. Google's Robby Stein announced the change on X on 19 November. From the sidebar, users can reopen past chats, start new threads or search their history. Stein says people now ask follow-up questions, and in testing the sidebar helped them keep exploring. Google says it's rolling out globally on desktop.",
+    "why_it_matters": "If your team researches on Google desktop, past AI chats now sit one click away. Agree on which work questions belong in those chats.",
+    "category": "New models",
+    "source_url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-11-21-google-adds-recent-ai-chat-sidebar-to-desktop-homepage",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  },
+  {
+    "headline": "NextDC rules out new datacentres near homes after backlash",
+    "summary": "NextDC says it will no longer pursue new datacentre developments near homes, after community anger over its expansion at West Footscray in inner Melbourne. Chair Doug Flynn says community sensitivities now shape where the company builds. The Guardian reports the company's share price fell 40% during the dispute before recovering, and NextDC plans a community consultative committee, a dedicated project website and set response times for complaints.",
+    "why_it_matters": "If your business relies on a site, power supply or council approval for a new facility, check community sentiment early. NextDC's expansion stalled after local protests over power poles.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/australia-news/2026/nov/20/nextdc-vows-to-keep-future-datacentres-away-from-homes-after-community-backlash-in-melbourne",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-21-nextdc-rules-out-new-datacentres-near-homes-after-backlash",
+    "edition_published": "2026-11-21T01:20:00+10:30"
+  }
+]
