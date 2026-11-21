@@ -1,0 +1,107 @@
+[
+  {
+    "headline": "Etsy clarifies AI terms after seller backlash",
+    "summary": "Etsy has defended a new Terms of Use clause that lets it and third-party partners use seller content to train AI. Some sellers have left the platform over the change, which takes effect on 16 December, according to Engadget and The New York Times. Etsy's VP of operations, James Ossman, says the company does not use content to train models that copy original work or replace creativity. He says Etsy already uses seller content for translations, marketing and shop-performance tools, and bars AI crawlers from scraping listings.",
+    "why_it_matters": "If you sell on Etsy, read the terms change before 16 December. It lets Etsy and partners use your listings to train AI, though Etsy says it won't copy your work.",
+    "category": "Safety & policy",
+    "source_url": "https://www.engadget.com/2324090/etsy-not-use-seller-content-train-ai/",
+    "source_name": "Engadget",
+    "also_reported_by": [],
+    "slug": "2026-11-22-etsy-clarifies-ai-terms-after-seller-backlash",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Trump threatens US firms with tax over overseas data centres",
+    "summary": "US President Donald Trump said on Friday, 20 November, that American companies will not be allowed to build AI data centres overseas, and any that do could face a \"tremendous tax\". Speaking after a summit with China's Xi Jinping and Russia's Vladimir Putin, he offered few details and said his own staff had not heard the idea before. The BBC reports it remains unclear how such a policy would be enforced. It also notes that Meta and Google have already agreed to build overseas data centres.",
+    "why_it_matters": "This is a proposal with few details, not a rule yet. If your business uses AI tools run by US cloud providers, it's worth watching how this develops.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/policy/1038892/trump-foreign-data-centers-tax",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "BBC Technology",
+      "CNBC Technology"
+    ],
+    "slug": "2026-11-22-trump-threatens-us-firms-with-tax-over-overseas-data-centres",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Signal blocks screenshots to keep AI agents out",
+    "summary": "Signal is restricting screenshots in its app on Android and iOS 27 to stop AI agents reading private messages. Its president, Meredith Whittaker, says built-in assistants such as Siri and Gemini can read on-screen content and undermine the app's privacy guarantees. Users can switch screenshots back on in settings, but Signal warns that could expose their chats to AI agents. Whittaker calls the fix incomplete, as agents can still reach app data through the device file system, and urges Apple, Google and Microsoft to offer developer tools.",
+    "why_it_matters": "If your team shares sensitive details on Signal, expect screenshots to be blocked on phones. Signal says AI assistants may still reach messages another way, so don't treat the app as fully protected.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1038390/signal-blocking-ai-agent-screenshots-mobile-app",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-22-signal-blocks-screenshots-to-keep-ai-agents-out",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Apple hires engineers for its own AI agent",
+    "summary": "Apple is building its own AI agent, according to a job listing Bloomberg spotted before it was removed. The role seeks an engineer to lead an assistant that browses the web, works across apps, writes code and calls services. Bloomberg says the agent is at an early stage and could arrive as early as late next year, with no Australian timing announced. Separately, Bloomberg reports that macOS 27.3 now requires 14 steps, not four, for third-party agents such as ChatGPT to control Macs; Apple says the change protects users.",
+    "why_it_matters": "If your team uses ChatGPT on Macs, expect extra setup steps before it can control the screen. Apple's own agent is still early, so don't build plans around it yet.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-22-apple-hires-engineers-for-its-own-ai-agent",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic shares slip back near IPO price in sell-off",
+    "summary": "Anthropic's shares closed down 8.5% on Friday 20 November, giving back half of Thursday's gains after its Nasdaq debut. The fall came during a wider tech sell-off that pushed the S&P 500 and Dow Jones into correction territory, according to the BBC. The stock dipped to about US$85 at one point, close to its US$83 listing price. CNBC reports the IPO raised a record US$93.5 billion.",
+    "why_it_matters": "If you own shares or tech-heavy super funds, expect sharper daily swings while investors reassess AI spending.",
+    "category": "Industry",
+    "source_url": "https://www.bbc.co.uk/news/articles/c6808ym10vzgo?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [
+      "Fast Company",
+      "CNBC Technology",
+      "The Decoder",
+      "ABC News",
+      "InnovationAus"
+    ],
+    "slug": "2026-11-22-anthropic-shares-slip-back-near-ipo-price-in-sell-off",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "BBC's TV test finds AI Black Friday advice mixed",
+    "summary": "The BBC tested four free AI assistants by asking each to find a 55-inch TV deal ahead of Black Friday. ChatGPT and Claude recommended TVs that were unavailable or led to dead pages, while Alexa's prices were accurate but it only searches Amazon's own store. Gemini gave a comparison table with no store links. Amazon launched Alexa for Shopping for UK users in November, and its Australian availability is not yet announced.",
+    "why_it_matters": "If you use a chatbot to hunt for sales, check each price, stock level and link on the seller's site before you buy. Wrong prices can waste time and money, and the BBC's test was not a formal study.",
+    "category": "Applications",
+    "source_url": "https://www.bbc.co.uk/news/articles/cw8dv4jmnle2o?at_medium=RSS&at_campaign=rss",
+    "source_name": "BBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-22-bbc-s-tv-test-finds-ai-black-friday-advice-mixed",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Anthropic mathematician claims Riemann hypothesis proof with Claude",
+    "summary": "Anthropic mathematician Levent Alpöge says he has proved the Riemann hypothesis, a problem first proposed in 1859, working with Claude. The Verge reports the claim is unverified and that Anthropic has not commented. TechCrunch reports several mathematicians in an online chat say they have compiled his proof in Lean, a language for checking proofs, but understanding it will take time. The Clay Mathematics Institute, which offers a US$1 million prize per Millennium Prize problem, has not yet accepted it, and its rules require at least two years of scrutiny.",
+    "why_it_matters": "If your business uses AI for complex technical work, big claims can take months or years to verify. Check important AI-generated results independently before you act on them.",
+    "category": "Trends",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "BBC Technology",
+      "The Decoder"
+    ],
+    "slug": "2026-11-22-anthropic-mathematician-claims-riemann-hypothesis-proof-with",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  },
+  {
+    "headline": "Thinking Machines launches open Inkling 2 Mini for laptops",
+    "summary": "Thinking Machines has released Inkling 2 Mini, an open model that reasons longer without generating more text. It handles text and images and is licensed under Apache 2.0, with weights available on Hugging Face. On agentic coding tests, where AI carries out multi-step programming jobs, it reportedly leads open models under 100 billion parameters. Artificial Analysis rates it level with Qwen3.8 27B on its Intelligence Index, at roughly six times lower cost.",
+    "why_it_matters": "If you handle sensitive customer records, a model that runs on a Mac with at least 32 GB of memory could keep that data on your own machine. Trial it on your own work before trusting published scores.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/new-open-model-inkling-2-mini-thinks-in-loops-to-solve-problems-with-fewer-words-and-still-runs-on-a-laptop/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-22-thinking-machines-launches-open-inkling-2-mini-for-laptops",
+    "edition_published": "2026-11-22T01:20:00+10:30"
+  }
+]
