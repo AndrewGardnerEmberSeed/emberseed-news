@@ -1,0 +1,104 @@
+[
+  {
+    "headline": "Nvidia reinstates Jensen Huang as CEO after 11 days",
+    "summary": "Nvidia's board has reinstated Jensen Huang as chief executive, effective immediately, 11 days after he resigned on 12 November. The board says it consulted senior US government officials before deciding Huang poses no national security risk. Nvidia shares opened about 30% higher on Monday, after the board said on 17 November it did not intend to bring him back. Colette Kress, the chief financial officer, had been interim CEO.",
+    "why_it_matters": "If your business relies on AI services, many run on Nvidia's chips, so a leadership change at the top can ripple outwards. Note which tools you depend on and whether you have a backup option.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/23/nvidia-reverses-course-and-brings-jensen-huang-back-as-ceo/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Wired",
+      "Ars Technica",
+      "CNBC Technology",
+      "The Decoder",
+      "ABC News",
+      "GamesIndustry.biz"
+    ],
+    "slug": "2026-11-24-nvidia-reinstates-jensen-huang-as-ceo-after-11-days",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Oregon and Virginia sue SpaceX over Grok deepfakes",
+    "summary": "Oregon and Virginia have sued SpaceX in state courts, alleging it misled users about Grok's safety. The states allege SpaceX misrepresented its efforts against child sexual abuse material and nonconsensual intimate images. Virginia says its investigators found Grok's image safeguards \"inconsistent and ineffective\". The states seek civil penalties, and SpaceX did not immediately respond to a request for comment.",
+    "why_it_matters": "If you use AI image tools for marketing, don't take a vendor's safety claims on trust. Ask what it blocks and how it handles reports of abuse.",
+    "category": "Safety & policy",
+    "source_url": "https://www.wired.com/story/states-sue-spacex-over-grok-deepfakes/",
+    "source_name": "Wired",
+    "also_reported_by": [
+      "CNBC Technology"
+    ],
+    "slug": "2026-11-24-oregon-and-virginia-sue-spacex-over-grok-deepfakes",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Walmart opens its website to Meta's Muse agent",
+    "summary": "Walmart is letting Meta's Muse AI agent buy products on its website on a customer's behalf. Muse shopping goes live on 24 November, after a 24-hour delay, according to Walmart. Muse shops through an Agent Profile inside the customer's Walmart account, where users can set spending limits, approve purchases and review Muse's purchase history. Walmart says more AI agents and apps are on the way, while Amazon and eBay have blocked AI agents from their platforms. No Australian availability has been announced.",
+    "why_it_matters": "If your team buys from Walmart, Muse can build a basket, but you set the spending limit and approve purchases.",
+    "category": "Business",
+    "source_url": "https://www.theverge.com/ai-artificial-intelligence/1039874/walmart-agent-gateway-meta-muse-black-friday",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-24-walmart-opens-its-website-to-meta-s-muse-agent",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI's Pachocki proposes shared AI limits tied to perplexity",
+    "summary": "OpenAI chief scientist Jakub Pachocki has proposed that AI developers agree on common limits, measured by a metric called perplexity. Perplexity scores how well a model predicts the next token, the chunks of text AI firms bill by; lower is better. In a blog post on 22 November, Pachocki says the score has stayed informative as task-based tests have aged quickly. He suggests companies would commit not to go past a set threshold until they can reliably monitor AI behaviour. Sam Altman called the post the most important thing OpenAI has published in a while.",
+    "why_it_matters": "This is a proposal, not a rule, and no limits have been agreed, so nothing changes for your AI tools yet. If your business relies on a particular AI vendor, watch whether it signs up to shared limits.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/22/openais-chief-scientist-has-thoughts-on-how-to-limit-ai-development/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-24-openai-s-pachocki-proposes-shared-ai-limits-tied-to-perplexi",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Lottery Corporation stages small Genesys pilot for contact centre",
+    "summary": "The Lottery Corporation is transforming its contact centre through a smaller, staged pilot that won Board approval. The initial Genesys investment is $135,000, with partner QPC assisting, after earlier multi-million-dollar proposals failed to win Board support. General manager Tammy Hall told the Genesys Xperience APAC summit that the organisation is using about 20 percent of the platform's capability so far. The centre's roughly 140 staff handle calls on prize payments, complaints and responsible play, the industry term for gambling assistance.",
+    "why_it_matters": "If you're pitching a big tech upgrade, a small staged pilot with a clear return may get the nod where a large plan stalls. Ask vendors to explain AI charges billed per token, the text chunks AI firms count.",
+    "category": "Business",
+    "source_url": "https://www.itnews.com.au/news/the-lottery-corporation-is-transforming-its-contact-centre-630484?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-24-lottery-corporation-stages-small-genesys-pilot-for-contact-c",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Sierra doubles valuation to $30B in six months",
+    "summary": "Sierra, the customer experience company co-founded by former Salesforce co-CEO Bret Taylor, has raised US$1.75 billion at a US$30 billion valuation. The Series F round, led by Greenoaks and Lightspeed Venture Partners, comes six months after a round that valued the company at US$15 billion. Sierra says it serves almost 50% of Fortune 50 companies and that its outcome-based pricing helped double run-rate revenue to US$400 million within five months.",
+    "why_it_matters": "If you're buying AI for customer service, ask vendors how they charge. Sierra says its outcome-based pricing helped double revenue, so per-result models are worth comparing.",
+    "category": "Industry",
+    "source_url": "https://techcrunch.com/2026/11/23/sierra-doubles-valuation-to-30b-within-six-months-as-demand-for-ai-in-cx-takes-off/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-24-sierra-doubles-valuation-to-30b-in-six-months",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Nicalis pulls AI music from Binding of Isaac update",
+    "summary": "Nicalis has removed AI-generated music from The Binding of Isaac: Repentance Plus after players raised concerns. According to The Verge, a Reddit user found tracks with Suno metadata in a Grand Theft Auto-themed section. Creator Edmund McMillen apologised on X, saying he \"had no idea\" generative AI was used. Steam reviews remain \"overwhelmingly negative\" despite the update.",
+    "why_it_matters": "If you publish content made with AI, check where each file came from before it goes live. Valve requires Steam developers to disclose generative AI use, and this update drew a review backlash.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://www.theverge.com/games/1039770/binding-of-isaac-ai-music",
+    "source_name": "The Verge",
+    "also_reported_by": [],
+    "slug": "2026-11-24-nicalis-pulls-ai-music-from-binding-of-isaac-update",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  },
+  {
+    "headline": "Lean community verifies Alpöge's Riemann hypothesis proof",
+    "summary": "The Lean and Mathlib communities say Levent Alpöge's proof of the Riemann hypothesis is correct. Alpöge, described by The Guardian as an Anthropic mathematician, posted the proof on 20 November. The proof runs to 17 million lines of Lean, a language that checks each logical step. Alpöge credits Claude with help over about six weeks, while The Conversation calls it a proof no human can read.",
+    "why_it_matters": "If AI produces work for your business, ask how it can be checked. Here, checking software backed the proof, but The Conversation says no human can read it.",
+    "category": "Trends",
+    "source_url": "https://the-decoder.com/lean-and-mathlib-community-officially-confirms-levent-alpoges-proof-of-the-riemann-hypothesis-is-correct/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "The Guardian",
+      "The Conversation"
+    ],
+    "slug": "2026-11-24-lean-community-verifies-alp-ge-s-riemann-hypothesis-proof",
+    "edition_published": "2026-11-24T01:20:00+10:30"
+  }
+]
