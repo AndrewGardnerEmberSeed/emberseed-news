@@ -1,0 +1,102 @@
+[
+  {
+    "headline": "Federal AI committee urges copyright payments for creators",
+    "summary": "A parliamentary committee on AI tabled its report on 24 November with 46 recommendations, including a mechanism to help Australian creators get paid by AI firms. The majority view also calls for transparency about how Australian content is used. Aria and Apra Amcos dispute that copyright changes are needed, and more than 7,000 artists have signed a pledge against weakening the law. Senator David Pocock, who dissented, wants a three-year moratorium on copyright changes.",
+    "why_it_matters": "If your business relies on original content, such as photos, copy or music, watch the copyright debate. The committee's findings aren't government policy yet, and draft AI laws are expected early next year.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/24/kate-bush-grace-jones-australian-artists-copyright-law-ai",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "The Conversation",
+      "InnovationAus"
+    ],
+    "slug": "2026-11-25-federal-ai-committee-urges-copyright-payments-for-creators",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "Iran-linked fake reporter used ChatGPT to target Australia",
+    "summary": "OpenAI says it disrupted an Iran-based influence operation that used ChatGPT to create seven fake Western journalists. The ABC reports that one persona, Alice Johnson, published at least two articles and several posts about Australia, since removed. One article ran on Middle East Monitor in March, a site Semrush estimates had about 22,000 Australian visits in October. Foreign Minister Penny Wong will raise the case in federal parliament, and OpenAI has yet to respond to the ABC's request for comment.",
+    "why_it_matters": "If your team relies on online news or social media for industry updates, check who wrote a story and where it came from before you act on it or repost it.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-24/penny-wong-iran-linked-ai-foreign-influence/107419864",
+    "source_name": "ABC News",
+    "also_reported_by": [
+      "Information Age"
+    ],
+    "slug": "2026-11-25-iran-linked-fake-reporter-used-chatgpt-to-target-australia",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI brings GPT-6.2 Sol chat upgrade to paid plans",
+    "summary": "OpenAI is rolling out a chat-tuned GPT-6.2 Sol worldwide to paid ChatGPT users on Plus, Pro, Business and Enterprise plans. OpenAI says it handles complex requests and web searches better than GPT-6. In its internal tests, image understanding rose from 47.4 to 71.7 per cent. Its system card puts safety-policy compliance in difficult conversations at 91 to 94 per cent, up from 77 to 80.",
+    "why_it_matters": "If your team uses ChatGPT chat, check who has access: Enterprise admins decide whether users get GPT-6.2. The reported gains apply only to chat, not Work or Codex.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/openai-updates-chatgpt-to-handle-complex-everyday-questions-web-searches-and-images-more-reliably/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-25-openai-brings-gpt-6-2-sol-chat-upgrade-to-paid-plans",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "Meta brings its Muse AI agent to the UK",
+    "summary": "Meta has launched Muse, its personal AI agent, in the UK from 24 November for adults aged 18 and over. Meta says Muse can book travel and check out purchases, but it asks for approval before sending emails or buying anything. It runs on iOS, Android, the web at muse.ai and WhatsApp, and is free for most uses, with subscription plans for heavier use. According to The Guardian, UK regulators say they are keeping a close eye on the launch over privacy and consumer protection. An Australian launch is not yet announced.",
+    "why_it_matters": "If you use Muse for email or shopping, decide which accounts it can reach. You approve every purchase, but you choose which other tasks it can carry out without asking.",
+    "category": "New models",
+    "source_url": "https://about.fb.com/news/2026/11/introducing-muse-in-the-uk-a-personal-ai-agent-you-control/",
+    "source_name": "Meta Newsroom",
+    "also_reported_by": [
+      "The Guardian",
+      "BBC Technology"
+    ],
+    "slug": "2026-11-25-meta-brings-its-muse-ai-agent-to-the-uk",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "CrowdStrike buys Zscaler in US$43.9 billion share deal",
+    "summary": "CrowdStrike will buy fellow security firm Zscaler in an all-stock deal worth US$43.9 billion. Zscaler shareholders will receive 1.135 CrowdStrike shares for each share they hold. CEO George Kurtz calls the pairing a \"winning combination\" that adds network security to its platform. Investors are weighing dilution, and IG Group analyst Axel Rudolph says antitrust scrutiny is possible but premature to assume a block.",
+    "why_it_matters": "If you buy security tools from CrowdStrike or Zscaler, ask your provider how the deal could affect pricing and support. The deal is not expected to close until the second half of CrowdStrike's fiscal year 2028.",
+    "category": "Industry",
+    "source_url": "https://www.cnbc.com/2026/11/23/crowdstrike-zscaler-aquisition-ai-cyberattacks.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "iTnews"
+    ],
+    "slug": "2026-11-25-crowdstrike-buys-zscaler-in-us-43-9-billion-share-deal",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "Google Search's AI Mode gets Wallet and Drive access",
+    "summary": "Google is extending Personal Intelligence, its feature that draws on users' own apps, to AI Mode in Search. Google Wallet is rolling out from today, with Drive and the Gemini app following in the coming weeks. Google says AI Mode can only read Wallet accounts, not move or manage money. Connecting apps is optional, and the feature already works with Gmail, Calendar and Photos. Australian availability has not yet been announced.",
+    "why_it_matters": "If your team uses Google Search for work, decide whether business documents or accounts should be connected. Connections are optional and can be switched off at any time.",
+    "category": "New models",
+    "source_url": "https://techcrunch.com/2026/11/23/google-searchs-ai-mode-can-now-tap-into-drive-and-wallet-for-more-personalized-responses/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Google Keyword"
+    ],
+    "slug": "2026-11-25-google-search-s-ai-mode-gets-wallet-and-drive-access",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "AWS-backed survey finds AI gains hard to measure across Asia",
+    "summary": "Some 58% of Asia-Pacific businesses using AI say their investments have already surpassed their initial costs. Yet only 12% are very confident they can accurately measure that return on investment. The research, by Strand Partners for Amazon Web Services, surveyed 9,750 business leaders in 10 Asia-Pacific markets. Australia had the region's highest adoption rate at 61%, while 48% of respondents cite a shortage of AI and digital skills as a barrier.",
+    "why_it_matters": "If you can't yet measure what AI returns, set a baseline now, such as hours per task, before spending more.",
+    "category": "Trends",
+    "source_url": "https://www.cnbc.com/2026/11/24/aws-asia-gains-roi.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [],
+    "slug": "2026-11-25-aws-backed-survey-finds-ai-gains-hard-to-measure-across-asia",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  },
+  {
+    "headline": "Safety groups ask Amazon and eBay to pause AI toys",
+    "summary": "More than 150 child safety groups and experts have urged Amazon and eBay to stop selling AI toys this Christmas until they are proved safe, and to offer refunds to buyers. Alliance 4 Children found one plush bunny, listed for ages three and up and connected to ChatGPT, suggested a child could consent to being touched for pleasure. US PIRG's tests of seven AI toys found most too faulty for sale, with privacy problems. Amazon says it has removed the named products while it reviews the claims; eBay says it continually evaluates its policies.",
+    "why_it_matters": "If you buy AI toys for children, check the age rating and what data they collect, as testers found gaps in both. If you sell toys on Amazon or eBay, AI toy listings are now under close scrutiny.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theguardian.com/technology/2026/nov/23/child-safety-groups-urge-amazon-ebay-stop-selling-ai-toys-until-proved-safe",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-25-safety-groups-ask-amazon-and-ebay-to-pause-ai-toys",
+    "edition_published": "2026-11-25T02:20:00+10:30"
+  }
+]
