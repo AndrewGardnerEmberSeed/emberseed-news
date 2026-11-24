@@ -590,7 +590,7 @@ footer.site .links{{display:flex;flex-wrap:wrap;gap:6px 20px}}
 
 FOOT = """</main>
 <footer class="site"><div class="wrap">
-<p>EmberSeed is a trading name of Wilderness Properties Pty Ltd · ACN 614 946 897 · Mylor SA 5153</p>
+<p>EmberSeed is a trading name of First Beer Club Trading Pty Ltd · ACN 635 895 304 · ABN 30 635 895 304 · Mylor SA 5153</p>
 <p class="links"><a href="{home}">News</a><a href="{main}/playbook">Playbook</a><a href="{main}/privacy">Privacy</a><a href="{main}/how-i-use-ai">How I use AI</a><a href="{base}archive.html">Archive</a><a href="{base}feed.xml">RSS</a></p>
 </div></footer>
 </body>
