@@ -14,27 +14,6 @@
     "notes": "Daily. Each description gives the main story plus an 'In the headlines' list, which makes it a good story radar. The podcast feed (https://anchor.fm/s/f7cac464/podcast/rss) also works but is about 8 MB with 1,100+ items, so use YouTube."
   },
   {
-    "name": "Matthew Berman (YouTube)",
-    "category": "Commentators & newsletters",
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCawZsQWqfGSbCI5yjkdVkTA",
-    "site": "https://www.youtube.com/@matthew_berman",
-    "notes": "Near-daily. Covers model launches with hands-on tests, plus some developer and coding content."
-  },
-  {
-    "name": "Wes Roth (YouTube)",
-    "category": "Commentators & newsletters",
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCqcbQf6yw5KzRoDDcZ_wBSw",
-    "site": "https://www.youtube.com/@WesRoth",
-    "notes": "Several videos a week. Titles are hype-heavy (caps, ellipses), so treat it as a signal only and confirm facts elsewhere."
-  },
-  {
-    "name": "The AI Advantage (YouTube)",
-    "category": "Commentators & newsletters",
-    "url": "https://www.youtube.com/feeds/videos.xml?channel_id=UCHhYXsLBEVVnbvsq57n1MTQ",
-    "site": "https://www.youtube.com/@aiadvantage",
-    "notes": "Practical how-to clips on new ChatGPT and Claude features. Descriptions are mostly promo boilerplate, so the titles carry the signal."
-  },
-  {
     "name": "Hard Fork (NYT podcast)",
     "category": "Commentators & newsletters",
     "url": "https://feeds.simplecast.com/6HKOhNgS",
