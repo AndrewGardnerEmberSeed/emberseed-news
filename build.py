@@ -269,7 +269,7 @@ def claude_on_mac(prompt, system, schema, model):
            "--output-format", "json", "--json-schema", json.dumps(schema),
            "--tools", "", "--no-session-persistence", "--strict-mcp-config", "--setting-sources", ""]
     # only what Claude Code needs: never the environment of whatever started this (a Claude session, say)
-    env = {"HOME": os.path.expanduser("~"), "USER": os.environ.get("USER", ""), "PATH": "/usr/bin:/bin:/usr/sbin:/sbin",
+    env = {"HOME": os.path.expanduser("~"), "USER": os.environ.get("USER", ""), "PATH": os.environ.get("CLAUDE_PATH", "/usr/bin:/bin:/usr/sbin:/sbin"),
            "LANG": "en_US.UTF-8", "CLAUDE_CODE_OAUTH_TOKEN": mac_token()}
     for attempt in range(1, 5):
         with tempfile.TemporaryDirectory() as empty:

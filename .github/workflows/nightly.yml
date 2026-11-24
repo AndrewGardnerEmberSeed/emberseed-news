@@ -1,19 +1,22 @@
 name: Publish AI news
 
-# Since 4 November 2026 Andrew's Mac makes the edition overnight (mac_job.py, on his Max plan, through Claude Code) and
-# pushes data/ and site/. This only publishes what it pushes. On 5 November Andrew had the API taken out altogether
-# ("please do 2": switch off the API completely), so GitHub no longer makes an edition itself and holds no Claude key:
-# if the Mac misses a night, there's no edition until it runs (it tries every hour from 1am to 9am).
+# Since 24 November 2026 GitHub makes the edition itself again, at 50 past each hour from about 1am to 10am in Adelaide,
+# through Claude Code on Andrew's Max plan (the secret CLAUDE_CODE_OAUTH_TOKEN, the same one-year token the Mac uses;
+# no API key and no per-use bills). Andrew, 24 November 2026: "Go ahead" on moving AI News off the Mac.
+# The Mac (mac_job.py, at 20 past) still tries too while it's awake: whichever runs first makes the day's edition and
+# the other finds it done. Pushes of site/ (from the Mac, or a fixed story) are published as before.
 on:
+  schedule:
+    - cron: "50 14-23 * * *"   # UTC: 1:20am to 10:20am in Adelaide in summer (an hour earlier in winter)
   push:
     branches: [main]
     paths: ["site/**"]
   workflow_dispatch:
     inputs:
       mode:
-        description: "render = rebuild the pages from data/ after fixing a story (to make a new edition, run python3 mac_job.py on the Mac)"
+        description: "render = rebuild the pages from data/ after fixing a story; test = a full run with Claude that prints the stories and saves nothing"
         type: choice
-        options: [render]
+        options: [render, test]
         default: render
 
 permissions:
@@ -42,8 +45,25 @@ jobs:
           python-version: "3.12"
 
       - name: Rebuild pages from data
-        if: github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch' && inputs.mode == 'render'
         run: python3 build.py --render-only
+
+      - uses: actions/setup-node@v4
+        if: github.event_name == 'schedule' || inputs.mode == 'test'
+        with:
+          node-version: "22"
+
+      - name: Make today's edition (Claude Code on the Max plan)
+        if: github.event_name == 'schedule' || inputs.mode == 'test'
+        env:
+          NEWS_BACKEND: mac
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+        run: |
+          if [ -z "$CLAUDE_CODE_OAUTH_TOKEN" ]; then echo "No CLAUDE_CODE_OAUTH_TOKEN secret yet, so no edition here."; exit 0; fi
+          npm install -g --silent @anthropic-ai/claude-code
+          export CLAUDE_BIN="$(command -v claude)"
+          export CLAUDE_PATH="$(dirname "$(command -v node)"):/usr/bin:/bin"
+          python3 build.py ${{ inputs.mode == 'test' && '--dry-run' || '' }}
 
       - name: Save the pages
         id: save
@@ -53,11 +73,17 @@ jobs:
           git add data site
           if git diff --cached --quiet; then
             echo "Nothing new to save."
+            # a scheduled run that made nothing (outside the hours, or today's edition already out) publishes nothing
+            if [ "${{ github.event_name }}" != "schedule" ]; then echo "publish=true" >> "$GITHUB_OUTPUT"; fi
           else
-            git commit -m "AI news pages $(TZ=Australia/Adelaide date +%Y-%m-%d)"
+            if [ "${{ github.event_name }}" = "schedule" ]; then
+              git commit -m "AI news $(TZ=Australia/Adelaide date +%Y-%m-%d) (made on GitHub)"
+            else
+              git commit -m "AI news pages $(TZ=Australia/Adelaide date +%Y-%m-%d)"
+            fi
             git push
+            echo "publish=true" >> "$GITHUB_OUTPUT"
           fi
-          echo "publish=true" >> "$GITHUB_OUTPUT"
 
       - uses: actions/upload-pages-artifact@v3
         if: steps.save.outputs.publish == 'true'

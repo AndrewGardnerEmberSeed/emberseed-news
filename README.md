@@ -42,6 +42,21 @@ models (Sonnet 5.5 picks and checks, Haiku 5.5 writes), effort and JSON schemas,
 - **Stop or start the job:** `launchctl bootout gui/$(id -u)/au.com.emberseedautomation.news` stops it;
   `launchctl bootstrap gui/$(id -u) ~/Library/LaunchAgents/au.com.emberseedautomation.news.plist` starts it again.
 
+## On GitHub again, through the Max plan (since 24 November 2026)
+
+Andrew, 24 November 2026: "Go ahead" on moving the edition off the Mac, so it comes out even when the Mac is asleep.
+
+- **The workflow** (`.github/workflows/nightly.yml`, "Publish AI news") runs at 50 past each hour, from about 1am to
+  10am in Adelaide. It installs Claude Code and runs `build.py` with `NEWS_BACKEND=mac`: the same Claude Code calls as on
+  the Mac, on Andrew's Max plan. No API key, no per-use bills. Then it saves `data/` and `site/` and publishes.
+- **The sign-in:** the repository secret `CLAUDE_CODE_OAUTH_TOKEN`, the same one-year token as the Mac's (made
+  4 November 2026, expires about 4 November 2027). Until the secret is set, the scheduled runs make nothing.
+- **The Mac still tries** at 20 past while it's awake. Whichever runs first makes the day's edition; the other finds it
+  done. If both push at once, the second push fails and that run shows red: the edition is still out.
+- **Test it:** Actions → Publish AI news → Run workflow → mode **test** (a full run that prints the stories and saves
+  nothing).
+- InnovationAus refuses GitHub's servers, so on nights GitHub makes the edition its stories don't come through.
+
 ## Status (16 October 2026)
 
 - Live at https://news.emberseedautomation.com.au/ since 21 October 2026 (before that at https://andrewgardneremberseed.github.io/emberseed-news/, which now forwards here). The News links on emberseedautomation.com.au go to `/news`, which a Squarespace URL mapping redirects here.
