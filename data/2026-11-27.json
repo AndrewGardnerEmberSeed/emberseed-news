@@ -1,0 +1,105 @@
+[
+  {
+    "headline": "42 US state attorneys general oppose Character.AI chat auction",
+    "summary": "A bipartisan group of 42 US state attorneys general wants a bankruptcy court to block Character.AI's 1 December auction of users' private chats. The AGs say the data covers more than 21 million US accounts, over 2.1 million of them registered to minors. Character.AI says its privacy policy still protects users, but the AGs argue that buyers would not have to honour it. If this raises concerns for you, call Lifeline on 13 11 14.",
+    "why_it_matters": "If your business runs a chatbot that stores customer conversations, check what your privacy promises would mean if the provider went bankrupt and sold its data.",
+    "category": "Safety & policy",
+    "source_url": "https://www.theverge.com/policy/1042620/character-ai-sale-state-ags-block-selling-users-chats",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "TechCrunch",
+      "Engadget"
+    ],
+    "slug": "2026-11-27-42-us-state-attorneys-general-oppose-character-ai-chat-aucti",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "76% of Australians have mistaken AI content for real",
+    "summary": "Researchers at the University of Canberra report that 76% of Australians have recently believed AI-generated content was real, only to learn later that it wasn't. Their survey of 2,000 adults ran in August and September 2026. Trust is low: 34% said they trust ChatGPT, 24% trust Microsoft Copilot, 24% trust Google Gemini and 17% trust Claude. The authors, writing in The Conversation, argue that platforms need clearer AI labels and that adults need media and AI literacy training.",
+    "why_it_matters": "If your business posts images, video or written content online, customers may not be able to tell whether it was made with AI. Label AI-made material and check facts before you publish.",
+    "category": "Safety & policy",
+    "source_url": "https://theconversation.com/76-of-australians-are-struggling-to-tell-apart-real-and-ai-content-new-report-296952",
+    "source_name": "The Conversation",
+    "also_reported_by": [],
+    "slug": "2026-11-27-76-of-australians-have-mistaken-ai-content-for-real",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "Nine pilots licensed AI access to its journalism",
+    "summary": "Nine is piloting a way for corporate subscribers to query its papers inside their AI tools. The pilot covers the AFR, SMH, The Age, Brisbane Times and WAtoday, linked through MCP, an open connection standard. Nine says it is co-designing the service with business clients before a commercial rollout through 2027. It has not disclosed which AI platforms are supported, what licensees will pay, or whether they receive full articles.",
+    "why_it_matters": "If your business holds a corporate subscription to Nine's papers, this could reach your AI tools as the rollout runs through 2027. Nine hasn't said what licensees will pay or whether full articles are included, so check the terms before you budget.",
+    "category": "Industry",
+    "source_url": "https://www.itnews.com.au/news/nine-trials-ai-access-to-news-via-mcp-630627?utm_source=feed&utm_medium=rss&utm_campaign=iTnews+",
+    "source_name": "iTnews",
+    "also_reported_by": [],
+    "slug": "2026-11-27-nine-pilots-licensed-ai-access-to-its-journalism",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "New York bans AI chatbot toys for five years",
+    "summary": "New York Governor Kathy Hochul has signed a five-year ban on making, distributing and selling AI chatbot toys, such as talking stuffed animals and dolls. The state is the second after California to ban them. The law takes effect 90 days after signing, and violators face civil penalties of up to US$15,000 per day for each violation, enforced by the attorney general. A Common Sense Media study this week found about a quarter of American parents with children under eight own or are considering an AI toy.",
+    "why_it_matters": "If you stock or sell AI toys into New York, the ban will apply to those sales once it takes effect. The sources don't mention any Australian rules on these toys.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/25/want-to-buy-your-kid-an-ai-toy-this-christmas-not-in-new-york/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-27-new-york-bans-ai-chatbot-toys-for-five-years",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "OpenAI merges ChatGPT Chat and Work usage limits",
+    "summary": "OpenAI has begun rolling out a merged Chat and Work experience to a small group of Pro subscribers, product lead Thibault Sottiaux said on X. Chat and Work will share one usage meter, though conversations on the Instant model stay unlimited and don't count toward it. OpenAI says most users won't face more frequent resets, but a small fraction of heavy users may hit their limits sooner. A wider rollout is planned for December, and no Australian timing has been announced.",
+    "why_it_matters": "If your team leans heavily on ChatGPT, watch your usage after the December rollout, as the heaviest users may hit limits sooner. Chats on the Instant model won't count toward the shared allowance.",
+    "category": "New models",
+    "source_url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [],
+    "slug": "2026-11-27-openai-merges-chatgpt-chat-and-work-usage-limits",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "Nothing's Ear (note) earbuds turn talks into notes",
+    "summary": "Nothing has given its Ear (note) AI earbuds a detailed look ahead of their 8 December release. The buds can record calls, while the charging case records, transcribes and summarises conversations. Bloomberg reports the buds will connect to a companion app that manages recordings, transcripts and AI summaries. Pricing, specifications and Australian availability have not yet been announced.",
+    "why_it_matters": "If your team takes client calls, set a recording and consent policy before staff start using these. Pricing is not yet announced, so hold off budgeting for them.",
+    "category": "Applications",
+    "source_url": "https://www.theverge.com/gadgets/1042162/nothing-ear-note-ai-earbuds-reveal",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget"
+    ],
+    "slug": "2026-11-27-nothing-s-ear-note-earbuds-turn-talks-into-notes",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "EA brings AI-recreated John Motson voice to FC 27",
+    "summary": "EA Sports is adding an AI-recreated voice of late commentator John Motson to FC 27 on 26 November. EA says Motson's widow and son approved it, and the family was paid, though it won't say how much. Motson died in February 2023, and the voice draws on recordings from his FIFA years. Peter Caulfield of Save Our Voices Now raises concerns that Motson never consented himself, while EA says it won't replace commentators.",
+    "why_it_matters": "If you use a real person's voice or likeness in ads, get explicit written consent that covers AI use. Here, one campaigner argues family approval wasn't enough.",
+    "category": "Gaming & entertainment",
+    "source_url": "https://www.theguardian.com/media/2026/nov/25/ai-helps-resurrect-voice-john-motson-football-video-game-fc27",
+    "source_name": "The Guardian",
+    "also_reported_by": [
+      "GamesIndustry.biz"
+    ],
+    "slug": "2026-11-27-ea-brings-ai-recreated-john-motson-voice-to-fc-27",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  },
+  {
+    "headline": "FCC clears SpaceX's Starmind AI satellite constellation",
+    "summary": "US regulator the FCC has approved SpaceX's plan for up to 1 million AI satellites, called Starmind. SpaceX says the satellites would use solar power and send data to Earth by laser through its Starlink network. The licence requires at least one satellite deployed by November 2033 and the full fleet by 2040. The FCC deferred SpaceX's request to move older satellites to \"graveyard\" orbits, saying it lacked sufficient detail. Amazon calls the plan a \"lofty ambition\", and US astronomers warn it would hurt night-sky viewing.",
+    "why_it_matters": "Don't plan around this yet. The licence requires the first satellite by 2033, though SpaceX says it wants to launch next year, and the BBC reports it is unclear whether all one million will launch. Your AI costs still depend on today's cloud options.",
+    "category": "Industry",
+    "source_url": "https://www.theverge.com/science/1042278/spacex-fcc-starmind-ai-space-data-centers",
+    "source_name": "The Verge",
+    "also_reported_by": [
+      "Engadget",
+      "BBC Technology",
+      "CNBC Technology",
+      "The Decoder",
+      "ABC News"
+    ],
+    "slug": "2026-11-27-fcc-clears-spacex-s-starmind-ai-satellite-constellation",
+    "edition_published": "2026-11-27T01:20:00+10:30"
+  }
+]
