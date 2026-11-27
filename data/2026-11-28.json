@@ -1,0 +1,97 @@
+[
+  {
+    "headline": "SAP reportedly plans at least 10,000 job cuts",
+    "summary": "German software firm SAP is reportedly preparing to cut at least 10,000 jobs as it reshapes its business for AI, Bloomberg reported on Thursday, citing people familiar with the matter. SAP told CNBC that roles will change over time but that no decisions have been made on further measures. The company, which employs more than 110,000 people, cut about 10,000 positions in a 2024 reorganisation, mostly through voluntary departures and retraining.",
+    "why_it_matters": "If your business relies on SAP software, the reported cuts are unconfirmed, so ask your vendor contact how support and service may change.",
+    "category": "Business",
+    "source_url": "https://www.cnbc.com/2026/11/27/sap-job-cuts-ai-restructuring.html",
+    "source_name": "CNBC Technology",
+    "also_reported_by": [
+      "The Decoder"
+    ],
+    "slug": "2026-11-28-sap-reportedly-plans-at-least-10-000-job-cuts",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "Nvidia pauses server shipments to four Southeast Asian nations",
+    "summary": "Nvidia has asked manufacturing partners, including Dell and Super Micro, to pause server shipments to Malaysia, Singapore, Thailand and Indonesia, according to reports from the Wall Street Journal and Financial Times. The Journal says the pause has no set end date while Nvidia checks whether regional partners meet US export rules. The move follows a US crackdown on Chinese firms renting Nvidia-powered computing remotely from data centres in those countries. Data centres already supplying large amounts of computing power to China-based companies have 90 days from 19 November to obtain a US licence, and banks have reportedly halted about US$500 million in loans to one provider, Aolani.",
+    "why_it_matters": "If you use cloud servers based in Southeast Asia, ask your provider whether the new US licence rules affect your service. Reporters quote an executive saying there is no clear guidance yet.",
+    "category": "Safety & policy",
+    "source_url": "https://techcrunch.com/2026/11/26/nvidia-hits-pause-on-chip-shipments-to-southeast-asia/",
+    "source_name": "TechCrunch",
+    "also_reported_by": [
+      "Engadget",
+      "The Decoder"
+    ],
+    "slug": "2026-11-28-nvidia-pauses-server-shipments-to-four-southeast-asian-natio",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "Talkie blocks Australian web users after Apple removal",
+    "summary": "Talkie, a popular AI companion app, now blocks web visitors in Australia and the UK. The move follows Apple's global removal of the app after a joint ABC and Bureau of Investigative Journalism investigation into inappropriate chats with children. The investigation also reported evidence that parent company MiniMax trained its models on chats users were told were private. Australia's eSafety Commissioner is investigating the app, and MiniMax did not respond to questions about the blocking.",
+    "why_it_matters": "If your business runs a chatbot or collects customer chat data, check your privacy wording. The Children's Online Privacy Code starts 10 December, but the report doesn't say which businesses it covers.",
+    "category": "Safety & policy",
+    "source_url": "https://www.abc.net.au/news/2026-11-27/talkie-ai-app-blocked-taken-off-apple-store/107433834",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-28-talkie-blocks-australian-web-users-after-apple-removal",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "Sydney start-up Ante plans zero-human software company",
+    "summary": "Sydney entrepreneur Lambros Photios has launched Ante, which he says will soon be Australia's first \"zero-human company\". His team built the product in about 10 days by cloning existing software, aiming to replace Atlassian's Confluence. Photios wants Ante running with no daily human input by March. University of Melbourne law professor Jeannie Paterson says a company without human oversight would be illegal and could be prosecuted.",
+    "why_it_matters": "If you pay for subscription software, AI can now copy some tools quickly, so review renewals. Australian companies still need a human director who is liable when things go wrong.",
+    "category": "Business",
+    "source_url": "https://www.abc.net.au/news/science/2026-11-27/what-is-a-zero-human-company/107410116",
+    "source_name": "ABC News",
+    "also_reported_by": [],
+    "slug": "2026-11-28-sydney-start-up-ante-plans-zero-human-software-company",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "TrueLayer's AI agent makes first cardless UK pizza purchase",
+    "summary": "TrueLayer says an AI agent has made the first UK cardless purchase, ordering nine mini pizzas from Papa John's. The order ran in the Financial Conduct Authority's regulated sandbox, using Lloyds Bank, and used no account numbers or passwords. The agent worked under a maximum spend limit per transaction and per month. TrueLayer chief executive Francesco Simoneschi calls the test a first step toward public use.",
+    "why_it_matters": "Not yet announced for Australia. If you sell online, ask your payment provider whether it plans to support AI-agent purchases, and how refunds would work.",
+    "category": "Business",
+    "source_url": "https://www.theguardian.com/business/2026/nov/27/ai-agent-cardless-transaction-pizza-papa-john-uk-fca-truelayer",
+    "source_name": "The Guardian",
+    "also_reported_by": [],
+    "slug": "2026-11-28-truelayer-s-ai-agent-makes-first-cardless-uk-pizza-purchase",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "OpenAI fixes billing bug, tightening GPT-6.2 usage limits",
+    "summary": "A billing bug gave most users the wrong discounts on GPT-6.2 Astra and Sol, according to OpenAI Codex engineer Thibault Sottiaux. Now that it's fixed, usage limits run out 40 percent faster on Astra and 25 percent faster on Sol than last week. OpenAI won't charge retroactively for the difference. Go, Plus, Pro and Business subscribers get an extra saved reset, and Business users get free Fast Mode access until the end of the year.",
+    "why_it_matters": "If your team uses GPT-6.2 Astra or Sol on a paid plan, expect usage limits to run out sooner than last week. Plan heavy work around that, and use the extra saved reset.",
+    "category": "New models",
+    "source_url": "https://the-decoder.com/gpt-6-2-astra-users-now-hit-limits-40-faster-after-openai-patched-a-pricing-error/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-28-openai-fixes-billing-bug-tightening-gpt-6-2-usage-limits",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "Z.AI and Moonshot delay flagship models as US curbs bite",
+    "summary": "Chinese AI firms Z.AI and Moonshot AI are delaying their next flagship models as US restrictions tighten. Reuters, citing sources, says Z.AI's GLM-5.5, planned for November, will likely slip into the first quarter of 2027. InnovationAus reports that Moonshot's development cycle could double from six months to a year or longer without access to overseas computing power. OpenAI and Anthropic have blocked data scraping for distillation, so Moonshot is reportedly turning to the latest Google and Meta models for training.",
+    "why_it_matters": "If your business uses Chinese AI models, expect slower upgrades. Check your provider's roadmap before committing to a long-term contract.",
+    "category": "Industry",
+    "source_url": "https://the-decoder.com/after-openai-and-anthropic-shut-the-door-on-their-data-a-chinese-ai-developer-is-turning-to-google-and-meta-instead/",
+    "source_name": "The Decoder",
+    "also_reported_by": [
+      "InnovationAus"
+    ],
+    "slug": "2026-11-28-z-ai-and-moonshot-delay-flagship-models-as-us-curbs-bite",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  },
+  {
+    "headline": "Microsoft maps how state hackers use the ARTEX AI tool",
+    "summary": "Microsoft Threat Intelligence says state-backed groups from China and North Korea have built the ARTEX AI attack tool into their operations. Released in July 2026, the penetration-testing framework uses specialised AI agents to automate attacks from reconnaissance through to data theft. In one case, an agent took five minutes to pull data from Azure Key Vault, and a Storm-0940 campaign logged more than 151,000 failed logins. Microsoft recommends decoy systems, slow-response traps and strict access controls, and says its own tests sharply cut successful attack traffic.",
+    "why_it_matters": "If your business runs cloud accounts or online logins, ask your IT provider about access controls and rate limits, which Microsoft recommends against automated attacks.",
+    "category": "Safety & policy",
+    "source_url": "https://the-decoder.com/microsoft-details-how-state-backed-hackers-use-the-artex-ai-framework-to-automate-cyberattacks/",
+    "source_name": "The Decoder",
+    "also_reported_by": [],
+    "slug": "2026-11-28-microsoft-maps-how-state-hackers-use-the-artex-ai-tool",
+    "edition_published": "2026-11-28T01:31:00+10:30"
+  }
+]
